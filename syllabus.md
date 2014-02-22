@@ -1,7 +1,10 @@
-# Themen der Lehrveranstaltung
+# Zeitplan und Themen der Lehrveranstaltung
 
 Die genaue Gliederung der Lehrveranstaltung (15 Termine) liegt noch nicht fest.
-Ggf. wandern einige Themen noch ins Teilmodul zu Open Access oder umgekehrt.
+Ggf. wandern einige Themen noch ins Teilmodul Open Access oder umgekehrt.
+
+Die Lehrveranstaltung findet jeweils von 10 bis 12 Uhr in Raum 2.17 im
+Kurt Schwitters Forum (Expo-Plaza 12, Hannover) statt.
 
 2014-03-03
   : Einführung und Grundlagen (Geschichte, Arten, Infrastrukturen...),
@@ -51,8 +54,11 @@ Ggf. wandern einige Themen noch ins Teilmodul zu Open Access oder umgekehrt.
 ### Eher OA
 
 * Digitale Sammlungen & Archive (incl. Digitalisierung)
-* Forschungsinformationssysteme (z.B. *VIVO*)
 * Communities & Soziale Netzwerke (z.B. *ResearchGate*, *LibraryThing*...)
-* Virtuelle Forschungsumgebungen (z.B. *HUB zero*)
 * Suchmaschinen, Literaturdatenbanken und Verzeichnisse (z.B. *Google Scholar*, *BASE*, *OAIster*, *Scirus*, *Scopus*, *DOAJ*...)
-
+* Übung: 
+    * OAI-Harvesting von OJS (027.7 etc.) und DOAJ  (http://www.doaj.org/oai.article)
+        Catmandu::OAI
+    * Zusammenführen von Zeitschriften-Metadaten (ZDB) mit EZB, DOJA, Wikidata
+    * Anschließende Analyse mit Tabellenkalkulation
+    * Ggf. Überführung in eine Suchmaschine
