@@ -21,7 +21,11 @@ summer 2014 at [Hochschule Hannover](http://www.hs-hannover.de/) as part of the
 Bachelor program in Information Management.
 
 The entire repository or parts of it can be used as Open Educational Resource
-(OER) under the terms of [CC-BY-SA](http://creativecommons.org/licenses/by-sa/3.0/).
+(OER) under the terms of [CC-BY-SA](http://creativecommons.org/licenses/by-sa/3.0/),
+unless noted differently. Please care for right attribution!
+
+![CC-BY-SA](cc-by-sa.png)
+
 The original location of this repository is <https://github.com/jakobib/hshdb2014/>.
 
 The class is combined with another class on Open Access and Open Science (see
