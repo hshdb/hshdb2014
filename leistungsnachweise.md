@@ -7,6 +7,10 @@
 * Ausarbeitung (max. .... Wörter, d.h etwa ... Seiten) in Markdown
   Syntax als Pull-Request
 
+## Praktisches
+
+Pro Veranstaltung etwa Kurzvorträge ab 4./5. Woche = 20 Themen
+
 ## Aufgaben
 
 * Installation einer **Suchoberfläche** (VuFind, Blacklight) für den
@@ -37,5 +41,11 @@
   der Artikel-Metadaten und seit wann OA praktiziert wird, soll eine
   kurze einschätzende Zusammenfassung erstellt werden.
 
+* Wer oder was ist ein **MOOCbrarian**? Es soll recherchiert und erklärt
+  werden, woher der Begriff stammt, wer ihn wofür verwendet und wie er
+  mit Leben gefüllt werden könnte (bitte mit eigenen Einschätzungen).
+
+
 * Wie werden OER erschlossen? Wie sollten OER erschlossen werden, um sie
   gezielter auffindbar zu machen? ..
+
