@@ -1,0 +1,6 @@
+[submodule "yaml2bib"]
+	path = yaml2bib
+	url = https://github.com/jakobib/yaml2bib.git
+[submodule "pandoc-bootstrap-template"]
+	path = pandoc-bootstrap-template
+	url = https://github.com/jakobib/pandoc-bootstrap-template.git

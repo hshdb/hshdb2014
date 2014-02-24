@@ -5,13 +5,13 @@ sich darunter spezielle oder beliebige Einrichtungen und Anwendungen
 zusammenfassen, in denen elektronische Medien über das Internet gesammelt,
 geordnet, bearbeitet und/oder verfügbar gemacht werden. Statt einer
 trennscharfen Definition ist es deshalb sinnvoller, den Begriff als Methapher
-aufzufassen (Seadle 2012). Dabei können je nach Anwendung verschiedene Aspekte
+aufzufassen [@Seadle2012]). Dabei können je nach Anwendung verschiedene Aspekte
 im Vordergrund stehen wenn von einer digitalen Bibliothek die Rede ist. Aus
 diesen Aspekten lassen sich grundlegende Arten von digitalen Bibliotheken
 Ableiten, die im Folgenden vorgestellt werden sollen.
 
-Da sich letzendlich alle Daten als digitale Dokumente auffassen lassen (Voß
-2013), ist die Übersicht eher breit und im Gegensatz zu abstrakten Modellen
+Da sich letzendlich alle Daten als digitale Dokumente auffassen lassen
+[@Voss2013], ist die Übersicht eher breit und im Gegensatz zu abstrakten Modellen
 digitaler Bibliotheken (DELOS, 5S, OAIS) pragmatisch angelegt: somit fallen
 darunter alle Systeme die sich praktisch als digitale Bibliotheken bezeichnen
 lassen. Praktisch bedeutet hierbei, dass die jeweiligen Systeme primär typische
@@ -46,7 +46,4 @@ Softwaresystemen betrachtet werden, mit denen sie umgesetzt sind.
 
 ## Nachweise
 
-* Seadle, M. (2013): *Digitale Bibliotheken*. In: Umlauf & Gradmann (Hrsg.):
-  *Handbuch Bibliothek*. S. 139-146.
-* Voß, J (2013): *Was sind eigentlich Daten?*. In: LIBREAS.
-* ...
+
