@@ -11,41 +11,43 @@ Hannover) statt.
   : *Einführung und Grundlagen*:
     Definition, Geschichte und Arten von Digitalen Bibliotheken
 2014-??-??
+  : *Suchmaschinen* (Indexierung, Ranking, Metasuche, Solr/VuFind...),
+2014-??-??
+  : *Linked Open Data* und Bibliotheken
+2014-??-??
+  : *Identifier-Systeme* (ISBN, DOI, URI, Handle...)
+2014-??-??
+  : *Empfehlungsdienste und Auskunftssysteme*
+    (SeeAlso, Questionpoint, StackExchange...)
+2014-??-??
+  : *Crowdsourcing & Crowdfunding**
+
+2014-??-??
+  : Big Data, Data Science und *Forschungsdaten*
+2014-??-??
+  : *Tagging und Erschließung*
+    Normdaten, Tagging, Erstellung von Metadaten...
+2014-??-??
+  : Literaturdatenbanken und Verzeichnisse (Kataloge, 
+    Fachdatenbanken, Social Cataloging, Reference Management...),
+    incl. DOAJ
+
+2014-??-??
   : Digitale Dokumente, Objekte und Daten:
 2014-??-??
   : Datenformate & Standards (CSV, JSON, XML, RDF...; Schemata...)
 2014-??-??
   : Software & Schnittstellen (Grundlagen & Beispiele)
-2014-??-??
-  : Schnittstellen und Webservices (API-Grundlagen, Mashups...)
-2014-??-??
-  : Literaturdatenbanken (Kataloge, Fachdatenbanken, Social Cataloging...)
-2014-??-??
-  : Suchmaschinen (Indexierung, Ranking, Metasuche, Solr/VuFind...),
-    Portale, Verbünde, Aggregatoren (?)
-2014-??-??
-  : Linked Open Data
-2014-??-??
-  : Identifier-Systeme (ISBN, DOI, URI, Handle...)
-2014-??-??
-  : Empfehlungsdienste und Auskunftssysteme
-    (SeeAlso, Questionpoint, StackExchange...)
-2014-??-??
-  : *Tagging und Erschließung*
-    Normdaten, Tagging, Erstellung von Metadaten...
-2014-??-??
-  : *Crowdsourcing & Crowdfunding**
-2014-??-??
-  : Big Data & Data Science (?) 
+    Schnittstellen und Webservices (API-Grundlagen, Mashups...)
+
+2014-xx-xx
+  : *Geld & Politik*
+    Institutionen, Verbünde, Betreiber, Geldgeber
+    (incl. "Negativbeispiele" von Vascoda bis CIB)
+
 2014-??-??
   : Natural Language Procesing, Text Mining, Web Crawling & Web Scraping
+
 2014-07-16
   : (Zusammenfassung und Bewertung)
-
-## Offene Themen (?)
-
-* Kommunikationsformen-, Communities & Soziale Netzwerke
-* Langzeitarchivierung (*LOCKSS* etc.)
-* Betriebsformen & Betreiber
-* Medienformen (eBooks, Bilder, Video, Forschungsdaten, OER...)
 
