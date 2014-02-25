@@ -15,6 +15,9 @@ all: html pdf
 clean:
 	@rm -rf *.html *.pdf
 
+total:
+	@for d in 2014-0?-??; do cd $$d; make all; cd ..; done
+
 # build slides or paper in local directory
 
 BOOTSTRAP=$(CURDIR)/pandoc-bootstrap-template
