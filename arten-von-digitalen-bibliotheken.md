@@ -44,6 +44,18 @@ praktisch alle digitalen Bibliotheken mit Software betrieben werden, sollten
 Arten von digitalen Bibliotheken grundsätzlich nicht losgelöst von den
 Softwaresystemen betrachtet werden, mit denen sie umgesetzt sind.
 
-## Nachweise
+# Vorhandene Definitionen Digitaler Bibliotheken
 
+## Normdatensätze
 
+* [GND 4380940-6](http://d-nb.info/gnd/4380940-6): 
+  Elektronische Bibliothek (=Digitale Bibliothek, Digital Library, 
+  Electronic Library, Virtuelle Bibliothek)
+* [Wikidata Q212805](https://www.wikidata.org/wiki/Q212805):
+  digital library
+* ...
+
+Interessant sind auch die Hierarchischen Verknüpfungen um zu sehen in welchem
+Semantischen Netz sich die verschiedenen Normdatensätze befinden.
+
+# Literatur und Nachweise
