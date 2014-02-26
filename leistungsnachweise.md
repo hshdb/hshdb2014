@@ -1,15 +1,42 @@
 % Leistungsnachweise
 
-## Formales
+# Voraussetzungen
 
-* Literatur- und Quellenverzeichnis in Zotero
+Zur "erfolgreichen" Teilnahme sind zu erbringen:
 
-* Ausarbeitung (max. .... Wörter, d.h etwa ... Seiten) in Markdown
-  Syntax als Pull-Request
+1. Ein Kurzvortrag ohne Folien (7 Minuten + Fragen)
+2. Eine Ausarbeitung als Markdown-Dokument (~ ...)
+3. Ein Quellenverzeichnis in BibTeX-Format
+4. Ein git-Repository mit Ausarbeitung und Literatur
+5. Ein Pull-Request am git-Repository der Lehrveranstaltung
 
-## Praktisches
+# Kurzvorträge
 
-Pro Veranstaltung etwa Kurzvorträge ab 4./5. Woche = 20 Themen
+* Jeden Monatag 2 Kurzvorträge (vormittags/nachmittags) ab 3./4. Woche
+* 7 Minuten freie Rede (gestoppt!) plus bis zu 7 Minuten Fragen und
+  Diskussion
+* Abgabe der Ausarbeitung bis zum folgenden Samstag Nacht.
+
+# Ausarbeitung
+
+* Kurze, übersichtlich gegliederte Ausarbeitung in verständlichem,
+  fehlerfreiem Deutsch oder Englisch
+* Textdatei (`.md`) in Markdown-Syntax (d.h. Text- oder Markdown-Editor)
+* Umfang max. .... Wörter, d.h etwa ... Seiten
+* Gerne mit Bildern, Screenshots, Diagrammen...
+* Abgabe aller Dateien in einem git-Repository (GitHub, Penflip, ...) 
+  per Pull-Request oder Mail mit der Zugangs-URL des Repository
+
+Mehr zu Pull-Requests, git und anderen Versionskontrollsystemen nächste Woche.
+
+# Quellenverzeichnis
+
+* Literaturangaben in der Ausarbeitung in Pandoc-Markdown-Syntax.
+* Quellenverzeichnis als BibTeX-Datei (`.bib`) mit vernüftigen Metadaten.
+* Ein (subjektiver) Kommentar pro Quelle
+
+*Nutzt besser ein Literaturverwaltungsprogramm!* (Zotero, Citavi...)
+
 
 ## Aufgaben
 
