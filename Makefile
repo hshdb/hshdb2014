@@ -20,7 +20,8 @@ total:
 
 # build slides or paper in local directory
 
-BOOTSTRAP=$(CURDIR)/pandoc-bootstrap-template
+BOOTSTRAP=$(realpath $(CURDIR)pandoc-bootstrap-template)
+
 ANY_FORMAT=-s
 ANY_PDF=--latex-engine xelatex $(ANY_FORMAT)
 SLIDES_PDF=-t beamer 

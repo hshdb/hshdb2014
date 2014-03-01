@@ -44,3 +44,33 @@ Eine Bibliothekarin muss kein...
 ...aber jede Bibliothekarin sollte... 
 
 die Möglichkeiten wirksamer Informationsvisualisierung kennen.
+
+
+----
+
+# Digitale Bibliotheken
+
+## Definitionen
+
+Der WP-Artikel "Digitale Bibliothek" ist grütze!
+
+* http://d-nb.info/gnd/4380940-6
+* ...
+
+## Kurze Geschichte
+
+* Memex, Xanadu ...
+* ...
+* Digitale Bibliothek als Metapher
+* ...
+
+
+## Modelle 
+
+* DELOS-Model, S5, OAIS...
+
+## Arten
+
+* Repositories, Digitale Archive, Google Books, Digitalisierung etc. (eigene
+  Typologie)
+

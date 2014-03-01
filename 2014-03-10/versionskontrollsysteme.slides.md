@@ -1,5 +1,9 @@
 % Versionskontrollsysteme. Von Xanadu bis git
 
+# Einführung in git
+
+<http://rogerdudler.github.io/git-guide/index.de.html>
+
 # Diffs
 
 # Komplexere Textformate

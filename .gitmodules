@@ -4,3 +4,6 @@
 [submodule "pandoc-bootstrap-template"]
 	path = pandoc-bootstrap-template
 	url = https://github.com/jakobib/pandoc-bootstrap-template.git
+[submodule "pandocfilters"]
+	path = pandocfilters
+	url = git@github.com:jgm/pandocfilters.git
