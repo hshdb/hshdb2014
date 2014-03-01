@@ -26,7 +26,8 @@ BEAMER=$(realpath $(CURDIR)beamer-template)
 
 ANY_FORMAT=-s
 ANY_PDF=--latex-engine xelatex $(ANY_FORMAT)
-SLIDES_PDF=-t beamer --template $(BEAMER)/template.tex 
+SLIDES_PDF=-t beamer --template $(BEAMER)/template.tex -V subtitle="Informationsmanagement / Modul Digitale Bibliothek"
+
 PAPER_PDF=$(ANY_PDF)
 ANY_HTML=-S $(ANY_FORMAT)
 SLIDES_HTML=-t dzslides $(ANY_HTML)
