@@ -1,13 +1,12 @@
 % Digitale Bibliothek
 % Dr. Jakob Voß
-% SS 2014 an der HsH
 
 # Übersicht der Lehrveranstaltung
 
 ## Zeit & Ort
 
 Die Lehrveranstaltung findet jeweils Montags von 10:00 (!) bis 11:30 Uhr und
-12:30 bis 14:00 Uhr in Raum 2.17 (PC-Raum 15 PCs und 27 Plätze) im Kurt
+12:15 bis 13:45 Uhr in Raum 2.17 (PC-Raum 15 PCs und 27 Plätze) im Kurt
 Schwitters Forum (Expo-Plaza 12, Hannover) statt. Die Aufteilung in Vor- und
 Nachmittagssession entspricht nicht direkt der Gliederung in die Teilmodule
 *Praxis der Digitalen Bibliothek* und *Open Access/Archives* sondern wurde so

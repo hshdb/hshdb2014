@@ -1,11 +1,32 @@
 % Open Access/Archives/Data/Science
+% Dr. Jakob Voß
 
-## OA-Tage 2014
+# Einführungsbeispiel
 
-Möchte und kann jemand ggf. am 8./9. September 2014 nach Köln?
+Hawking's letztes Paper.
+http://phenomena.nationalgeographic.com/2014/02/19/scientists-on-the-loose-my-aaas-talk/#.UwcGE_o-w3Y.twitter
 
-* Open-Access-Tage 2014 an der FH Köln\
-  <http://open-access.net/de/aktivitaeten/open_access_tage/>
-* CfP-Deadline in vier Wochen (31. März)
-* Kurzpräsentation (5 Minuten) oder Poster kann jeder! 
+# Einführung 
 
+* Geschichte und Probleme des wissenschaftlichen Publizierens
+* Zeitschriftenkrise
+
+# Open Access
+
+* Grundidee und -formen von Open Access
+* Grüner/Goldener/Grauer Weg
+* ...
+
+# Open Archives
+
+* Repositorien
+* "OA-Szene"
+...
+
+# Open Data
+
+...
+
+# Open Science
+
+...

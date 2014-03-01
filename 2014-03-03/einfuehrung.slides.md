@@ -1,4 +1,20 @@
-Was müssen Bibliothekare im Zeitalter der Data Science können?
+% Digitale Bibliothek
+% Dr. Jakob Voß
+
+# Vorbemerkung
+
+* old librarians like books
+* new librarians like data
+* good librarians like people
+
+# Warum Daten?
+
+* Bisherige Publikationen sind zunehmend digital
+* Neue Publikationsformen sind digital
+
+...mehr dazu nächste Woche.
+
+# Was sollten Bibliothekare können?
 
 Frei übersetzt nach
 <http://infospace.ischool.syr.edu/2012/07/16/data-science-whats-in-it-for-the-new-librarian/>
@@ -45,7 +61,6 @@ Eine Bibliothekarin muss kein...
 
 die Möglichkeiten wirksamer Informationsvisualisierung kennen.
 
-
 ----
 
 # Digitale Bibliotheken
@@ -63,7 +78,6 @@ Der WP-Artikel "Digitale Bibliothek" ist grütze!
 * ...
 * Digitale Bibliothek als Metapher
 * ...
-
 
 ## Modelle 
 
