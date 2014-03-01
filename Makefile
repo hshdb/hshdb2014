@@ -15,20 +15,23 @@ all: html pdf
 clean:
 	@rm -rf *.html *.pdf
 
-total:
+total: all
 	@for d in 2014-0?-??; do cd $$d; make all; cd ..; done
 
 # build slides or paper in local directory
 
 BOOTSTRAP=$(realpath $(CURDIR)pandoc-bootstrap-template)
+BEAMER=$(realpath $(CURDIR)beamer-template)
+
 
 ANY_FORMAT=-s
 ANY_PDF=--latex-engine xelatex $(ANY_FORMAT)
-SLIDES_PDF=-t beamer 
+SLIDES_PDF=-t beamer --template $(BEAMER)/template.tex 
 PAPER_PDF=$(ANY_PDF)
 ANY_HTML=-S $(ANY_FORMAT)
 SLIDES_HTML=-t dzslides $(ANY_HTML)
-# DO: calcute relat path to CSS
+
+# TODO: calculate relative path to CSS
 PAPER_HTML=-t html5 $(ANY_HTML) --template $(BOOTSTRAP)/template.html --css $(BOOTSTRAP)/template.css --toc --toc-depth 2
 
 .md.pdf: bib

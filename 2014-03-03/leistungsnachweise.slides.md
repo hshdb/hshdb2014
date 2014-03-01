@@ -1,4 +1,6 @@
 % Modul Digitale Bibliothek: Leistungsnachweise
+% Dr. Jakob Voß
+% 2014-03-03, Hochschule Hannover
 
 # Voraussetzungen
 
