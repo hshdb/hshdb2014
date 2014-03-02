@@ -15,10 +15,13 @@ $endif$
 \usecolortheme[named=hshorange]{structure}
 \setbeamertemplate{footline}{%
  \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,right, rightskip=1mm, leftskip=1mm]{footlinecolor}
- \insertauthor: $subtitle$
- \hfill\textbf{\inserttitle}
- \hfill
- \insertframenumber/\inserttotalframenumber%
+  Bachelor Informationsmanagement / Modul Digitale Bibliothek (SS 2014)
+  \hfill Hoschschule Hannover (HsH)
+ \end{beamercolorbox}
+ \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,right, rightskip=1mm, leftskip=1mm]{footlinecolor}
+  \textbf{\inserttitle} (\insertframenumber/\inserttotalframenumber)
+  \hfill 
+  CC-BY-SA $date$ \insertauthor
  \end{beamercolorbox}
 }
 %%</hshdb2014-layout>
@@ -134,9 +137,7 @@ $endfor$
 $if(title)$
 \title{$title$}
 $endif$
-$if(subtitle)$
-\subtitle{$subtitle$}
-$endif$
+\subtitle{Bachelor Informationsmanagement\\ Modul Digitale Bibliothek (SS 2014)}
 $if(author)$
 \author{$for(author)$$author$$sep$ \and $endfor$}
 $endif$
