@@ -1,32 +1,43 @@
-% Open Access/Archives/Data/Science
+% Open Access/Archives/Data/Science in gaaanz kurz
 % Dr. Jakob Voß
+% 2014-03-03
 
 # Einführungsbeispiel
 
 Hawking's letztes Paper.
-http://phenomena.nationalgeographic.com/2014/02/19/scientists-on-the-loose-my-aaas-talk/#.UwcGE_o-w3Y.twitter
+<http://phenomena.nationalgeographic.com/2014/02/19/scientists-on-the-loose-my-aaas-talk/>
 
-# Einführung 
+# Von der Lösung zum Problem
 
-* Geschichte und Probleme des wissenschaftlichen Publizierens
-* Zeitschriftenkrise
+Lösung
+  : Alles was digital ist, lässt sich beliebig kopieren
+Problem
+  : * Geschäftsmodelle basieren darauf für Kopien Geld zu nehmen
+    * Einige Verlage haben Quasi Monopole
+    * Zeitschriftenkrise
 
 # Open Access
 
-* Grundidee und -formen von Open Access
-* Grüner/Goldener/Grauer Weg
-* ...
+Problem
+  : Kopieren verboten
+Lösung
+  : * Grüner Weg: Autoren archivieren zusätzlich selber
+    * Goldener Weg: Open Access Zeitschriften
 
 # Open Archives
 
 * Repositorien
-* "OA-Szene"
-...
+    * Fachlich
+    * Institutionell
+* Umfangreiche Open Access-Szene
 
 # Open Data
 
-...
+Open Data = Open Access + Datenbestände statt herkömmlicher Publikationen +
+freie Nutzung
 
-# Open Science
+# Open Science und Digital Humanities
 
-...
+"Open Science" und "Digital Humanities" ist für die Wissenschaft das was
+"Digitale Bibliothek" für das Bibliothekswesen ist.
+

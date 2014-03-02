@@ -1,22 +1,17 @@
 % Aufgaben
 % Dr. Jakob Voß
+% 2014-03-03
 
 # Wo steht die Liste?
 
 * Verlinkt in Moodle (Digitale Bibliothek, SoSe 2014, Voß)\
   <https://moodle.hs-hannover.de/course/view.php?id=1271>
-* Im GitHub-Repository <https://github.com/hshdb/hshdb2014>
-* Auswahl bis Donnerstag Nacht, sonst freie Zuteilung.
+* In HTML unter <http://hshdb.github.io/hshdb2014/2014-03-03/aufgaben.html>
+* In Markdown im GitHub-Repository <https://github.com/hshdb/hshdb2014>
+* Auswahl **bis Donnerstag Nacht**, sonst freie Zuteilung.
 
-# Aufgaben
 
-@. Installation einer **Suchoberfläche** (VuFind, Blacklight) für den
-   GBV-Verbundindex bzw. Verbundübergreifenden **Solr-Index**, kurze
-   Erklärung der dafür benötigten Schritte und der Funktionsweise der
-   Suche.
-
-@. Was sind **Nanopublikationen**? Erklärung mit Definitionen, Herkunft,
-   Beispielen, Verbreitung, Einschätzung...
+# Aufgaben (nur teilweise geordnet)
 
 ---
 
@@ -24,19 +19,35 @@
    anhand von Beispielen aus der Praxis. Dabei sollten sowohl institutionelle 
    als auch nicht-klassische digitale Bibliotheken herangezogen werden.
 
+---
+
 @. Übersetzung des **[Archivist
    Manifesto](http://www.metamute.org/editorial/lab/archivist-manifesto)**
    aus dem Englischen ins Deutsche und kurze Zusammenfassung (Philosophie,
    Soziale Bedeutung von digitaler Archivierung, Aufruf selber zu
-   archivieren...). Siehe dazu auch <http://digitalmilieu.net/?p=536>.
+   archivieren...). Siehe dazu <http://digitalmilieu.net/?p=536>.
 
-@. **Langzeitarchivierung an der DNB** (koLibRI, DP4lib, AREDO): was genau
-   archiviert die DNB, wieviel wurde schon archiviert, wo liegen die
-   Probleme und Grenzen?
+---
 
-@. Übersicht und Vergleich von freien **Webanwendungen zur Datenvisualisierung** 
-   (Many Eyes, Data Wrangler...) mit grundsätzlichen Stärken und Grenzen
-   sowie den Möglichkeiten Visualisierungen und Daten zu veröffentlichen.
+@. Was sind **Nanopublikationen**? Erklärung mit Definitionen, Herkunft,
+   Beispielen, Verbreitung, Einschätzung... Wo werden Nanopublikationen
+   genutzt?
+
+---
+
+@. Wer oder was ist ein **MOOCbrarian**? Es soll recherchiert und erklärt
+   werden, woher der Begriff stammt, wer ihn wofür verwendet und wie er
+   mit Leben gefüllt werden könnte (bitte mit eigenen Einschätzungen).
+
+---
+
+@. Wie sieht in verschiedenen Bibliothekskatalogen (verschiedene Software,
+   mind. 5!) die **Verfügbarkeitsanzeige** aus? Die Ausarbeitung sollte
+   Screenshot-Ausschnitte enthalten, im Kurzvortrag sollen die häufigsten
+   Bestandteile der Anzeige skizziert werden. Vergleiche und Benenne die 
+   Anzeige mit den in der DAIA API vorgesehenden Datenelementen!
+
+---
 
 @. Erstellung einer **Übersicht deutschsprachiger Fachzeitschriften im 
    Bibliotheks- und Informationsbereich** unter Beachtung von Open Access
@@ -47,9 +58,29 @@
    der Artikel-Metadaten und seit wann OA praktiziert wird, soll eine
    kurze einschätzende Zusammenfassung erstellt werden.
 
-@. Wer oder was ist ein **MOOCbrarian**? Es soll recherchiert und erklärt
-   werden, woher der Begriff stammt, wer ihn wofür verwendet und wie er
-   mit Leben gefüllt werden könnte (bitte mit eigenen Einschätzungen).
+---
+
+@. Welche deutschsprachigen Hochschulen bieten **elektronische
+   Semesterapparate**? Erstellung einer Übersicht mit wesentlichen Angaben wie 
+   URL, verwendte Software, Einführungszeitraum und Umfang sowie Möglichkeiten
+   zum Export von Literaturlisten.
+
+---
+
+@. Übersicht über die **Verfügbarkeit von Erschließungssystemen**. Welches 
+   der *wichtigsten* Klassifikationen, Thesauri und Normdateien (DDC, GND, 
+   RVK, BK, Getty... -- mind. 12) sind seit wann und von wem als Linked Open 
+   Data oder in welchen anderen Formen verfügbar? Welche Lizenzen gelten 
+   und wie sieht es mit Aktualisierungen aus?
+
+---
+
+@. Übersicht und Vergleich von verschiedenen **Identifiern für Werke**.
+   Welche Datenbanken enthalten Informationen zu Werken, die einzelnen
+   Ausgaben und Exemplaren von Publikationen übergeordnet sind.
+   (Wie) sind sie miteinander verknüpft?
+
+---
 
 @. Welche deutschen Hochschulen betreiben seit wann und in welcher Form ein
    **Forschungsinformationssystem**? Erstellung eines übersichtlichen
@@ -58,6 +89,39 @@
    in Hochschulen und Forschungseinrichtungen" (36 S.) vergleichbar mit 
    der vor fünf Jahren erstellten Übersicht von "Hochschulbibliografien an
    deutschen Hochschulen" (Voß & Scherer, 2009)
+
+---
+
+@. Vom 18.3. bis 17.4. findet eine **[Online-Konsultation zur Zukunft des
+   wissenschaftlichen Kommunikationssystems](http://www.publikationssystem.de)**
+   statt. Geben Sie eine Übersicht und Einschätzung der dort behandelten
+   Themen und Probleme!
+
+---
+
+@. Vorstellung des Cititen Science Projekt **[crowdcrafting](http://crowdcrafting.org)/PyBossa**.
+   Wofür eignet sich die Plattform bzw. Software gut, wo liegen die Grenzen? 
+
+---
+
+@. Vorstellung des Projekt **[Commons Machinery](http://commonsmachinery.se/)**
+   zur besseren Angabe von Urheberschaften. Welches Problem soll mit welchen 
+   Mitteln gelöst werden?
+
+---
+
+@. **Langzeitarchivierung an der DNB** (koLibRI, DP4lib, AREDO): was genau
+   archiviert die DNB, wieviel wurde schon archiviert, wo liegen die
+   Probleme und Grenzen?
+
+---
+
+@. Installation einer **Suchoberfläche** (VuFind, Blacklight) für den
+   GBV-Verbundindex bzw. Verbundübergreifenden **Solr-Index**, kurze
+   Erklärung der dafür benötigten Schritte und der Funktionsweise der
+   Suche.
+
+---
 
 @. Erstellung einer exemplarische **RDF-Beschreibung der Fakultät III der HsH**.
    In Anlehnung an [vorhandene RDF-Beschreibungen](http://linkeduniversities.org/)
@@ -69,17 +133,32 @@
    oder ein anderen RDF-Validierungstool verwendet werden). Der Kurzvortrag
    sollte auch das Vorgehen und Erkenntnisse behandeln.
 
-@. Vom 18.3. bis 17.4. findet eine **[Online-Konsultation zur Zukunft des
-   wissenschaftlichen Kommunikationssystems](http://www.publikationssystem.de)**
-   statt. Geben Sie eine Übersicht und Einschätzung der dort behandelten
-   Themen und Probleme!
+---
 
-@. Vorstellung des Cititen Science Projekt **[crowdcrafting](http://crowdcrafting.org)/PyBossa**.
-   Wofür eignet sich die Plattform bzw. Software gut, wo liegen die Grenzen? 
+@. Übersicht und Vergleich von freien **Webanwendungen zur Datenvisualisierung** 
+   (Many Eyes, Data Wrangler...) mit grundsätzlichen Stärken und Grenzen
+   sowie den Möglichkeiten Visualisierungen und Daten zu veröffentlichen.
+   Die Ausarbeitung sollte selbst umgesetzte, einfache Beispiele enthalten.
 
-@. Vorstellung des Projekt **[Commons Machinery](http://commonsmachinery.se/)**
-   zur besseren Angabe von Urheberschaften. Welches Problem soll mit welchen 
-   Mitteln gelöst werden?
+---
+
+@. Worin liegen Unterschiede und Gemeinsamkeiten der
+   **Repository-Verzeichnisse** OpenDOAR, ROAR, R3DATA, DOAJ, und der EZB?
+
+---
+
+@. In welcher Form und mit welchen Angaben ("Feldern") sind die meisten **Open 
+   Educational Resources** (OER) erschlossen? Wo und wie lässt sich dank dieser 
+   Erschließung gezielt nach OER recherchieren? Wie könnte die Erschließung
+   verbessert werden um sie gezielter Auffindbar zu machen?
+
+---
+
+@. Welche größeren Projekte existieren zur **Transkiption** und Tiefenerschließung
+   von digitalisierten Texten? Was haben die Projekte gemeinsam und wo
+   unterscheiden sie sich? 
+
+---
 
 @. Sollten **Bibliothekare programmieren** und Bibliotheken eigene Software
    entwickeln? Daniel Chudnov hat dazu vor kurzem
@@ -87,46 +166,4 @@
    es gibt aber auch andere Stimmen. Welche Bibliotheken veröffentlichen eigene 
    Software (hint: auf GitHub) und worin liegen die Vorteile und
    Schwierigkeiten?
-
-@. Wie sieht in verschiedenen Bibliothekskatalogen (verschiedene Software,
-   mind. 5!) die **Verfügbarkeitsanzeige** aus? Die Ausarbeitung sollte
-   Screenshot-Ausschnitte enthalten, im Kurzvortrag sollen die häufigsten
-   Bestandteile der Anzeige skizziert werden. Vergleiche und Benenne die 
-   Anzeige mit den in der DAIA API vorgesehenden Datenelementen!
-
-@. Welche deutschsprachigen Hochschulen bieten **elektronische
-   Semesterapparate**? Erstellung einer Übersicht mit wesentlichen Angaben wie 
-   URL, verwendte Software, Einführungszeitraum und Umfang sowie Möglichkeiten
-   zum Export von Literaturlisten.
-
-@. Vergleich des Verzeichnis von **Forschungsdaten-Repositories**
-   <http://r3data.org> mit DOAJ, ROAR, OpenDOAR un/oderd ZDB/EZB. (??)
-
-@. Übersicht und Vergleich von verschiedenen **Identifiern für Werke**.
-   Welche Datenbanken enthalten Informationen zu Werken, die einzelnen
-   Ausgaben und Exemplaren von Publikationen übergeordnet sind.
-   (Wie) sind sie miteinander verknüpft?
-
-@. Übersicht über die **Verfügbarkeit von Erschließungssystemen**. Welches 
-   der *wichtigsten* Klassifikationen, Thesauri und Normdateien (DDC, GND, 
-   RVK, BK, Getty... -- mind. 12) sind seit wann und von wem als Linked Open 
-   Data oder in welchen anderen Formen verfügbar? Welche Lizenzen gelten 
-   und wie sieht es mit Aktualisierungen aus?
-
-@. Mapping von Normdaten (??)
-
-@. ?? Wie werden OER erschlossen? Wie sollten OER erschlossen werden, um sie
-   gezielter auffindbar zu machen? ..
-
-@. ...Metadaten vs. NSA
-
-@. ...
-
-@. ...
-
-@. ...
-
-@. ...
-
-@. ...
 
