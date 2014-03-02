@@ -21,14 +21,15 @@ total: all
 # build slides or paper in local directory
 
 # TODO: relative path to includir and css/ 
-BOOTSTRAP=$(realpath $(CURDIR)pandoc-bootstrap-template)
+BOOTSTRAP=$(realpath $(CURDIR)css)
 
 BEAMER=$(realpath $(CURDIR)beamer-template)
 
 
 ANY_FORMAT=-s
 ANY_PDF=--latex-engine xelatex $(ANY_FORMAT)
-SLIDES_PDF=-t beamer --template $(BEAMER)/template.tex
+# TODO: xelatex
+SLIDES_PDF=$(ANY_FORMAT) -t beamer --template $(BEAMER)/template.tex
 
 PAPER_PDF=$(ANY_PDF)
 ANY_HTML=-S $(ANY_FORMAT)

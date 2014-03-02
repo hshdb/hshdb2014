@@ -24,12 +24,13 @@ Im Wesentlichen lassen sich also (ohne Abrede relevanter Schnitt- und
 Teilmengenmengen) folgende Arten von digitalen Bibliotheken unterscheiden:
 
 * Repositories und Archive (z.B. *arXiv*, *Internet Archive*, *LOCKSS*...)
-* Suchmaschinen, Literaturdatenbanken und Verzeichnisse (z.B. *Google Scholar*, *BASE*, *OAIster*, *Scirus*, *Scopus*, *DOAJ*...)
+* Literaturdatenbanken und Verzeichnisse (z.B. *DOAJ*, Kataloge...)
+* Suchmaschinen (z.B. *Google Scholar*, *BASE*, *OAIster*, *Scirus*, *Scopus*, *DOAJ*...)
 * Publikationssysteme (z.B. *Open Journal Systems*)
 * Auskunftssysteme (z.B. *Questionpoint*, *StackExchange*...)
 * Forschungsinformationssysteme (z.B. *VIVO*)
-* Soziale Netzwerke (z.B. *ResearchGate*, *LibraryThing*...)
-* Virtuelle Forschungsumgebungen (z.B. *HUB zero*)
+* Soziale Netzwerke (z.B. *ResearchGate*, *Blogplattformen*...)
+* Virtuelle Forschungsumgebungen (z.B. *HUB zero*, *TextGrid*...)
 * ...
 
 Für eine genauere Unterteilung ist vermutlich eine ausführlicheren Sammlung von
