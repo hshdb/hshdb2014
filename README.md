@@ -15,9 +15,9 @@ verwendet werden. Nähere Hinweise zur Weiternutzung siehe unter
 ![CC-BY-SA](cc-by-sa.png) Jakob Voß
 
 Die versionierten Quelldateien der Lerhveranstaltung sind auf GitHub unter
-[https://github.com/jakobib/hshdb2014/](https://github.com/jakobib/hshdb2014/)
+[https://github.com/hshdb/hshdb2014/](https://github.com/hshdb/hshdb2014/)
 verfügbar. Darüber hinaus wird aus den Quellen unter
-[http://jakobib.github.io/hshdb2014/](http://jakobib.github.io/hshdb2014/) eine
+[http://hshdb.github.io/hshdb2014/](http://hshdb.github.io/hshdb2014/) eine
 Webseite erstellt.
 
 ## Inhalt und Gliederung
@@ -44,7 +44,7 @@ folgendes Vorgehen:
   einfache Quellenangabe mit Angabe der Lizenz.
 
 * Korrekturen und Ergänzungen am Besten unter
-  <https://github.com/jakobib/hshdb2014/issues>
+  <https://github.com/hshdb/hshdb2014/issues>
 
 * Weitere Bearbeitung aller Inhalte oder ausgewählter Teile in einem
   Versionskontrollsystem sind am Besten durch fork/clone oder merge möglich,
@@ -53,5 +53,3 @@ folgendes Vorgehen:
   Verzeichnisse oder Dateien mit ihrer Versionsgeschichte enthält das Repository
   das Skript `extract-from-git.sh`.
 
-
-...
