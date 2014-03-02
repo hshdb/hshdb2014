@@ -16,45 +16,50 @@ erbringen:
 # Kurzvorträge
 
 * Je 2 Kurzvorträge (vor & nachmittags) ab 3./4. Woche
-* 10 Minuten freie Rede (!) + kurz Fragen und Diskussion
+* 10 Minuten **freie Rede** + kurz Fragen und Diskussion
 * Abgabe der Ausarbeitung bis zum folgenden Samstag Nacht
 
 # Ausarbeitung
 
-* Kurze, übersichtlich gegliederte Ausarbeitung in verständlichem,
+* **Kurze, übersichtlich gegliederte** Ausarbeitung in verständlichem,
   fehlerfreiem Deutsch oder Englisch
-* Textdatei (`.md`) in Markdown-Syntax (d.h. Text- oder Markdown-Editor)
-* Umfang rund 1000 Wörter (das sind etwa 2 Seiten reiner Text)
+* Textdatei in (Pandoc) **Markdown-Syntax** (`.md`) \
+  (also mit Texteditor oder Markdown-Editor)
+* Umfang **rund 1000** Wörter (etwa 2 Seiten reiner Text)
 * Gerne mit Bildern, Screenshots, Diagrammen, Links...
-* Abgabe aller Dateien in einem git-Repository (GitHub, Penflip, ...) 
+* Abgabe aller Dateien in einem **git-Repository** (GitHub, Penflip, ...) 
   per Pull-Request oder Mail mit der Zugangs-URL des Repository
 
-Mehr zu Pull-Requests, git und anderen Versionskontrollsystemen nächste Woche.
+Mehr zu git-Repositories, Pull-Requests und anderen Aspekten von 
+Versionskontrollsystemen nächste Woche.
 
-# Quellenverzeichnis
+# Literatur- und Quellenverzeichnis
 
-* Literaturangaben in der Ausarbeitung in Pandoc-Markdown-Syntax
-* Quellenverzeichnis als BibTeX-Datei (`.bib`) mit vernüftigen Metadaten
+* Literaturangaben in der Ausarbeitung in **Pandoc-Markdown-Syntax**
+* Quellenverzeichnis als **BibTeX-Datei** (`.bib`) mit vernüftigen Metadaten
   (Wer, Wann, Wie, Wo, Was?)
-* Nutzt ein Literaturverwaltungsprogramm! (Zotero, Citavi, Mendeley...)
-* Ein Kommentar pro Quelle mit euer Bewertung
-* Kein Wissenschaftlicher Fachartikel, d.h. alle Arten von Quellen
-  erlaubt (incl. Wikipedia, Weblogs, Podcasts, direkte Nachfrage...)
+* Nutzt ein **Literaturverwaltungsprogramm**!\
+  (Zotero, Citavi, Mendeley...)
+* Ein **Kommentar** pro Quelle mit euer Bewertung
+* Kein Wissenschaftlicher Fachartikel, d.h. **alle Arten von Quellen**
+  erlaubt (incl. Wikipedia, Weblogs, Podcasts, direkte Nachfrage bei
+  Experten...)
 
 # Recherche
 
-* Verschiedene Recherchestrategien und Quellen (Fachzeitschriften,
+* **Verschiedene Recherchestrategien** und Quellen (Fachzeitschriften,
   Weblogs, Selbstdarstellungen)
-* Es gibt keine ganz neutralen Quellen (also Einschätzung und Bewertung)
-* Immer auch Englisch
-* Viel lesen!
-* Fragen hilft (Kontakt mit verantwortlichen, öffentliche Frage auf
-  Mailinglisten o.Ä.)
+* Recherchiert (auch) auf **Englisch**!
+* Es gibt keine ganz neutralen Quellen, daher ist **Einschätzung und
+  Bewertung** wichtig
+* **Lesen**, lesen, lesen!
+* **Fragen** hilft: Kontakt mit verantwortlichen, öffentliche Frage auf
+  Mailinglisten o.Ä., mich (nicht erst kurz vor knapp)
 
 # Weitere Hinweise
 
-* Zusammenfassung: Recherche, Kurzvortrag, Ausarbeitung
-* Aufwand nicht unterschätzen, kurz ist nicht einfacher!
+* Aufgabe besteht aus: Recherche, Kurzvortrag, Ausarbeitung
+* Aufwand nicht unterschätzen: **kurz ist nicht einfacher**!
 * Die ersten werden etwas weniger streng bewertet
 
 # Aufgabenverteilung
@@ -65,4 +70,7 @@ Mail an `jakob.voss@hs-hannover.de`
 * bis Donnerstag Nacht!
 * Name, Erst-, Zweit- und Drittwunsch sowie ggf. ein Kommentar in einer Zeile
 
+Parallel bite einfache Anmeldung in Moodle.
+
+*Fragen?*
 

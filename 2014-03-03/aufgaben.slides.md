@@ -1,14 +1,26 @@
 % Aufgaben
 % Dr. Jakob Voß
 
+# Wo steht die Liste?
+
+* Verlinkt in Moodle (Digitale Bibliothek, SoSe 2014, Voß)\
+  <https://moodle.hs-hannover.de/course/view.php?id=1271>
+* Im GitHub-Repository <https://github.com/hshdb/hshdb2014>
+* Auswahl bis Donnerstag Nacht, sonst freie Zuteilung.
+
 # Aufgaben
 
-#. Installation einer **Suchoberfläche** (VuFind, Blacklight) für den
+@. Installation einer **Suchoberfläche** (VuFind, Blacklight) für den
    GBV-Verbundindex bzw. Verbundübergreifenden **Solr-Index**, kurze
    Erklärung der dafür benötigten Schritte und der Funktionsweise der
    Suche.
 
-#. Übersetzung des **[Archivist
+@. Was sind **Nanopublikationen**? Erklärung mit Definitionen, Herkunft,
+   Beispielen, Verbreitung, Einschätzung...
+
+---
+
+@. Übersetzung des **[Archivist
    Manifesto](http://www.metamute.org/editorial/lab/archivist-manifesto)**
    aus dem Englischen ins Deutsche und kurze Zusammenfassung (Philosophie,
    Soziale Bedeutung von digitaler Archivierung, Aufruf selber zu
@@ -107,5 +119,4 @@
 #. ...
 
 #. ...
-
 
