@@ -59,3 +59,15 @@ PAPER_HTML=-t html5 $(ANY_HTML) --template $(BOOTSTRAP)/template.html --css $(BO
 	fi
 
 include $(CURDIR)/yaml2bib/Makefile
+
+## Make website
+.PHONY: website clean-repo
+
+clean-repo:
+	@git diff-index --quiet HEAD --
+
+website: clean-repo
+	@git checkout gh-pages && \
+	echo "Not implemented yet" && \
+	git checkout master && git submodule foreach git checkout .
+
