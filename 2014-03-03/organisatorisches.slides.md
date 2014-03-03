@@ -2,14 +2,10 @@
 % Dr. Jakob Voß
 % 2014-03-03
 
-# Willkommen
-
-* Warum sind wir hier?
-
 # Zeit & Ort
 
-* Montags 10-12 und 12-14\ (Vorschlag: 10:00-11:30 und 12:15-13:45?)
-* 14 Termine (incl. heute) bis 16.7. 
+* Montags 10:00-11:30 und 12:14-13:45
+* 14 Termine (incl. heute) bis 16.6. 
 * Raum 2.17 im Kurt Schwitters Forum, Expo-Plaza 12
 * Aufteilung in die Teilmodule *Praxis der Digitalen Bibliothek* 
   und *Open Access/Archives* eher pragmatisch
@@ -25,7 +21,7 @@
 
 * <http://hshdb.github.io/hshdb2014/> (im Aufbau)
 * `jakob.voss@hs-hannover.de`
-* Ich bin nur Mo & Di in Hannover
+* Ich bin Montags & Dienstags in Hannover
 * Fragen hilft!
 
 # Weitere Veranstaltungen
@@ -51,7 +47,7 @@ Möchte und kann jemand am 8./9. September 2014 nach Köln?
 
 # Weitere Veranstaltungen
 
-* BibCamp 2014 (26./27. September in Potsdam)
-* Bibliothekstag (3.-6. Juni in Bremen)
-* ...diverse Barcamps und Kongresse
+* **BibCamp 2014** (26./27. September in Potsdam)
+* **Bibliothekstag 2014** (3.-6. Juni in Bremen)
+* ...diverse Barcamps und Kongresse...
 

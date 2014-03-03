@@ -5,7 +5,7 @@
 
 ## Zeit & Ort
 
-Die Lehrveranstaltung findet jeweils Montags von 10:00 (!) bis 11:30 Uhr und
+Die Lehrveranstaltung findet jeweils Montags von 10:00 bis 11:30 Uhr und
 12:15 bis 13:45 Uhr in Raum 2.17 (PC-Raum 15 PCs und 27 Plätze) im Kurt
 Schwitters Forum (Expo-Plaza 12, Hannover) statt. Die Aufteilung in Vor- und
 Nachmittagssession entspricht nicht direkt der Gliederung in die Teilmodule
@@ -97,7 +97,7 @@ Aufgaben ab.
       Institutionen, Verbünde, Betreiber, Geldgeber (z.B. DFG, Vascoda, DDB, CIB...)
     - **Datenjournalismus**
 
-2014-07-16
+2014-06-16
   :  - **Open Educational Resources:** OER und (M)OOCs
      - **Summarium et Paralipomena**:
       Sonstiges, Zusammenfassung, Bewertung & Feedback

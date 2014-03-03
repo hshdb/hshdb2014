@@ -84,3 +84,4 @@ aber sie sollten
 
 die Möglichkeiten wirksamer Informationsvisualisierung kennen.
 
+# Quellenangaben
