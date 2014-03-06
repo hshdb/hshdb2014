@@ -29,7 +29,7 @@ BEAMER=$(realpath $(CURDIR)beamer-template)
 ANY_FORMAT=-s
 ANY_PDF=--latex-engine xelatex $(ANY_FORMAT)
 # TODO: xelatex
-SLIDES_PDF=$(ANY_FORMAT) -t beamer --template $(BEAMER)/template.tex
+SLIDES_PDF=$(ANY_PDF) -t beamer --template $(BEAMER)/template.tex
 
 PAPER_PDF=$(ANY_PDF)
 ANY_HTML=-S $(ANY_FORMAT)
