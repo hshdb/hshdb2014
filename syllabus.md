@@ -1,103 +1,132 @@
-% Digitale Bibliothek
+% Übersicht der Lehrveranstaltung
 % Dr. Jakob Voß
+% 2014
 
-# Übersicht der Lehrveranstaltung
-
-## Zeit & Ort
+# Zeit & Ort
 
 Die Lehrveranstaltung findet jeweils Montags von 10:00 bis 11:30 Uhr und
 12:15 bis 13:45 Uhr in Raum 2.17 (PC-Raum 15 PCs und 27 Plätze) im Kurt
-Schwitters Forum (Expo-Plaza 12, Hannover) statt. Die Aufteilung in Vor- und
-Nachmittagssession entspricht nicht direkt der Gliederung in die Teilmodule
-*Praxis der Digitalen Bibliothek* und *Open Access/Archives* sondern wurde so
-vorgenommen, dass an jedem Termin jeweils ein eher technisch-theoretisches und
-dazu passend ein eher praktisch-soziales Thema an der Reihe sind.
+Schwitters Forum (Expo-Plaza 12, Hannover) statt.
 
-## Semesterplan
+# Semesterplan
 
-Die endgültige Reihenfolge steht noch nicht fest und hängt von den verteilten
-Aufgaben ab.
+Die Aufteilung in Vor- und Nachmittagssession entspricht nicht direkt der
+Gliederung in die Teilmodule "Praxis der Digitalen Bibliothek" und "Open
+Access/Archives" sondern ist nach pragmatischen Gesichtspunkten vorgenommen.
+Das Motto ("in Anführungszeichen") soll als einfache Merkhilfe dienen. Die
+Kurzvorträge (*kursiv*) finden am Anfang der Teilmodule statt. Aufgaben stehen
+im [internen Repository](https://github.com/hshdb/hshdb2014-aufgaben).
 
-2014-03-03
-  : - **[Einführung & Grundlagen](2014-03-03/einfuehrung.slides.md)**:
-      Definition, Geschichte & Arten von Digitalen Bibliotheken & Open Access/Data/Science 
-    - **Leistungsnachweise & Aufgaben**
+`2014-03-03` "Einführung"
+  : - **[Prolog](2014-03-03/prolog.slides.md)**
+    - **[Organisatorisches](2014-03-03/organisatorisches.slides.md)**
+    - Einführung und **[Grundlagen Digitaler Bibliotheken](2014-03-03/einfuehrung-db.slides.md)**
+    - Hinweise zu den **[Leistungsnachweisen](2014-03-03/leistungsnachweise.slides.md)**
+    - Vorstellung der **[Aufgaben](2014-03-03/aufgaben.slides.md)**
 
-2014-03-10
-  : - **[Versionskontrollsysteme](2014-03-10/versionskontrollsysteme.slides.md):**
-      von Xanadu bis git
-    - **[Digitalität](2014-03-10/digitalitaet.slides.md):**
-      Grundlegende Eigenschaften Digitaler Dokumente, Objekte und Daten
-    - **Zuteilung der Aufgaben**
+`2014-03-10` "Hilfsmittel"
+  : - **[Versionskontrollsysteme](2014-03-10/versionskontrollsysteme.slides.md)**
+    - **[Empfehlungsdienste & Auskunftssysteme](2014-03-10/empfehlungsdienste.slides.md)**
+    - **[Aufgabenverteilung](2014-03-10/aufgabenverteilung.slides.md)**
 
-2014-??-??
-  : - **Literaturdatenbanken und Verzeichnisse**:
-      Kataloge, Fachdatenbanken, Reference Management... (auch: DOAJ)
-    - **Datenkonvertierung und -formate:**
-      CSV, JSON, XML, RDF...; Schemata...
+`2014-03-17` "Grundlagen"
+  : - **Digitalität**: Grundlegende Eigenschaften Digitaler Dokumente, Objekte und Daten
+    - Einführung in **Open Access, Open Data & Open Science**
 
-2014-??-??
-  : - **Wissenschaftliche Kommunikation:**
-       Communities, Soziale Netzwerke & Kommunikationsformen
-       (ResearchGate, LibraryThing, Twitter...)
-    - **Repository-Software & -Workflows**: 
+`2014-03-24` "Metadaten"
+  : - **Tagging & Erschließung**:
+      Social Tagging, Normdaten & Erstellung von Metadaten
+    - **Aggregation von Metadaten**:
+      RSS, ATOM, OAI-PMH, ResourceSync, Sitemaps...
+
+`2014-03-31` "Software"
+  : - **Repository-Software & -Workflows**: 
       Softwareysteme (DSpace, EPub, OPUS, MyCore...),
       Arten von Repositories und Archiven (arXiv, SSRRN, RePEC, Hochschulserver,
       Internet Archive, Wikimedia Commons, private Sammlungen ...)
+    - **Suchmaschinen:**
+      Indexierung, Ranking vs Bool, Metasuche, Solr/VuFind... 
 
-2014-??-??
-  : - **Tagging & Erschließung**:
-      Social Tagging, Normdaten & Erstellung von Metadaten
+`2014-04-07` "Datenverarbeitung"
+  : - **Datenkonvertierung**
+    -  *Verfügbarkeitsanzeige*
+    - **Crowdsourcing & Crowdfunding**
+    -  *Crowdcrafting/PyBossa*
+
+`2014-04-14` "Identifikation"
+  : - **Identifier-Systeme**: 
+      ISBN, DOI, URI, Handle...
+    - *Werk-Identifier*
     - **Linked Open Data**:
       RDF & Semantic Web in Bibliotheken
+    - *HsH in RDF*
 
-2014-??-??
-  : - **Forschungs- & Lernumgebungen & -Portale:**
-      ViFas, OER, (M)OOCs & Systeme wie HUB zero
-    - **Suchmaschinen:**
-      Indexierung, Ranking vs Bool, Metasuche, Solr/VuFind...
-      
-2014-??-??
-  : - **(Forschungs)informationssysteme:**
+`2014-04-22`
+  : *keine Lehrveranstaltung* (Ostermontag)
+
+`2014-04-28` "Kommunikation"
+  : - **Digitale Publikation**:
+      Publikationsformen, Autorensysteme, OJS, Wikis...
+    -  *Konsultation Kommunikationssysteme* (18.3. bis 17.4).
+    - **Digitale Kommunikation**
+       Communities, Soziale Netzwerke & Kommunikationsformen
+       (Fachzeitschriften, ResearchGate, Twitter...)
+    - *Fachzeitschriften*
+
+`2014-05-05` "Spezifikation"
+  : - **Datenformate und Standards:**
+      CSV, JSON, XML, RDF...; Schemata...
+    -  *Transkription*
+    - **(Forschungs)informationssysteme:**
       incl. Hochschulserver und -bibliographien (z.B. VIVO)
-    - **Identifier-Systeme:** 
-      ISBN, DOI, URI, Handle...
+    -  *Forschungsinformationssysteme an deutschsprachigen Hochschulen*
 
-2014-??-??
-  : - **Empfehlungsdienste & Auskunftssysteme:**
-      (SeeAlso, Questionpoint, StackExchange...)
-    - **Data Mining:**
-      Natural Language Procesing, Text Mining, Web Crawling & Web Scraping
-
-2014-??-??
-  : - **Crowdsourcing & Crowdfunding**
-    - **Software & Schnittstellen**: (
-      API-Grundlagen & Beispiele, Webservices, Mashups, SOA...
-
-2014-??-??
-  : - **Rechte und Lizenzen:**
+`2014-05-12` "Verantwortung"
+  : - **Rechte und Lizenzen**:
       Urheberrecht, DRM, CC, Nationallizenzen,...
+    -  *Commons Machinery*
     - **Digitalisierung und Archivierung:**
       Digitale Sammlungen und Archive bis zu Google Books und 3D-Scannern,
       Langzeitarchivierung (Methoden, LOCKSS etc.)
+    -  *Langzeitarchivierung an der DNB*
 
-2014-??-??
-  : - **Metriken:**
-      Quantitative Bewertungsverfahren wissenschaftlicher Publikation
-    - **Aggregation von Metadaten:**
-      (RSS, ATOM, OAI-PMH, ResourceSync, Sitemaps...; Europeana, OAISter...)
+`2014-05-19` "Werkzeuge"
+ :  - **Software & Schnittstellen**: (
+      API-Grundlagen & Beispiele, Webservices, Mashups, SOA...
+    -  *Sollten Bibliotheken programmieren?*
+    - **Data Mining:**
+      Natural Language Procesing, Text Mining, Web Crawling & Web Scraping
+    -  *Archivist Manifesto*
 
-2014-??-??
-  : - **Wissenschaftliche Publikation**:
-      Publkationsformen, Autorensysteme, OJS, Wikis...
+`2014-05-26` "Sammlung"
+  : - **Literaturdatenbanken und Verzeichnisse**:
+      Kataloge, Fachdatenbanken, Reference Management... (auch: DOAJ)
+    -  *Semesterapparate*
     - **Forschungsdaten:** Big Data & Data Science
+    -  *Nanopublikationen* (nicht 28.4. bis 12.5.)
 
-2014-xx-xx
+`2014-06-02` "Lernen"
+  : - **Forschungs- & Lernumgebungen & -Portale:**
+      ViFas, (M)OOCs & Systeme wie HUB zero
+    -  *MOOCbrarian*
+    - **Open Educational Resources:**
+    -  *Erschließung von OER*
+
+`2014-06-09`
+  : *keine Lehrveranstaltung (Pfingsten) aber **Deadline** für gegenseitige Korrekturen!*
+
+`2014-06-16` "Gesellschaft"
   : - **Geld & Politik:**
       Institutionen, Verbünde, Betreiber, Geldgeber (z.B. DFG, Vascoda, DDB, CIB...)
-    - **Datenjournalismus**
-
-2014-06-16
-  :  - **Open Educational Resources:** OER und (M)OOCs
-     - **Summarium et Paralipomena**:
+    - **Summarium et Paralipomena**:
       Sonstiges, Zusammenfassung, Bewertung & Feedback
+
+----
+
+Die folgenden ursprünglich vorgesehenen Themen werden bei Bedarf im Rahmen
+anderer Termine behandelt
+
+- **Metriken:** Quantitative Bewertungsverfahren wissenschaftlicher Publikationen
+- **Datenjournalismus**
+
+

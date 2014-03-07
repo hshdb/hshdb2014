@@ -57,7 +57,7 @@ PAPER_HTML=-t html5 $(ANY_HTML) --template $(BOOTSTRAP)/template.html --css $(BO
 	if [ "$(suffix $(basename $<))" = ".slides" ]; then \
 		pandoc $(SLIDES_HTML) $$BIB $(notdir $<) -o $(notdir $@) ;\
 	else \
-		sed 's/\.slides\.md)/.slides.html)/g' $(notdir $<) \
+		sed 's/\([^()]\+\.slides\)\.md)/\1.html) ([PDF](\1.pdf))/g' $(notdir $<) \
 		| pandoc $(PAPER_HTML) $$BIB -  -o $(notdir $@) ;\
 	fi
 

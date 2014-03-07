@@ -1,5 +1,43 @@
 % Versionskontrollsysteme. Von Xanadu bis git
 
+# Versionskontrollsysteme
+
+* ...
+* Analog: Bibliotheke archivieren auch ältere Auflagen
+  (vor allem aus historischen Gründen)
+
+# Populäre Beispiele
+
+* Wikipedia
+* Dropbox
+* GitHub
+
+# Weniger populäre Beispiele
+
+...
+
+# Wikipedia
+
+...
+
+# Dropbox
+
+* ...
+* Speichert ältere Dateiversionen der letzten 30 Tage
+  (oder länger wenn dafür bezahlt wird)
+
+# Versionen in Dropbox
+
+![../img/dropbox-versionen-1.png]
+
+# Versionen in Dropbox
+
+![../img/dropbox-versionen-2.png]
+
+# ...
+
+...
+
 # Einführung in git
 
 <http://rogerdudler.github.io/git-guide/index.de.html>
@@ -50,3 +88,16 @@ für `stl` Dateien (seit Sept. 2013).
 ![](img/github-3dfile-diff-1.gif)
 
 ![](img/github-3dfile-diff-2.gif)
+
+# Wikipedia
+
+# GitHub
+
+* Viele Tools zur Softwareentwicklung
+* Nicht primär für Arbeit an anderen digitalen Objekten
+
+# GitHub-Account
+
+* Benötigt zur Einsicht und Korrektur der Ausarbeitungen
+
+* Aufgabe: Jeder Erstellt sich einen Account
