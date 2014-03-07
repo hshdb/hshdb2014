@@ -26,7 +26,7 @@ BOOTSTRAP=$(realpath $(CURDIR)css)
 BEAMER=$(realpath $(CURDIR)beamer-template)
 
 
-ANY_FORMAT=-s
+ANY_FORMAT=-s -V title-prefix=hshdb2014
 ANY_PDF=--latex-engine xelatex $(ANY_FORMAT)
 # TODO: xelatex
 SLIDES_PDF=$(ANY_PDF) -t beamer --template $(BEAMER)/template.tex
@@ -48,6 +48,8 @@ PAPER_HTML=-t html5 $(ANY_HTML) --template $(BOOTSTRAP)/template.html --css $(BO
 		pandoc $(PAPER_PDF) $$BIB $(notdir $<) -o $(notdir $@) ;\
 	fi
 
+# TODO: Infoseite zu jedem Foliensatz mit HTML und PDF-Ansicht
+
 .md.html: bib
 	@cd `dirname $<`; \
 	NAME="$(basename $(basename $<))"; \
@@ -55,7 +57,8 @@ PAPER_HTML=-t html5 $(ANY_HTML) --template $(BOOTSTRAP)/template.html --css $(BO
 	if [ "$(suffix $(basename $<))" = ".slides" ]; then \
 		pandoc $(SLIDES_HTML) $$BIB $(notdir $<) -o $(notdir $@) ;\
 	else \
-		pandoc $(PAPER_HTML) $$BIB $(notdir $<) -o $(notdir $@) ;\
+		sed 's/\.slides\.md)/.slides.html)/g' $(notdir $<) \
+		| pandoc $(PAPER_HTML) $$BIB -  -o $(notdir $@) ;\
 	fi
 
 include $(CURDIR)/yaml2bib/Makefile
