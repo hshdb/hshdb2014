@@ -28,7 +28,6 @@ BEAMER=$(realpath $(CURDIR)beamer-template)
 
 ANY_FORMAT=-s -V title-prefix=hshdb2014
 ANY_PDF=--latex-engine xelatex $(ANY_FORMAT)
-# TODO: xelatex
 SLIDES_PDF=$(ANY_PDF) -t beamer --template $(BEAMER)/template.tex
 
 PAPER_PDF=$(ANY_PDF)
