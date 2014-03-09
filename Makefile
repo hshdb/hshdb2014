@@ -37,12 +37,16 @@ SLIDES_HTML=-t dzslides $(ANY_HTML)
 # TODO: calculate relative path to CSS
 PAPER_HTML=-t html5 $(ANY_HTML) --template $(BOOTSTRAP)/template.html --css $(BOOTSTRAP)/template.css --toc --toc-depth 2
 
+HTML_PAPER_FILTER=sed 's/\([^()]\+\.slides\)\.md)/\1.html) ([PDF](\1.pdf))/g'
+HTML_SLIDES_FILTER=cat
+PDF_SLIDES_FILTER=sed 's/\.gif)/.png)/'
+
 .md.pdf: bib
 	@cd `dirname $<`; \
 	NAME="$(basename $(basename $<))"; \
 	[ -e "$$NAME.bib" ] && BIB="--bibliography $$NAME.bib"; \
 	if [ "$(suffix $(basename $<))" = ".slides" ]; then \
-		pandoc $(SLIDES_PDF) $$BIB $(notdir $<) -o $(notdir $@) ;\
+		$(PDF_SLIDES_FILTER) $(notdir $<) | pandoc $(SLIDES_PDF) $$BIB - -o $(notdir $@) ;\
 	else \
 		pandoc $(PAPER_PDF) $$BIB $(notdir $<) -o $(notdir $@) ;\
 	fi
@@ -54,10 +58,9 @@ PAPER_HTML=-t html5 $(ANY_HTML) --template $(BOOTSTRAP)/template.html --css $(BO
 	NAME="$(basename $(basename $<))"; \
 	[ -e "$$NAME.bib" ] && BIB="--bibliography $$NAME.bib"; \
 	if [ "$(suffix $(basename $<))" = ".slides" ]; then \
-		pandoc $(SLIDES_HTML) $$BIB $(notdir $<) -o $(notdir $@) ;\
+		$(HTML_SLIDES_FILTER) $(notdir $<) | pandoc $(SLIDES_HTML) $$BIB - -o $(notdir $@) ;\
 	else \
-		sed 's/\([^()]\+\.slides\)\.md)/\1.html) ([PDF](\1.pdf))/g' $(notdir $<) \
-		| pandoc $(PAPER_HTML) $$BIB -  -o $(notdir $@) ;\
+		$(HTML_PAPER_FILTER) $(notdir $<)  | pandoc $(PAPER_HTML) $$BIB - -o $(notdir $@) ;\
 	fi
 
 include $(CURDIR)/yaml2bib/Makefile
