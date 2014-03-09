@@ -3049,3 +3049,20 @@ h4:hover a { color: #333; } h5:hover a { color: #333; } h6:hover a { color: #333
 .toc ul > li > a:focus { text-decoration: none; background-color: #eeeeee; }
 .toc ul { margin-bottom: 0; }
 .toc ul > li > a, .toc ul > li > a { padding: 3px 15px; }
+.well {
+  border: 1px solid #FF6B00;
+}
+.doc-title { text-shadow: 0; }
+footer, .footer { 
+  background: #FF6B00;
+}
+.navbar-inner {
+  background-color: #fafafa;
+  background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+  border: 1px solid #d4d4d4;
+}
