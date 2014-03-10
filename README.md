@@ -10,10 +10,6 @@ angegeben können alle Inhalte unter den Lizenbedingungen der [CC-BY-SA]
 verwendet werden. Nähere Hinweise zur Weiternutzung siehe unter
 [Weiternutzung](#weiternutzung).
 
-[CC-BY-SA]: http://creativecommons.org/licenses/by-sa/3.0/
-
-![CC-BY-SA](cc-by-sa.png) Jakob Voß
-
 Die versionierten Quelldateien der Lerhveranstaltung sind auf GitHub unter
 [https://github.com/hshdb/hshdb2014/](https://github.com/hshdb/hshdb2014/)
 verfügbar. Darüber hinaus wird aus den Quellen unter
@@ -34,6 +30,10 @@ The repository also contains a list of similar
 classes and related Open Educational Resources.
 
 ## Weiternutzung
+
+[CC-BY-SA]: http://creativecommons.org/licenses/by-sa/3.0/
+
+![CC-BY-SA](cc-by-sa.png) Jakob Voß
 
 Soweit nicht anders angegeben (ggf. bei einigen Bildern) können die Inhalte des
 Repository als Open Educational Resource (ORE) unter Angabe des Urhebers und
