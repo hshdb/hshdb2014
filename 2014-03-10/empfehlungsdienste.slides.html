@@ -88,8 +88,9 @@
 <ul>
 <li>Empfehlungsdienste
 <ul>
-<li>Arten</li>
+<li>Definition</li>
 <li>Bestandteile</li>
+<li>Typologie</li>
 <li>Beispiele</li>
 </ul></li>
 <li>Auskunftsysteme
@@ -126,12 +127,47 @@
 <li>Recommender-Dienste allgemein
 <ul>
 <li>Verschiedene Quellen für Empfehlungen</li>
-<li>Empfehlungen immer Nutzer &amp; Kontext-abhängig, daher nicht im Katalog eingetragen, sondern Kataloganreicherung</li>
+<li>Empfehlungen immer äbhängig von Nutzer &amp; Kontext</li>
+<li>d.h. Kataloganreicherung statt im Katalog eingetragen</li>
 </ul></li>
 </ul>
 </section>
-<section id="arten" class="slide level1">
-<h1>Arten</h1>
+<section id="bestandteile" class="slide level1">
+<h1>Bestandteile</h1>
+<p>Datenbasis <span class="math"> → </span> Verfahren <span class="math"> → </span> Dienst <span class="math"> → </span> Anwendung</p>
+<ul>
+<li>In der Praxis of nicht klar getrennt</li>
+<li>Trotzdem wichtig zum Verständnis</li>
+<li>Empfehlungsdienste sind keine Magie sondern Software</li>
+</ul>
+</section>
+<section id="bestandteile-1" class="slide level1">
+<h1>Bestandteile</h1>
+<dl>
+<dt>Datenbasis</dt>
+<dd>Auf Grundlage welcher Daten wird empfohlen?
+</dd>
+<dt>Verfahren</dt>
+<dd>Wie werden Empfehlungen ermittelt?
+</dd>
+<dt>Dienst</dt>
+<dd>Worüber werden Empfehlungen technisch bereitgestellt? (API)
+</dd>
+<dt>Anwendung</dt>
+<dd>In welchem Kontext werden Empfehlungen präsentiert?
+</dd>
+</dl>
+</section>
+<section id="mögliche-anwendungen" class="slide level1">
+<h1>Mögliche Anwendungen</h1>
+<ul>
+<li>Dort wo Nutzer sowieso Suchen (Kataloge, Portale, Rechercheplattformen…)</li>
+<li>Push-Medien (Mail, SMS, Benachrichtigung per Handy…)</li>
+<li>…</li>
+</ul>
+</section>
+<section id="arten-von-empfehlungsdiensten" class="slide level1">
+<h1>Arten von Empfehlungsdiensten</h1>
 <h2 id="explizite-empfehlungsdienste">Explizite Empfehlungsdienste</h2>
 <p>Manuelle Bewertungen, Rezensionen, Rankings, Kommentare, Literatur- &amp; Neuerscheinungslisten etc. für eine Zielgruppe</p>
 <h2 id="inhaltsbasierte-empfehlungsdienste">Inhaltsbasierte Empfehlungsdienste</h2>
@@ -141,60 +177,48 @@
 <li>bspw. Google-Bildersuche</li>
 </ul>
 </section>
-<section id="arten-1" class="slide level1">
-<h1>Arten</h1>
+<section id="arten-von-empfehlungsdiensten-1" class="slide level1">
+<h1>Arten von Empfehlungsdiensten</h1>
 <h2 id="regel--und-wissensbasierte-empfehlungsdienste">Regel- und wissensbasierte Empfehlungsdienste</h2>
-<p>…</p>
+<ul>
+<li>auch “semantisch” oder “intelligent” (Bullshit)</li>
+<li>Analyse des Kontext nach speziellen Regeln</li>
+<li>Regeln beliebig komplex, meist aber Wenn-Dann-Regeln</li>
+<li>Beispiele
+<ul>
+<li>Die am häufigsten zitierten Dokumente des gleichen Autor</li>
+<li>Offene Cafés (vormittags), Restaurants (Mittags) oder Kneipen (Abends) in der Nähe</li>
+</ul></li>
+</ul>
+</section>
+<section id="arten-von-empfehlungsdiensten-2" class="slide level1">
+<h1>Arten von Empfehlungsdiensten</h1>
 <h2 id="verhaltensbasierte-empfehlungsdienste">Verhaltensbasierte Empfehlungsdienste</h2>
-<p>…</p>
-</section>
-<section id="arten-2" class="slide level1">
-<h1>Arten</h1>
+<ul>
+<li>Auswertung der Nutzung von Dokumenten</li>
+<li>…oder was Google, NSA &amp; Co sonst so von euch sammeln</li>
+<li>Beispiele
+<ul>
+<li>Die meisten likes/views/Zitationen…</li>
+<li>“Kunden die dieses Buch gekauft haben…”</li>
+</ul></li>
+<li>je mehr Nutzungsdaten, desto personalisierter</li>
+<li>aka “Kollaboratives Filtern”</li>
+</ul>
 <h2 id="hybride-systeme">Hybride Systeme</h2>
-<p>…</p>
-</section>
-<section id="bestandteile" class="slide level1">
-<h1>Bestandteile</h1>
-<p>Datenbasis <span class="math"> → </span> Verfahren <span class="math"> → </span> Dienst <span class="math"> → </span> Anwendung</p>
-<ul>
-<li>In der Praxis of nicht klar getrennt</li>
-<li>Trotzdem wichtig zum Verständnis</li>
-</ul>
-</section>
-<section id="datenbasis" class="slide level1">
-<h1>Datenbasis</h1>
-<p>…</p>
-</section>
-<section id="verfahren" class="slide level1">
-<h1>Verfahren</h1>
-<p>…</p>
-</section>
-<section id="dienst" class="slide level1">
-<h1>Dienst</h1>
-<p>…</p>
-</section>
-<section id="anwendungen" class="slide level1">
-<h1>Anwendungen</h1>
-<ul>
-<li>Dort wo Nutzer sowieso Suchen (Kataloge, Portale, Rechercheplattformen…)</li>
-<li>Push-Medien (Mail, SMS, Benachrichtigung per Handy…)</li>
-<li>…</li>
-</ul>
+<p>In der Praxis Kombination verschiedener Verfahren</p>
 </section>
 <section id="beispiele" class="slide level1">
 <h1>Beispiele</h1>
 <ul>
-<li>BibTip</li>
-<li>recently</li>
-<li>Google Scholar</li>
-<li>SeeAlso</li>
+<li>BibTip: Verhaltensbasiert</li>
+<li>recently: Inhaltsbasiert</li>
+<li>Google Scholar: Inhaltsbasiert u.A.</li>
+<li>SeeAlso: Regelbasiert</li>
 <li>…</li>
 </ul>
 </section>
 <section id="auskunftsdienste" class="slide level1">
-<h1>Auskunftsdienste</h1>
-</section>
-<section id="auskunftsdienste-1" class="slide level1">
 <h1>Auskunftsdienste</h1>
 <ul>
 <li>Gezielte Antworten auf spezielle Fragen</li>
@@ -217,9 +241,31 @@
 <section id="auskunfts-communities" class="slide level1">
 <h1>Auskunfts-Communities</h1>
 <ul>
-<li>SeeAlso, Questionpoint, StackExchange…</li>
+<li>Interne Communities (Intranet, Issue-Tracker, Questionpoint…)</li>
+<li>Offene Online-Communities
+<ul>
+<li>Foren</li>
+<li>Mailinglisten</li>
+<li><a href="http://stackexchange.com">StackExchange</a></li>
 <li>…</li>
+</ul></li>
 </ul>
+</section>
+<section id="auskunfts-communities-1" class="slide level1">
+<h1>Auskunfts-Communities</h1>
+<dl>
+<dt>Vorteile</dt>
+<dd><ul>
+<li>Menschen geben Auskunft</li>
+</ul>
+</dd>
+<dt>Nachteile</dt>
+<dd><ul>
+<li>Menschen geben Auskunft</li>
+<li>Wie finde ich die richtige Community zu meiner Frage?</li>
+</ul>
+</dd>
+</dl>
 </section>
 <section id="literatur" class="slide level1">
 <h1>Literatur</h1>
