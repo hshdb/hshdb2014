@@ -32,7 +32,7 @@ Parallel bite einfache Anmeldung in Moodle.
 | 
 | hier mein Name:
 | Vorname Nachname
-| Matrikelnr.: 1193133
+| Matrikelnr.: 123456789
 |
 | hier meine Wünsche:
 | 
