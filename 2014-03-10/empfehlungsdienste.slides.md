@@ -5,8 +5,9 @@
 # Gliederung
 
 * Empfehlungsdienste
-    * Arten
+    * Definition
     * Bestandteile
+    * Typologie
     * Beispiele
 * Auskunftsysteme
     * Beispiele
@@ -35,10 +36,35 @@
       ("Nutzer, die dieses Produkt mögen, mögen auch...")
 * Recommender-Dienste allgemein
     * Verschiedene Quellen für Empfehlungen
-    * Empfehlungen immer Nutzer & Kontext-abhängig, daher nicht
-      im Katalog eingetragen, sondern Kataloganreicherung
+    * Empfehlungen immer äbhängig von Nutzer & Kontext
+    * d.h. Kataloganreicherung statt im Katalog eingetragen
 
-# Arten
+# Bestandteile
+
+Datenbasis $\longrightarrow$ Verfahren $\longrightarrow$ Dienst $\longrightarrow$ Anwendung
+
+* In der Praxis of nicht klar getrennt
+* Trotzdem wichtig zum Verständnis
+* Empfehlungsdienste sind keine Magie sondern Software
+
+# Bestandteile
+
+Datenbasis
+  : Auf Grundlage welcher Daten wird empfohlen?
+Verfahren
+  : Wie werden Empfehlungen ermittelt? 
+Dienst
+  : Worüber werden Empfehlungen technisch bereitgestellt? (API)
+Anwendung
+  : In welchem Kontext werden Empfehlungen präsentiert?
+
+# Mögliche Anwendungen
+
+* Dort wo Nutzer sowieso Suchen (Kataloge, Portale, Rechercheplattformen...)
+* Push-Medien (Mail, SMS, Benachrichtigung per Handy...)
+* ...
+
+# Arten von Empfehlungsdiensten
 
 ## Explizite Empfehlungsdienste
 
@@ -51,58 +77,41 @@ Literatur- & Neuerscheinungslisten etc. für eine Zielgruppe
 - Prinzip wie Ranking bei Suchmaschinen (siehe am 31.3.), 
 - bspw. Google-Bildersuche
 
-# Arten
+# Arten von Empfehlungsdiensten
 
 ## Regel- und wissensbasierte Empfehlungsdienste
 
-...
+* auch "semantisch" oder "intelligent" (Bullshit)
+* Analyse des Kontext nach speziellen Regeln
+* Regeln beliebig komplex, meist aber Wenn-Dann-Regeln
+* Beispiele
+    * Die am häufigsten zitierten Dokumente des gleichen Autor
+    * Offene Cafés (vormittags), Restaurants (Mittags) oder
+      Kneipen (Abends) in der Nähe
+
+# Arten von Empfehlungsdiensten
 
 ## Verhaltensbasierte Empfehlungsdienste
 
-...
-
-# Arten
+* Auswertung der Nutzung von Dokumenten 
+* ...oder was Google, NSA & Co sonst so von euch sammeln
+* Beispiele
+    * Die meisten likes/views/Zitationen...
+    * "Kunden die dieses Buch gekauft haben..."
+* je mehr Nutzungsdaten, desto personalisierter
+* aka "Kollaboratives Filtern"
 
 ## Hybride Systeme
 
-...
-
-# Bestandteile
-
-Datenbasis $\longrightarrow$ Verfahren $\longrightarrow$ Dienst $\longrightarrow$ Anwendung
-
-* In der Praxis of nicht klar getrennt
-* Trotzdem wichtig zum Verständnis
-
-# Datenbasis
-
-...
-
-# Verfahren
-
-...
-
-# Dienst
-
-...
-
-# Anwendungen
-
-* Dort wo Nutzer sowieso Suchen (Kataloge, Portale, Rechercheplattformen...)
-* Push-Medien (Mail, SMS, Benachrichtigung per Handy...)
-* ...
+In der Praxis Kombination verschiedener Verfahren
 
 # Beispiele
 
-* BibTip
-* recently
-* Google Scholar
-* SeeAlso
+* BibTip: Verhaltensbasiert
+* recently: Inhaltsbasiert
+* Google Scholar: Inhaltsbasiert u.A.
+* SeeAlso: Regelbasiert
 * ...
-
-# Auskunftsdienste
-
----
 
 # Auskunftsdienste
 
@@ -123,7 +132,19 @@ Weitere Hinweise zum **digitalen Auskunftsdienst** u.A. aktuell unter
 
 # Auskunfts-Communities
 
-* SeeAlso, Questionpoint, StackExchange...
-* ...
+* Interne Communities (Intranet, Issue-Tracker, Questionpoint...)
+* Offene Online-Communities
+    * Foren
+    * Mailinglisten
+    * [StackExchange](http://stackexchange.com)
+    * ...
+
+# Auskunfts-Communities
+
+Vorteile
+  : - Menschen geben Auskunft
+Nachteile
+  : - Menschen geben Auskunft
+    - Wie finde ich die richtige Community zu meiner Frage?
 
 # Literatur
