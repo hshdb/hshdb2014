@@ -1,3 +1,6 @@
+% Crowdsourcing & Crowdfunding
+% Dr. Jakob Voß
+% 2014-04-07
 
 # Beispiele
 
@@ -16,3 +19,10 @@
 
 * http://crowdcrafting.org/
 * http://www.sciencestarter.de/
+
+# Weitere Beispiele
+
+* Zooniverse (!)
+* WikiCommons, Wikisource (nur Kurz)
+* ..
+
