@@ -1,6 +1,6 @@
 % Datenkonvertierung
 % Dr. Jakob Voß
-% 2014-03-17
+% 2014-04-07
 
 # Was ist Datenkonvertierung?
 
