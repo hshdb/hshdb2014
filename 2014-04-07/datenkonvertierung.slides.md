@@ -132,9 +132,13 @@ Illustrationen  $\rightarrow$  Contributor
 * a & b -> ab
 * a & X -> C
 
-# Konvertierungs- und Verarbeitungs-pipelines
+# Konvertierungs- und Verarbeitungs-Pipelines
 
-* a & b -> ... -> BA 
+a & b -> ab -> AB -> BA ...
+
+Prinzip in Unix und anderen Systemen
+
+![](../img/pipes-memo.jpg)
 
 # Eigenschaften von Konvertierungsregeln
 
