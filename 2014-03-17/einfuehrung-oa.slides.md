@@ -27,8 +27,6 @@
 
 <http://phenomena.nationalgeographic.com/2014/02/19/scientists-on-the-loose-my-aaas-talk/>
 
-...TODO
-
 # Warum ist Open Access ein Thema?
 
 * Wissenschaftler publizieren in der Regel
@@ -105,13 +103,9 @@ Weitere Positionspapiere und (Absichts)erklärungen:
 
 # Mehr als Worte
 
-TODO
+1991 setzte Paul Ginsparg einen Server für Physik-*Preprints* auf
 
-Paul Ginsparg
-
-ArXiV.org
-
-Was ist ein Preprint
+<http://ArXiV.org>
 
 # Open Archives / Repositories
 
@@ -135,15 +129,24 @@ Was ist ein Preprint
 
 # Warum nicht einfach nur noch Open Access?
 
-* Absichtserklärungen sind geduldig
-* Kulturelles Problem
 * Kapitalismus abschaffen!
+
+# Warum nicht einfach nur noch Open Access?
+
+* Absichtserklärungen sind geduldig
+* Kulturelles und Soziales Problem
 
 Mögliche Druckmittel
 
 * Obligatorische Mandate für OA
 * Mittelvergabe
 * Verlage
+
+# Positives Beispiel
+
+* National Institutes of Health (NIH)
+* PubMed Central
+* maximal 12 Monate nach Erscheinen
 
 # Formen von Open Access
 
@@ -197,12 +200,9 @@ Vorbild ab (*siehe Kurzvortrag am 28.4.*)
 
 **Archivserver**
 
-...TODO...
-
 * Repositorien
 * Umfangreiche Open Access-Szene
-* PLOS1 u.A. beispiele
-* DOAJ zeigen
+* PLOS, DOAJ, ...
 
 # Finanzierungsmodelle von Open Access
 
@@ -231,7 +231,6 @@ Veröffentlichung in Fachzeitschrift
 
 *Aufgabe: Suche nach Mätzel (2014) in verschiedenen Quellen (SerWisS, BASE, Google, b2i...)*
 
----
 # Open Data
 
 Open Data = Open Access + Datenbestände statt herkömmlicher Publikationen +
@@ -239,22 +238,17 @@ freie Nutzung
 
 # Open Science und Digital Humanities
 
-"Open Science" und "Digital Humanities" ist für die Wissenschaft das was
-"Digitale Bibliothek" für das Bibliothekswesen ist.
+Polemische Definition:
 
-----
-
-# Beispiele
-
-Plos
-Plos Biology, etc.
+"Open Science" und "Digital Humanities" ist in etwa für die Wissenschaft das
+was "Digitale Bibliothek" für das Bibliothekswesen ist.
 
 # Zusammenfassung
 
 **Open Access** bedeutet freier und unbeschränkter Zugang zu wissenschaftlichen
 Informationen.
-   
-... TODO ...
+
+...
 
 # Quellennachweise
 
