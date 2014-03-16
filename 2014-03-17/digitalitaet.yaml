@@ -32,3 +32,20 @@ Goodman1988:
     date: 1988
     type: book
     publisher: Routledge
+Voss2013:
+    title: "Was sind eigentlich Daten?"
+    author: "Jakob Voss"
+    journal: "LIBREAS. Library Ideas"
+    volume: 23
+    year: 2013
+    url: http://libreas.eu/ausgabe23/02voss/
+Kogalovsky2013:
+    title: "Metadata in Computer Systems"
+    author: "M. R. Kogalovsky"
+    year: 2013
+    journal: Programming and Computer Software
+    month: July
+    volume: 39
+    issue: 4
+    pages: 182-193
+
