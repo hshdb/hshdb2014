@@ -30,8 +30,8 @@ im [internen Repository](https://github.com/hshdb/hshdb2014-aufgaben).
     - **[Aufgabenverteilung](2014-03-10/aufgabenverteilung.slides.md)**
 
 `2014-03-17` "Grundlagen"
-  : - **Digitalität**: Grundlegende Eigenschaften Digitaler Dokumente, Objekte und Daten
-    - Einführung in **Open Access, Open Data & Open Science**
+  : - **[Digitalität](2014-03-17/digitalitaet.slides.md)**: Grundlegende Eigenschaften Digitaler Dokumente, Objekte und Daten
+    - Einführung in **[Open Access](2014-03-17/einfuehrung-oa.slides.md)**
 
 `2014-03-24` "Metadaten"
   : - **Tagging & Erschließung**:

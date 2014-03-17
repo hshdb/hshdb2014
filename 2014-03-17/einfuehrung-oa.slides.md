@@ -8,7 +8,7 @@
 
 # Aaron Swartz (1986-2013)
 
-* Gründer oder Mitarbeiter von/bei: RSS (mit 14), Creative Commons (mit 15),
+> * Gründer oder Mitarbeiter von/bei: RSS (mit 14), Creative Commons (mit 15),
   RDF/XML, Markdown (!), Infogami/Reddit, SOPA...
 * Bekam 2006 den Katalog der LoC frei (legal)
 * 2010/2011 am MIT 4,8 Millionen Artikel von JSTOR
@@ -24,6 +24,10 @@
   hochladen, auffindbar machen, fertig
 
 # Vorgeschichte II: Stephen Hawking
+
+* Wahrscheinlich der berühmteste lebende Physiker
+* Publiziert über Schwarze Löcher und philosophiert über Gott und die Welt
+* Preprint auf http://arxiv.org/
 
 <http://phenomena.nationalgeographic.com/2014/02/19/scientists-on-the-loose-my-aaas-talk/>
 
@@ -201,8 +205,9 @@ Vorbild ab (*siehe Kurzvortrag am 28.4.*)
 **Archivserver**
 
 * Repositorien
-* Umfangreiche Open Access-Szene
-* PLOS, DOAJ, ...
+* Umfangreiche Open Access-Szene (u.A. OA-Konferenzen)
+* Mehr und einflussreichere Zeitschriften (u.A. PLOS)
+* DOAJ
 
 # Finanzierungsmodelle von Open Access
 
@@ -220,6 +225,12 @@ Veröffentlichung in Fachzeitschrift
 * Community-Fee-Modell
 * Institutionelle Trägerschaft
 
+# Schlechte Finanzierungsmodelle von Open Access
+
+* Verlag verlangt 
+    * OA-Gebühr für einzelne Artikel
+    * Abogebühr von Bibliotheken (da nicht alles OA)
+* Veröffentlichungsgebühren sind problematisch
 
 # Open Access an der HS Hannover
 
@@ -229,32 +240,59 @@ Veröffentlichung in Fachzeitschrift
 
 ![](../img/serwiss.jpg)
 
-*Aufgabe: Suche nach Mätzel (2014) in verschiedenen Quellen (SerWisS, BASE, Google, b2i...)*
+*Aufgabe: Suche in verschiedenen Quellen (SerWisS, BASE, Google, b2i, INFODATA eDepot...)*
 
-# Open Data
+# Open Data und Freie Inhalte
 
-Open Data = Open Access + Datenbestände statt herkömmlicher Publikationen +
-freie Nutzung
+Open Data
+  : Open Access (incl. Weiternutzung) für beliebige Daten statt herkömmlicher
+    Dokumente
+Freie Inhalte
+  : Open Source, Wikimedia u.Ä.
+
+# Open Data und Freie Inhalte
+
+* Nicht primär wissenschaftliche Inhalte
+* Zunehmend relevant
+    * Open Government
+    * Open Educational Resources
 
 # Open Science und Digital Humanities
 
-Polemische Definition:
+* Open Access stark abhängig von Fachdisziplin
+* Vor allem Naturwissenschaften (mit Ausnahmen)
+* Andere Kultur des Publizierens in den Geisteswissenschaften
 
-"Open Science" und "Digital Humanities" ist in etwa für die Wissenschaft das
-was "Digitale Bibliothek" für das Bibliothekswesen ist.
+# Open Science und Digital Humanities
+
+Open Science
+  : Freie oder offene Inhalte in den *Sciences*
+Digital Humanities
+  : Freie oder offene Inhalte in den *Humanities*
+
+# Open Science und Digital Humanities
+
+Eine etwas vereinfachte Definition:
+
+> "Open Science" und "Digital Humanities" ist in etwa für die Wissenschaft das
+was "Digitale Bibliothek" für das Bibliothekswesen ist: eine radikale
+Veränderung der Rahmenbedingungen.
 
 # Zusammenfassung
 
-**Open Access** bedeutet freier und unbeschränkter Zugang zu wissenschaftlichen
-Informationen.
-
-...
+* **Open Access** bedeutet freier und unbeschränkter Zugang zu wissenschaftlichen Informationen.
+* Traditionelles Publikationswesen nutzt die Möglichkeiten digitaler Verbreitung nicht aus.
+* Absichtserklärungen, Mandate & Aktivisten
+* Propagierte Lösungen: grüner und goldener Weg
+* Open Data, Freie Inhalte, Open Science, Digital Humanities... gehen 
+  über Open Access hinaus
 
 # Quellennachweise
 
-Teile der Vortragsfolien basieren auf Einführungsfolien der SUB Göttingen zu
-Open Access (Ulrike Hermann, Roman Nowak, Andrea Hartung und Dagmar Härter bzw.
-Sabine Witt und Margo Bargheer) und auf Folien von Christian Hauschke zu Open
-Access an der HsH.
+* Teile der Vortragsfolien basieren auf Einführungsfolien der SUB Göttingen zu
+  Open Access (Ulrike Hermann, Roman Nowak, Andrea Hartung und Dagmar Härter bzw.
+  Sabine Witt und Margo Bargheer) und auf Folien von Christian Hauschke zu Open
+  Access an der HsH.
 
-Foto von Aaron Swartz: CC-BY Sage Ross, 2009
+* Foto von Aaron Swartz: CC-BY Sage Ross, 2009
+
