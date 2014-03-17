@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+  <meta name="author" content="Dr. Jakob Voß" />
+  <meta name="dcterms.date" content="2014-03-17" />
+  <title>hshdb2014 - Open Access und Open Archives</title>
+  <style type="text/css">code{white-space: pre;}</style>
+<style>
+  html { background-color: black; }
+  body { background-color: white; border-radius: 12px}
+  /* A section is a slide. It's size is 800x600, and this will never change */
+  section {
+      font-family: Arial, serif;
+      font-size: 20pt;
+    }
+  address, blockquote, dl, fieldset, form, h1, h2, h3, h4, h5, h6, hr, ol, p, pre, table, ul, dl { padding: 10px 20px 10px 20px; }
+  h1, h2, h3 {
+    text-align: center;
+    margin: 10pt 10pt 20pt 10pt;
+  }
+  ul, ol {
+    margin: 10px 10px 10px 50px;
+  }
+  section.titleslide h1 { margin-top: 200px; }
+  h1.title { margin-top: 150px; }
+  h1 { font-size: 180%; }
+  h2 { font-size: 120%; }
+  h3 { font-size: 100%; }
+  q { quotes: "“" "”" "‘" "’"; }
+  blockquote { font-style: italic }
+  /* Figures are displayed full-page, with the caption on
+     top of the image/video */
+  figure {
+    background-color: black;
+  }
+  figcaption {
+    margin: 70px;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 40px;
+    text-align: right;
+    background-color: #F3F4F8;
+    border-top: 1px solid #CCC;
+  }
+
+  /* Transition effect */
+  /* Feel free to change the transition effect for original
+     animations. See here:
+     https://developer.mozilla.org/en/CSS/CSS_transitions
+     How to use CSS3 Transitions: */
+  section {
+      -moz-transition: left 400ms linear 0s;
+      -webkit-transition: left 400ms linear 0s;
+      -ms-transition: left 400ms linear 0s;
+      transition: left 400ms linear 0s;
+  }
+
+  /* Before */
+  section { left: -150%; }
+  /* Now */
+  section[aria-selected] { left: 0; }
+  /* After */
+  section[aria-selected] ~ section { left: +150%; }
+
+  /* Incremental elements */
+
+  /* By default, visible */
+  .incremental > * { opacity: 1; }
+
+  /* The current item */
+  .incremental > *[aria-selected] { color: red; opacity: 1; }
+
+  /* The items to-be-selected */
+  .incremental > *[aria-selected] ~ * { opacity: 0.2; }
+</style>
+</head>
+<body>
+<section class="title">
+  <h1 class="title">Open Access und Open Archives</h1>
+  <h2 class="author">Dr. Jakob Voß</h2>
+  <h3 class="date">2014-03-17</h3>
+</section>
+<section id="vorgeschichte-aaron-swartz" class="slide level1">
+<h1>Vorgeschichte: Aaron Swartz</h1>
+<figure>
+<img src="../img/Aaron_Swartz.jpg" />
+</figure>
+</section>
+<section id="aaron-swartz-1986-2013" class="slide level1">
+<h1>Aaron Swartz (1986-2013)</h1>
+<ul class="incremental">
+<li>Gründer oder Mitarbeiter von/bei: RSS (mit 14), Creative Commons (mit 15), RDF/XML, Markdown (!), Infogami/Reddit, SOPA…</li>
+<li>Bekam 2006 den Katalog der LoC frei (legal)</li>
+<li>2010/2011 am MIT 4,8 Millionen Artikel von JSTOR</li>
+<li>keine Anklage durch JSTOR, Ende 2011 gemeinfreie Teile frei</li>
+<li>weitere Verfolgung durch US-Staatsanwaltschaft wegen Copyright-Verstößen (bis zu 35 Jahre Haft)</li>
+<li>Selbstmord im Januar 2013 (verschiedene Gründe)</li>
+</ul>
+</section>
+<section id="was-bedeutet-open-access" class="slide level1">
+<h1>Was bedeutet Open Access?</h1>
+<ul>
+<li>Unbeschränkter Zugang zu über das Internet zu (wissenschaftlichen) Dokumenten</li>
+<li>Bei elektronischen Publikationen <em>eigentlich</em> kein Thema: hochladen, auffindbar machen, fertig</li>
+</ul>
+</section>
+<section id="vorgeschichte-ii-stephen-hawking" class="slide level1">
+<h1>Vorgeschichte II: Stephen Hawking</h1>
+<ul>
+<li>Wahrscheinlich der berühmteste lebende Physiker</li>
+<li>Publiziert über Schwarze Löcher und philosophiert über Gott und die Welt</li>
+<li>Preprint auf http://arxiv.org/</li>
+</ul>
+<p><a href="http://phenomena.nationalgeographic.com/2014/02/19/scientists-on-the-loose-my-aaas-talk/">http://phenomena.nationalgeographic.com/2014/02/19/scientists-on-the-loose-my-aaas-talk/</a></p>
+</section>
+<section id="warum-ist-open-access-ein-thema" class="slide level1">
+<h1>Warum ist Open Access ein Thema?</h1>
+<ul>
+<li>Wissenschaftler publizieren in der Regel
+<ul>
+<li>um ihre Erkenntnisse und Ergebnisse zu teilen</li>
+<li><em>nicht</em> um damit Geld zu verdienen</li>
+</ul></li>
+<li>Verlage publizieren in der Regel
+<ul>
+<li>weil sie damit besser auskennen</li>
+<li>um damit Geld zu verdienen</li>
+</ul></li>
+<li>Zugangsbeschränkungen für kostenpflichtige Inhalte</li>
+</ul>
+</section>
+<section id="unbeschränkter-zugang-zu-digitalen-dokumenten" class="slide level1">
+<h1>Unbeschränkter Zugang zu digitalen Dokumenten</h1>
+<ul>
+<li>kostenfrei, unwiderruflich, weltweit</li>
+<li>herunterladen, kopieren, drucken, durchsuchen, verlinken…</li>
+<li>Weitergabe von Original, Auszügen &amp; Zusammenfassungen</li>
+<li>je nach Auffassung/Lizenz auch weitere Bearbeitung</li>
+</ul>
+<p>…sofern die Urheber angemessen kenntlich gemacht werden.</p>
+</section>
+<section id="rechte-lizenzen" class="slide level1">
+<h1>Rechte &amp; Lizenzen</h1>
+<ul>
+<li><strong>Urheberrecht:</strong> Wer hat es geschaffen?</li>
+<li><strong>Verwertungsrechte:</strong> Wer darf etwas damit anfangen?</li>
+</ul>
+<p>Freie Lizenzen, üblicherweise Creative Commons (CC):</p>
+<p><img src="../img/cc-by.png" /> Attribution: Namensnennung</p>
+<p><img src="../img/cc-sa.png" /> ShareAlike (SA): Weitergabe unter gleichen Bedingungen</p>
+<p><img src="../img/cc-nd.png" /> NoDerivatives (ND): keine Bearbeitungen</p>
+<p><img src="../img/cc-nc.png" /> NonCommercial (NC): keine kommerziellen Zwecke</p>
+<p><em>…mehr zu Rechten und Lizenzen am 12.5.</em></p>
+</section>
+<section id="definitionen-und-absichtserklärungen" class="slide level1">
+<h1>Definitionen und (Absichts)erklärungen</h1>
+<p>Januar 2002: <strong>Budapester Open Access Erklärung</strong> <a href="http://www.budapestopenaccessinitiative.org/translations/german-translation">http://www.budapestopenaccessinitiative.org/translations/german-translation</a></p>
+<blockquote>
+<p>Frei zugänglich im Internet sollte all jene Literatur sein, die Wissenschaftlerinnen und Wissenschaftler ohne Erwartung, hierfür bezahlt zu werden, veröffentlichen</p>
+</blockquote>
+<p>Oktober 2003: <strong>Berliner Erklärung</strong> über offenen Zugang zu wissenschaftlichem Wissen <a href="http://openaccess.mpg.de/3515/Berliner_Erklaerung">http://openaccess.mpg.de/3515/Berliner_Erklaerung</a></p>
+<blockquote>
+<p>…zu kopieren, zu nutzen, zu verbreiten, zu übertragen und öffentlich wiederzugeben sowie Bearbeitungen davon zu erstellen und zu verbreiten…</p>
+</blockquote>
+</section>
+<section id="open-access-im-engeren-sinne" class="slide level1">
+<h1>Open Access im engeren Sinne</h1>
+<ul>
+<li>Freigabe der Dokumente</li>
+<li>Archivierung auf Dokumentenserver</li>
+</ul>
+<p>Somit sichergestellt, dass Dokumente dauerhaft frei genutzt werden können.</p>
+</section>
+<section id="viele-warme-worte" class="slide level1">
+<h1>Viele warme Worte</h1>
+<p>Unterzeichner der Berliner Erklärung, u.A.:</p>
+<ul>
+<li><em>Deutsche Forschungsgemeinschaft (DFG), Fraunhofer-Gesellschaft, Helmholtz-Gemeinschaft, Wissenschaftsgemeinschaft Gottfried Wilhelm Leibniz, Max-Planck-Gesellschaft (MPG), Deutsche Initiative für Netzwerkinformation (DINI), Deutscher Bibliotheksverband (dbv), Hochschulrektorenkonferenz, Wissenschaftsrat, …</em></li>
+</ul>
+<p>Weitere Positionspapiere und (Absichts)erklärungen: <a href="http://open-access.net/de/allgemeines/was_bedeutet_open_access/initiativen_und_positionspapiere/">http://open-access.net/de/allgemeines/was_bedeutet_open_access/initiativen_und_positionspapiere/</a></p>
+</section>
+<section id="mehr-als-worte" class="slide level1">
+<h1>Mehr als Worte</h1>
+<p>1991 setzte Paul Ginsparg einen Server für Physik-<em>Preprints</em> auf</p>
+<p><a href="http://ArXiV.org">http://ArXiV.org</a></p>
+</section>
+<section id="open-archives-repositories" class="slide level1">
+<h1>Open Archives / Repositories</h1>
+<ul>
+<li>Institutionelle Repositories (Herkunft)</li>
+<li>Fachliche Repositories (Fachgebiet): arXiV, PubMed, RePEc…</li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Disciplinary_repository">http://en.wikipedia.org/wiki/Disciplinary_repository</a></p>
+<figure>
+<img src="../img/dini-zertifikat.jpg" alt="DINI-Zertifizierung" /><figcaption>DINI-Zertifizierung</figcaption>
+</figure>
+<p><em>…mehr zu Repositories am 31.3.</em></p>
+</section>
+<section id="die-zeitschriftenkrise" class="slide level1">
+<h1>Die Zeitschriftenkrise</h1>
+<blockquote>
+<p>In the last 30 years, the prices of scientific journals have been steadily increasing. Between 1975 and 1995, they increased 200%- 300% beyond inflation.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+</blockquote>
+<ul>
+<li>Zeitschriftenmonopole bei großen Verlagen (u.A. Elsevier)</li>
+<li>Orbitante Preiserhöhungen</li>
+<li>Abbestellungen und eingeschränkter Zugriff</li>
+</ul>
+</section>
+<section id="warum-nicht-einfach-nur-noch-open-access" class="slide level1">
+<h1>Warum nicht einfach nur noch Open Access?</h1>
+<ul>
+<li>Kapitalismus abschaffen!</li>
+</ul>
+</section>
+<section id="warum-nicht-einfach-nur-noch-open-access-1" class="slide level1">
+<h1>Warum nicht einfach nur noch Open Access?</h1>
+<ul>
+<li>Absichtserklärungen sind geduldig</li>
+<li>Kulturelles und Soziales Problem</li>
+</ul>
+<p>Mögliche Druckmittel</p>
+<ul>
+<li>Obligatorische Mandate für OA</li>
+<li>Mittelvergabe</li>
+<li>Verlage</li>
+</ul>
+</section>
+<section id="positives-beispiel" class="slide level1">
+<h1>Positives Beispiel</h1>
+<ul>
+<li>National Institutes of Health (NIH)</li>
+<li>PubMed Central</li>
+<li>maximal 12 Monate nach Erscheinen</li>
+</ul>
+</section>
+<section id="formen-von-open-access" class="slide level1">
+<h1>Formen von Open Access</h1>
+<dl>
+<dt>Grüner Weg</dt>
+<dd><p>Open Access-Publikation parallel oder zeitversetzt zur Originalpublikation</p>
+</dd>
+<dt>Goldener Weg</dt>
+<dd><p>Open Access direkt beim ersten/eigentlichen Erscheinen</p>
+</dd>
+</dl>
+<p><em>Merkt euch diese beiden Formen für die mündliche Prüfung!</em></p>
+</section>
+<section id="rechliche-situation" class="slide level1">
+<h1>Rechliche Situation</h1>
+<figure>
+<img src="../img/oa-gruener-weg.png" />
+</figure>
+</section>
+<section id="rechliche-situation-1" class="slide level1">
+<h1>Rechliche Situation</h1>
+<figure>
+<img src="../img/oa-goldener-weg.png" />
+</figure>
+</section>
+<section id="vor--und-nachteile" class="slide level1">
+<h1>Vor- und Nachteile</h1>
+<ul>
+<li>für Leser</li>
+<li>für Autoren</li>
+<li>für Bibliotheken</li>
+<li>für Verlage</li>
+</ul>
+</section>
+<section id="vorteile-für-leser-und-autoren" class="slide level1">
+<h1>Vorteile für Leser und Autoren</h1>
+<p>Vorteile</p>
+<ul>
+<li>Schnellere und leichtere Verfügbarkeit</li>
+<li>Bessere Auffindbarkeit (Suchmaschinen, Nachweisdienste)</li>
+<li>Breitere und häufigere Nutzung</li>
+<li>Vermehrte Zitierung</li>
+<li>Einfacher und größerer Austausch</li>
+</ul>
+<p>Nachteile</p>
+<ul>
+<li>Höhere Transparenz, weniger Papier</li>
+<li>Scheinbarer Qualitätsverlust</li>
+</ul>
+</section>
+<section id="vorteile-und-nachteile-für-bibliotheken-und-verlage" class="slide level1">
+<h1>Vorteile und Nachteile für Bibliotheken und Verlage</h1>
+<ul>
+<li>Geringere Abhängigkeit</li>
+<li>Bedeutungsverlust als Türsteher</li>
+</ul>
+<p>Das Bibliothekswesen mit ihren Fachzeitschriften gibt eher kein leuchtendes Vorbild ab (<em>siehe Kurzvortrag am 28.4.</em>)</p>
+</section>
+<section id="hochladen-auffindbar-machen-fertig" class="slide level1">
+<h1>Hochladen, auffindbar machen, fertig</h1>
+<p><strong>Archivserver</strong></p>
+<ul>
+<li>Repositorien</li>
+<li>Umfangreiche Open Access-Szene (u.A. OA-Konferenzen)</li>
+<li>Mehr und einflussreichere Zeitschriften (u.A. PLOS)</li>
+<li>DOAJ</li>
+</ul>
+</section>
+<section id="finanzierungsmodelle-von-open-access" class="slide level1">
+<h1>Finanzierungsmodelle von Open Access</h1>
+<p>Veröffentlichung auf Repository</p>
+<ul>
+<li>Repository-Betreiber (Institution, Fachorganisation…)</li>
+</ul>
+<p>Veröffentlichung in Fachzeitschrift</p>
+<ul>
+<li>Autor finanziert Zugänglichmachung durch den Verlag selbst</li>
+<li>Finanzierung durch Förderorganisation</li>
+<li>Institutionelle Mitgliedschaft</li>
+<li>Publikationsfonds</li>
+<li>Hybrides Finanzierungsmodell</li>
+<li>Community-Fee-Modell</li>
+<li>Institutionelle Trägerschaft</li>
+</ul>
+</section>
+<section id="schlechte-finanzierungsmodelle-von-open-access" class="slide level1">
+<h1>Schlechte Finanzierungsmodelle von Open Access</h1>
+<ul>
+<li>Verlag verlangt
+<ul>
+<li>OA-Gebühr für einzelne Artikel</li>
+<li>Abogebühr von Bibliotheken (da nicht alles OA)</li>
+</ul></li>
+<li>Veröffentlichungsgebühren sind problematisch</li>
+</ul>
+</section>
+<section id="open-access-an-der-hs-hannover" class="slide level1">
+<h1>Open Access an der HS Hannover</h1>
+<ul>
+<li><p><a href="http://www.hs-hannover.de/bibl/service/hochschulpublikationen/serwiss/open-access-erklaerung/index.html">OA-Erklärung der Bibliothek der Hochschule Hannover</a></p></li>
+<li><p>SerWisS <a href="http://serwiss.bib.hs-hannover.de/">http://serwiss.bib.hs-hannover.de/</a></p></li>
+</ul>
+<figure>
+<img src="../img/serwiss.jpg" />
+</figure>
+<p><em>Aufgabe: Suche in verschiedenen Quellen (SerWisS, BASE, Google, b2i, INFODATA eDepot…)</em></p>
+</section>
+<section id="open-data-und-freie-inhalte" class="slide level1">
+<h1>Open Data und Freie Inhalte</h1>
+<dl>
+<dt>Open Data</dt>
+<dd>Open Access (incl. Weiternutzung) für beliebige Daten statt herkömmlicher Dokumente
+</dd>
+<dt>Freie Inhalte</dt>
+<dd>Open Source, Wikimedia u.Ä.
+</dd>
+</dl>
+</section>
+<section id="open-data-und-freie-inhalte-1" class="slide level1">
+<h1>Open Data und Freie Inhalte</h1>
+<ul>
+<li>Nicht primär wissenschaftliche Inhalte</li>
+<li>Zunehmend relevant
+<ul>
+<li>Open Government</li>
+<li>Open Educational Resources</li>
+</ul></li>
+</ul>
+</section>
+<section id="open-science-und-digital-humanities" class="slide level1">
+<h1>Open Science und Digital Humanities</h1>
+<ul>
+<li>Open Access stark abhängig von Fachdisziplin</li>
+<li>Vor allem Naturwissenschaften (mit Ausnahmen)</li>
+<li>Andere Kultur des Publizierens in den Geisteswissenschaften</li>
+</ul>
+</section>
+<section id="open-science-und-digital-humanities-1" class="slide level1">
+<h1>Open Science und Digital Humanities</h1>
+<dl>
+<dt>Open Science</dt>
+<dd>Freie oder offene Inhalte in den <em>Sciences</em>
+</dd>
+<dt>Digital Humanities</dt>
+<dd>Freie oder offene Inhalte in den <em>Humanities</em>
+</dd>
+</dl>
+</section>
+<section id="open-science-und-digital-humanities-2" class="slide level1">
+<h1>Open Science und Digital Humanities</h1>
+<p>Eine etwas vereinfachte Definition:</p>
+<blockquote>
+<p>“Open Science” und “Digital Humanities” ist in etwa für die Wissenschaft das was “Digitale Bibliothek” für das Bibliothekswesen ist: eine radikale Veränderung der Rahmenbedingungen.</p>
+</blockquote>
+</section>
+<section id="zusammenfassung" class="slide level1">
+<h1>Zusammenfassung</h1>
+<ul>
+<li><strong>Open Access</strong> bedeutet freier und unbeschränkter Zugang zu wissenschaftlichen Informationen.</li>
+<li>Traditionelles Publikationswesen nutzt die Möglichkeiten digitaler Verbreitung nicht aus.</li>
+<li>Absichtserklärungen, Mandate &amp; Aktivisten</li>
+<li>Propagierte Lösungen: grüner und goldener Weg</li>
+<li>Open Data, Freie Inhalte, Open Science, Digital Humanities… gehen über Open Access hinaus</li>
+</ul>
+</section>
+<section id="quellennachweise" class="slide level1">
+<h1>Quellennachweise</h1>
+<ul>
+<li><p>Teile der Vortragsfolien basieren auf Einführungsfolien der SUB Göttingen zu Open Access (Ulrike Hermann, Roman Nowak, Andrea Hartung und Dagmar Härter bzw. Sabine Witt und Margo Bargheer) und auf Folien von Christian Hauschke zu Open Access an der HsH.</p></li>
+<li><p>Foto von Aaron Swartz: CC-BY Sage Ross, 2009</p></li>
+</ul>
+</section>
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>European Commission (2006): Study on the economic and technical evolution of the scientific publication markets in Europe.<a href="#fnref1">↩</a></p></li>
+</ol>
+</section>
+<!-- {{{{ dzslides core
+#
+#
+#     __  __  __       .  __   ___  __
+#    |  \  / /__` |    | |  \ |__  /__`
+#    |__/ /_ .__/ |___ | |__/ |___ .__/ core :€
+#
+#
+# The following block of code is not supposed to be edited.
+# But if you want to change the behavior of these slides,
+# feel free to hack it!
+#
+-->
+
+<div id="progress-bar"></div>
+
+<!-- Default Style -->
+<style>
+  * { margin: 0; padding: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  details { display: none; }
+  body {
+    width: 800px; height: 600px;
+    margin-left: -400px; margin-top: -300px;
+    position: absolute; top: 50%; left: 50%;
+    overflow: hidden;
+  }
+  section {
+    position: absolute;
+    pointer-events: none;
+    width: 100%; height: 100%;
+  }
+  section[aria-selected] { pointer-events: auto; }
+  html { overflow: hidden; }
+  body { display: none; }
+  body.loaded { display: block; }
+  .incremental {visibility: hidden; }
+  .incremental[active] {visibility: visible; }
+  #progress-bar{
+    bottom: 0;
+    position: absolute;
+    -moz-transition: width 400ms linear 0s;
+    -webkit-transition: width 400ms linear 0s;
+    -ms-transition: width 400ms linear 0s;
+    transition: width 400ms linear 0s;
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+  }
+  figure > * {
+    position: absolute;
+  }
+  figure > img, figure > video {
+    width: 100%; height: 100%;
+  }
+</style>
+
+<script>
+  var Dz = {
+    remoteWindows: [],
+    idx: -1,
+    step: 0,
+    slides: null,
+    progressBar : null,
+    params: {
+      autoplay: "1"
+    }
+  };
+
+  Dz.init = function() {
+    document.body.className = "loaded";
+    this.slides = $$("body > section");
+    this.progressBar = $("#progress-bar");
+    this.setupParams();
+    this.onhashchange();
+    this.setupTouchEvents();
+    this.onresize();
+  }
+  
+  Dz.setupParams = function() {
+    var p = window.location.search.substr(1).split('&');
+    p.forEach(function(e, i, a) {
+      var keyVal = e.split('=');
+      Dz.params[keyVal[0]] = decodeURIComponent(keyVal[1]);
+    });
+  // Specific params handling
+    if (!+this.params.autoplay)
+      $$.forEach($$("video"), function(v){ v.controls = true });
+  }
+
+  Dz.onkeydown = function(aEvent) {
+    // Don't intercept keyboard shortcuts
+    if (aEvent.altKey
+      || aEvent.ctrlKey
+      || aEvent.metaKey
+      || aEvent.shiftKey) {
+      return;
+    }
+    if ( aEvent.keyCode == 37 // left arrow
+      || aEvent.keyCode == 38 // up arrow
+      || aEvent.keyCode == 33 // page up
+    ) {
+      aEvent.preventDefault();
+      this.back();
+    }
+    if ( aEvent.keyCode == 39 // right arrow
+      || aEvent.keyCode == 40 // down arrow
+      || aEvent.keyCode == 34 // page down
+    ) {
+      aEvent.preventDefault();
+      this.forward();
+    }
+    if (aEvent.keyCode == 35) { // end
+      aEvent.preventDefault();
+      this.goEnd();
+    }
+    if (aEvent.keyCode == 36) { // home
+      aEvent.preventDefault();
+      this.goStart();
+    }
+    if (aEvent.keyCode == 32) { // space
+      aEvent.preventDefault();
+      this.toggleContent();
+    }
+    if (aEvent.keyCode == 70) { // f
+      aEvent.preventDefault();
+      this.goFullscreen();
+    }
+  }
+
+  /* Touch Events */
+
+  Dz.setupTouchEvents = function() {
+    var orgX, newX;
+    var tracking = false;
+
+    var db = document.body;
+    db.addEventListener("touchstart", start.bind(this), false);
+    db.addEventListener("touchmove", move.bind(this), false);
+
+    function start(aEvent) {
+      aEvent.preventDefault();
+      tracking = true;
+      orgX = aEvent.changedTouches[0].pageX;
+    }
+
+    function move(aEvent) {
+      if (!tracking) return;
+      newX = aEvent.changedTouches[0].pageX;
+      if (orgX - newX > 100) {
+        tracking = false;
+        this.forward();
+      } else {
+        if (orgX - newX < -100) {
+          tracking = false;
+          this.back();
+        }
+      }
+    }
+  }
+
+  /* Adapt the size of the slides to the window */
+
+  Dz.onresize = function() {
+    var db = document.body;
+    var sx = db.clientWidth / window.innerWidth;
+    var sy = db.clientHeight / window.innerHeight;
+    var transform = "scale(" + (1/Math.max(sx, sy)) + ")";
+
+    db.style.MozTransform = transform;
+    db.style.WebkitTransform = transform;
+    db.style.OTransform = transform;
+    db.style.msTransform = transform;
+    db.style.transform = transform;
+  }
+
+
+  Dz.getDetails = function(aIdx) {
+    var s = $("section:nth-of-type(" + aIdx + ")");
+    var d = s.$("details");
+    return d ? d.innerHTML : "";
+  }
+
+  Dz.onmessage = function(aEvent) {
+    var argv = aEvent.data.split(" "), argc = argv.length;
+    argv.forEach(function(e, i, a) { a[i] = decodeURIComponent(e) });
+    var win = aEvent.source;
+    if (argv[0] === "REGISTER" && argc === 1) {
+      this.remoteWindows.push(win);
+      this.postMsg(win, "REGISTERED", document.title, this.slides.length);
+      this.postMsg(win, "CURSOR", this.idx + "." + this.step);
+      return;
+    }
+    if (argv[0] === "BACK" && argc === 1)
+      this.back();
+    if (argv[0] === "FORWARD" && argc === 1)
+      this.forward();
+    if (argv[0] === "START" && argc === 1)
+      this.goStart();
+    if (argv[0] === "END" && argc === 1)
+      this.goEnd();
+    if (argv[0] === "TOGGLE_CONTENT" && argc === 1)
+      this.toggleContent();
+    if (argv[0] === "SET_CURSOR" && argc === 2)
+      window.location.hash = "#" + argv[1];
+    if (argv[0] === "GET_CURSOR" && argc === 1)
+      this.postMsg(win, "CURSOR", this.idx + "." + this.step);
+    if (argv[0] === "GET_NOTES" && argc === 1)
+      this.postMsg(win, "NOTES", this.getDetails(this.idx));
+  }
+
+  Dz.toggleContent = function() {
+    // If a Video is present in this new slide, play it.
+    // If a Video is present in the previous slide, stop it.
+    var s = $("section[aria-selected]");
+    if (s) {
+      var video = s.$("video");
+      if (video) {
+        if (video.ended || video.paused) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      }
+    }
+  }
+
+  Dz.setCursor = function(aIdx, aStep) {
+    // If the user change the slide number in the URL bar, jump
+    // to this slide.
+    aStep = (aStep != 0 && typeof aStep !== "undefined") ? "." + aStep : ".0";
+    window.location.hash = "#" + aIdx + aStep;
+  }
+
+  Dz.onhashchange = function() {
+    var cursor = window.location.hash.split("#"),
+        newidx = 1,
+        newstep = 0;
+    if (cursor.length == 2) {
+      newidx = ~~cursor[1].split(".")[0];
+      newstep = ~~cursor[1].split(".")[1];
+      if (newstep > Dz.slides[newidx - 1].$$('.incremental > *').length) {
+        newstep = 0;
+        newidx++;
+      }
+    }
+    this.setProgress(newidx, newstep);
+    if (newidx != this.idx) {
+      this.setSlide(newidx);
+    }
+    if (newstep != this.step) {
+      this.setIncremental(newstep);
+    }
+    for (var i = 0; i < this.remoteWindows.length; i++) {
+      this.postMsg(this.remoteWindows[i], "CURSOR", this.idx + "." + this.step);
+    }
+  }
+
+  Dz.back = function() {
+    if (this.idx == 1 && this.step == 0) {
+      return;
+    }
+    if (this.step == 0) {
+      this.setCursor(this.idx - 1,
+                     this.slides[this.idx - 2].$$('.incremental > *').length);
+    } else {
+      this.setCursor(this.idx, this.step - 1);
+    }
+  }
+
+  Dz.forward = function() {
+    if (this.idx >= this.slides.length &&
+        this.step >= this.slides[this.idx - 1].$$('.incremental > *').length) {
+        return;
+    }
+    if (this.step >= this.slides[this.idx - 1].$$('.incremental > *').length) {
+      this.setCursor(this.idx + 1, 0);
+    } else {
+      this.setCursor(this.idx, this.step + 1);
+    }
+  }
+
+  Dz.goStart = function() {
+    this.setCursor(1, 0);
+  }
+
+  Dz.goEnd = function() {
+    var lastIdx = this.slides.length;
+    var lastStep = this.slides[lastIdx - 1].$$('.incremental > *').length;
+    this.setCursor(lastIdx, lastStep);
+  }
+
+  Dz.setSlide = function(aIdx) {
+    this.idx = aIdx;
+    var old = $("section[aria-selected]");
+    var next = $("section:nth-of-type("+ this.idx +")");
+    if (old) {
+      old.removeAttribute("aria-selected");
+      var video = old.$("video");
+      if (video) {
+        video.pause();
+      }
+    }
+    if (next) {
+      next.setAttribute("aria-selected", "true");
+      var video = next.$("video");
+      if (video && !!+this.params.autoplay) {
+        video.play();
+      }
+    } else {
+      // That should not happen
+      this.idx = -1;
+      // console.warn("Slide doesn't exist.");
+    }
+  }
+
+  Dz.setIncremental = function(aStep) {
+    this.step = aStep;
+    var old = this.slides[this.idx - 1].$('.incremental > *[aria-selected]');
+    if (old) {
+      old.removeAttribute('aria-selected');
+    }
+    var incrementals = $$('.incremental');
+    if (this.step <= 0) {
+      $$.forEach(incrementals, function(aNode) {
+        aNode.removeAttribute('active');
+      });
+      return;
+    }
+    var next = this.slides[this.idx - 1].$$('.incremental > *')[this.step - 1];
+    if (next) {
+      next.setAttribute('aria-selected', true);
+      next.parentNode.setAttribute('active', true);
+      var found = false;
+      $$.forEach(incrementals, function(aNode) {
+        if (aNode != next.parentNode)
+          if (found)
+            aNode.removeAttribute('active');
+          else
+            aNode.setAttribute('active', true);
+        else
+          found = true;
+      });
+    } else {
+      setCursor(this.idx, 0);
+    }
+    return next;
+  }
+
+  Dz.goFullscreen = function() {
+    var html = $('html'),
+        requestFullscreen = html.requestFullscreen || html.requestFullScreen || html.mozRequestFullScreen || html.webkitRequestFullScreen;
+    if (requestFullscreen) {
+      requestFullscreen.apply(html);
+    }
+  }
+  
+  Dz.setProgress = function(aIdx, aStep) {
+    var slide = $("section:nth-of-type("+ aIdx +")");
+    if (!slide)
+      return;
+    var steps = slide.$$('.incremental > *').length + 1,
+        slideSize = 100 / (this.slides.length - 1),
+        stepSize = slideSize / steps;
+    this.progressBar.style.width = ((aIdx - 1) * slideSize + aStep * stepSize) + '%';
+  }
+  
+  Dz.postMsg = function(aWin, aMsg) { // [arg0, [arg1...]]
+    aMsg = [aMsg];
+    for (var i = 2; i < arguments.length; i++)
+      aMsg.push(encodeURIComponent(arguments[i]));
+    aWin.postMessage(aMsg.join(" "), "*");
+  }
+  
+  function init() {
+    Dz.init();
+    window.onkeydown = Dz.onkeydown.bind(Dz);
+    window.onresize = Dz.onresize.bind(Dz);
+    window.onhashchange = Dz.onhashchange.bind(Dz);
+    window.onmessage = Dz.onmessage.bind(Dz);
+  }
+
+  window.onload = init;
+</script>
+
+
+<script> // Helpers
+  if (!Function.prototype.bind) {
+    Function.prototype.bind = function (oThis) {
+
+      // closest thing possible to the ECMAScript 5 internal IsCallable
+      // function 
+      if (typeof this !== "function")
+      throw new TypeError(
+        "Function.prototype.bind - what is trying to be fBound is not callable"
+      );
+
+      var aArgs = Array.prototype.slice.call(arguments, 1),
+          fToBind = this,
+          fNOP = function () {},
+          fBound = function () {
+            return fToBind.apply( this instanceof fNOP ? this : oThis || window,
+                   aArgs.concat(Array.prototype.slice.call(arguments)));
+          };
+
+      fNOP.prototype = this.prototype;
+      fBound.prototype = new fNOP();
+
+      return fBound;
+    };
+  }
+
+  var $ = (HTMLElement.prototype.$ = function(aQuery) {
+    return this.querySelector(aQuery);
+  }).bind(document);
+
+  var $$ = (HTMLElement.prototype.$$ = function(aQuery) {
+    return this.querySelectorAll(aQuery);
+  }).bind(document);
+
+  $$.forEach = function(nodeList, fun) {
+    Array.prototype.forEach.call(nodeList, fun);
+  }
+
+</script>
+<!-- vim: set fdm=marker: }}} -->
+</body>
+</html>
