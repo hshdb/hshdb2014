@@ -28,6 +28,7 @@ BEAMER=$(realpath $(CURDIR)beamer-template)
 
 ANY_FORMAT=-s -V title-prefix=hshdb2014
 ANY_PDF=--latex-engine xelatex $(ANY_FORMAT)
+SLIDES_TEX=$(ANY_PDF) -t latex --template $(BEAMER)/template.tex
 SLIDES_PDF=$(ANY_PDF) -t beamer --template $(BEAMER)/template.tex
 
 PAPER_PDF=$(ANY_PDF)
@@ -39,14 +40,16 @@ PAPER_HTML=-t html5 $(ANY_HTML) --template $(BOOTSTRAP)/template.html --css $(BO
 
 HTML_PAPER_FILTER=sed 's/\([^()]\+\.slides\)\.md)/\1.html) ([PDF](\1.pdf))/g'
 HTML_SLIDES_FILTER=cat
-PDF_SLIDES_FILTER=sed 's/\.gif)/.png)/'
+PDF_SLIDES_FILTER=sed 's/\.gif)/.png)/' | ppp
+
+.md.tmp:
 
 .md.pdf: bib
 	@cd `dirname $<`; \
-	NAME="$(basename $(basename $<))"; \
-	[ -e "$$NAME.bib" ] && BIB="--bibliography $$NAME.bib"; \
+	FILENAME="$(basename $(basename $(notdir $<)))"; \
+	[ -e "$$FILENAME.bib" ] && BIB="--bibliography $$FILENAME.bib"; \
 	if [ "$(suffix $(basename $<))" = ".slides" ]; then \
-		$(PDF_SLIDES_FILTER) $(notdir $<) | pandoc $(SLIDES_PDF) $$BIB - -o $(notdir $@) ;\
+		cat $(notdir $<) | $(PDF_SLIDES_FILTER) | pandoc $(SLIDES_PDF) $$BIB - -o $(notdir $@) ;\
 	else \
 		pandoc $(PAPER_PDF) $$BIB $(notdir $<) -o $(notdir $@) ;\
 	fi
@@ -55,8 +58,8 @@ PDF_SLIDES_FILTER=sed 's/\.gif)/.png)/'
 
 .md.html: bib
 	@cd `dirname $<`; \
-	NAME="$(basename $(basename $<))"; \
-	[ -e "$$NAME.bib" ] && BIB="--bibliography $$NAME.bib"; \
+	FILENAME="$(basename $(basename $(notdir $<)))"; \
+	[ -e "$$FILENAME.bib" ] && BIB="--bibliography $$FILENAME.bib"; \
 	if [ "$(suffix $(basename $<))" = ".slides" ]; then \
 		$(HTML_SLIDES_FILTER) $(notdir $<) | pandoc $(SLIDES_HTML) $$BIB - -o $(notdir $@) ;\
 	else \

@@ -1,0 +1,25 @@
+VanDeSompel2000:
+    type: article
+    url: http://www.dlib.org/dlib/february00/vandesompel-oai/02vandesompel-oai.html
+    author: Herbert Van de Sompel and Carl Lagoze
+    title: The Santa Fe Convention of the Open Archives Initiative
+    journal: D-Lib Magazine
+    date: 2000-02
+    volume: 6
+    number: 2
+
+Mueller2008:
+    title: Retiring support for OAI-PMH in Sitemaps
+    date: 2008-04-23
+    author: John Mueller
+    journal: Google Webmaster Central Blog
+    url: http://googlewebmastercentral.blogspot.de/2008/04/retiring-support-for-oai-pmh-in.html        
+
+Tennant2004:
+    author: Tennant, Ro
+    journal: Library Journal
+    number: 12
+    title: Metadata's Bitter Harvest
+    url: http://www.libraryjournal.com/article/CA434443.html
+    volume: 129
+    year: 2004
