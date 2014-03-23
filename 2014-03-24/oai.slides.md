@@ -248,10 +248,6 @@ ListSets
 * 2006-2008 entwickelt
 * <http://www.openarchives.org/ore>
 
-# OAI-ORE
-
-* TODO: Beispiel
-
 # Konzepte in OAI-ORE
 
 * Aggregated Resource
@@ -283,10 +279,6 @@ ListSets
 * OAI-PMH stößt an Grenzen
 * 2012-2014 entwickelt
 * <http://www.openarchives.org/rs/>
-
----
-
-TODO: Beispiel/Details
 
 # Verwandte Initiativen & Projekte
 
