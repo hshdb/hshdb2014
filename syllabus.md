@@ -34,24 +34,25 @@ im [internen Repository](https://github.com/hshdb/hshdb2014-aufgaben).
     - Einführung in **[Open Access](2014-03-17/einfuehrung-oa.slides.md)**
 
 `2014-03-24` "Metadaten"
-  : - **Tagging & Erschließung**:
+  : - **[Open Archives Initiative](2014-03-24/oai.slides.md)**
+    - **[Tagging & Erschließung](2014-03-24/tagging-und-erschliessung.slides.md)**:
       Social Tagging, Normdaten & Erstellung von Metadaten
-    - **Aggregation von Metadaten**:
+    - **[Aggregation von Metadaten](2014-03-24/metadaten-aggregation.slides.md)**:
       RSS, ATOM, OAI-PMH, ResourceSync, Sitemaps...
 
 `2014-03-31` "Software"
+  : - **[Suchmaschinen](2014-03-31/suchmaschinen.slides.md)**:
+      Indexierung, Ranking vs Bool, Metasuche, Solr/VuFind... 
+    - **[Datenkonvertierung](2014-03-31/datenkonvertierung.slides.md)**
+
+`2014-04-07` 
   : - **Repository-Software & -Workflows**: 
       Softwareysteme (DSpace, EPub, OPUS, MyCore...),
       Arten von Repositories und Archiven (arXiv, SSRRN, RePEC, Hochschulserver,
       Internet Archive, Wikimedia Commons, private Sammlungen ...)
-    - **Suchmaschinen:**
-      Indexierung, Ranking vs Bool, Metasuche, Solr/VuFind... 
-
-`2014-04-07` "Datenverarbeitung"
-  : - **Datenkonvertierung**
     -  *Verfügbarkeitsanzeige*
-    - **Crowdsourcing & Crowdfunding**
     -  *Crowdcrafting/PyBossa*
+    - **Crowdsourcing & Crowdfunding**
 
 `2014-04-14` "Identifikation"
   : - **Identifier-Systeme**: 
