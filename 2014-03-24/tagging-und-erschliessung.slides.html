@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+  <meta name="author" content="Dr. Jakob Voß" />
+  <meta name="dcterms.date" content="2014-03-24" />
+  <title>hshdb2014 - Tagging &amp; Erschließung</title>
+  <style type="text/css">code{white-space: pre;}</style>
+<style>
+  html { background-color: black; }
+  body { background-color: white; border-radius: 12px}
+  /* A section is a slide. It's size is 800x600, and this will never change */
+  section {
+      font-family: Arial, serif;
+      font-size: 20pt;
+    }
+  address, blockquote, dl, fieldset, form, h1, h2, h3, h4, h5, h6, hr, ol, p, pre, table, ul, dl { padding: 10px 20px 10px 20px; }
+  h1, h2, h3 {
+    text-align: center;
+    margin: 10pt 10pt 20pt 10pt;
+  }
+  ul, ol {
+    margin: 10px 10px 10px 50px;
+  }
+  section.titleslide h1 { margin-top: 200px; }
+  h1.title { margin-top: 150px; }
+  h1 { font-size: 180%; }
+  h2 { font-size: 120%; }
+  h3 { font-size: 100%; }
+  q { quotes: "“" "”" "‘" "’"; }
+  blockquote { font-style: italic }
+  /* Figures are displayed full-page, with the caption on
+     top of the image/video */
+  figure {
+    background-color: black;
+  }
+  figcaption {
+    margin: 70px;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 40px;
+    text-align: right;
+    background-color: #F3F4F8;
+    border-top: 1px solid #CCC;
+  }
+
+  /* Transition effect */
+  /* Feel free to change the transition effect for original
+     animations. See here:
+     https://developer.mozilla.org/en/CSS/CSS_transitions
+     How to use CSS3 Transitions: */
+  section {
+      -moz-transition: left 400ms linear 0s;
+      -webkit-transition: left 400ms linear 0s;
+      -ms-transition: left 400ms linear 0s;
+      transition: left 400ms linear 0s;
+  }
+
+  /* Before */
+  section { left: -150%; }
+  /* Now */
+  section[aria-selected] { left: 0; }
+  /* After */
+  section[aria-selected] ~ section { left: +150%; }
+
+  /* Incremental elements */
+
+  /* By default, visible */
+  .incremental > * { opacity: 1; }
+
+  /* The current item */
+  .incremental > *[aria-selected] { color: red; opacity: 1; }
+
+  /* The items to-be-selected */
+  .incremental > *[aria-selected] ~ * { opacity: 0.2; }
+</style>
+</head>
+<body>
+<section class="title">
+  <h1 class="title">Tagging &amp; Erschließung</h1>
+  <h2 class="author">Dr. Jakob Voß</h2>
+  <h3 class="date">2014-03-24</h3>
+</section>
+<section id="problem-der-erschließung" class="slide level1">
+<h1>Problem der Erschließung</h1>
+<p>Möglichst <em>vollständige</em> und <em>eindeutige</em> Beschreibung.</p>
+</section>
+<section id="probleme-von-zeichen" class="slide level1">
+<h1>Probleme von Zeichen</h1>
+<ul>
+<li><strong>Synonyme</strong> (“Bank” = “Sitzbank”)</li>
+<li><strong>Homonyme</strong> (“Sitzbank”, “Kreditinstitut”…)</li>
+</ul>
+</section>
+<section id="lösungsstrategien-bei-der-erschließung" class="slide level1">
+<h1>Lösungsstrategien bei der Erschließung</h1>
+<ul>
+<li>Terminologische Kontrolle / Normdaten</li>
+<li>Arten von Kontrollierten Vokabularen
+<ul>
+<li>Schlagwortliste</li>
+<li>Klassifikation</li>
+<li>Thesaurus</li>
+<li>Ontologie</li>
+</ul></li>
+</ul>
+</section>
+<section id="digitale-semiotik" class="slide level1">
+<h1>Digitale Semiotik</h1>
+<p><sub>~</sub> {.dot .dpi=300 .scale=80%} graph { size=“400,600”; Vorstellung – Daten; Vorstellung – Bedeutung; {rank=same Daten Bedeutung} } <sub>~</sub></p>
+</section>
+<section id="zeichen-über-zeichen" class="slide level1">
+<h1>Zeichen über Zeichen</h1>
+<ul>
+<li>Metadaten zum Dokument</li>
+<li>Dokument zum Inhalt</li>
+</ul>
+</section>
+<section id="fehlermöglichkeiten" class="slide level1">
+<h1>Fehlermöglichkeiten</h1>
+<ul>
+<li>mangelnde Terminologiearbeit/Datenformate/Programme/…</li>
+<li>mangelnde Erschließung/Daten/Benutzung/…</li>
+</ul>
+<p><em>….und viele andere Fehler mehr.</em></p>
+</section>
+<section id="lösungsansätze-zur-besseren-erschließung" class="slide level1">
+<h1>Lösungsansätze zur besseren Erschließung</h1>
+<ul>
+<li>Homonymie, Synonymie, Prä/Postkoordination<br /> <em>Terminologische Kontrolle</em></li>
+<li>Begriffliche Komplexität<br /> <em>Definitionen und Beispiele!</em></li>
+<li>Mangelnde Erschließung<br /> <em>Mehr Mitarbeiter und bessere Werkzeuge</em></li>
+</ul>
+</section>
+<section id="einführungsbeispiel-1" class="slide level1">
+<h1>Einführungsbeispiel 1</h1>
+<p><strong><a href="http://www.librarything.de/">LibraryThing</a></strong></p>
+<ul>
+<li>Gegründet 2005</li>
+<li>Eigene Bücherlisten/kataloge (10$/Jahr oder 25$/Leben)</li>
+<li>1.700.000 Mitglieder</li>
+<li>Inhalte der Seite (sogar Übersetzung) von Mitgliedern</li>
+<li>Ausgaben, Werke, Rezensionen, Diskussionen etc.</li>
+<li>Cataloging Parties etc.</li>
+<li>LibraryThing for Libraries</li>
+</ul>
+</section>
+<section id="einführungsbeispiel-2" class="slide level1">
+<h1>Einführungsbeispiel 2</h1>
+<p><strong>Dokumentenserver</strong> (z.B. SerWisS unter OPUS 4)</p>
+</section>
+<section id="allgemeine-rollen-bei-der-erschließung" class="slide level1">
+<h1>Allgemeine Rollen bei der Erschließung</h1>
+<ul>
+<li><strong>Autor</strong> erstellt Dokumentes</li>
+<li><strong>Archivar</strong> sammelt Dokumente</li>
+<li><strong>Dokumentar</strong> beschreibt Dokumente</li>
+<li><strong>Leser</strong> findet Dokumente (über Sammlungen &amp; Beschreibungen) und konsumiert Dokumente</li>
+</ul>
+</section>
+<section id="beispiele-für-rolleneinteilung" class="slide level1">
+<h1>Beispiele für Rolleneinteilung</h1>
+<ul>
+<li>Traditionelle Bibliothek
+<ul>
+<li>Autor:</li>
+<li>Archivar:</li>
+<li>Dokumentar:</li>
+<li>Leser:</li>
+</ul></li>
+<li>Dokumentenserver
+<ul>
+<li>Autor:</li>
+<li>Archivar:</li>
+<li>Dokumentar:</li>
+<li>Leser:</li>
+</ul></li>
+<li>LibraryThing
+<ul>
+<li>Autor:</li>
+<li>Archivar:</li>
+<li>Dokumentar:</li>
+<li>Leser:</li>
+</ul></li>
+</ul>
+</section>
+<section id="was-hat-das-mit-digitalen-bibliotheken-zu-tun" class="slide level1">
+<h1>Was hat das mit digitalen Bibliotheken zu tun?</h1>
+<ul>
+<li>Digitale Bibliotheken beschäftigen sich mit Daten
+<ul>
+<li>Erschließungsdaten (Metadaten)</li>
+<li>Dokumente</li>
+</ul></li>
+<li>Einteilung im digitalen flexibel
+<ul>
+<li>Metadaten / Dokumente</li>
+<li>Autor / Leser / Archivar / Dokumentar</li>
+</ul></li>
+<li>Automtische Prozesse in allen Bereichen</li>
+</ul>
+</section>
+<section id="social-cataloging" class="slide level1">
+<h1>Social Cataloging</h1>
+<ul>
+<li>Erschließung durch Benutzer</li>
+<li>Beispiele:
+<ul>
+<li>LibraryThing, Comics.org, IMBD, ISFDB…</li>
+<li>BibSonomy, Mendeley, Zotero…</li>
+<li>Wikidata</li>
+<li>…</li>
+</ul></li>
+<li>Social Bookmarking</li>
+</ul>
+</section>
+<section id="beispiel-3-bibsonomy" class="slide level1">
+<h1>Beispiel 3: BibSonomy</h1>
+</section>
+<section id="bag-model-vs.set-model" class="slide level1">
+<h1>Bag-Model vs. Set-Model</h1>
+<ul>
+<li>Bag: jeder hat seins</li>
+<li>Set: alle an einem</li>
+</ul>
+</section>
+<section id="social-cataloging-light-in-bibliotheken" class="slide level1">
+<h1>Social Cataloging <em>light</em> in Bibliotheken</h1>
+<ul>
+<li>Verbundkatalogisierung (<em>Set oder Bag?</em>)</li>
+</ul>
+</section>
+<section id="social-cataloging-in-bibliotheken" class="slide level1">
+<h1>Social Cataloging in Bibliotheken</h1>
+<ul>
+<li>Export-Möglichkeiten in Social-Cataloging-Plattformen</li>
+<li>Kaum erfolgreiche Beteiligung am Katalogisieren
+<ul>
+<li>Technische Probleme</li>
+<li>Mangelnde Usability</li>
+<li>Fehlende Motivation</li>
+<li>Bestand statt Relevanz</li>
+<li>…</li>
+</ul></li>
+</ul>
+<p><em>Wer erschließt stattdessen?!</em></p>
+</section>
+<section id="social-tagging" class="slide level1">
+<h1>Social Tagging</h1>
+</section>
+<section id="beispiele" class="slide level1">
+<h1>Beispiele</h1>
+<ul>
+<li>StackExchange</li>
+<li>http://www.flickr.com/photos/tags/</li>
+</ul>
+</section>
+<section id="social-tagging-modell-tripartiter-graph" class="slide level1">
+<h1>Social Tagging-Modell: Tripartiter Graph</h1>
+<p><sub>~</sub> {.dot .dpi=300 .scale=60%} graph { size=“400,600”; edge[penwidth=2.0]; Tags – Dokumente; Tags – Benutzer; Dokumente – Benutzer; {rank=same Dokumente Benutzer} } <sub>~</sub></p>
+</section>
+<section id="social-tagging-modell" class="slide level1">
+<h1>Social Tagging-Modell</h1>
+<p><sub>~</sub> {.dot .dpi=300 .scale=60%} graph { size=“400,600”; edge[penwidth=2.0]; Tags – Dokumente; Tags – Benutzer; Dokumente – Benutzer; {rank=same Dokumente Benutzer}</p>
+<p>Tags:ne – Tags:nw [label=“Vokabular”]; Dokumente:s – Dokumente:s [label=“Hyperlinks”]; Benutzer:s – Benutzer:s [label=“Soziale Netzwerke”]; } <sub>~</sub></p>
+</section>
+<section id="aggregation-von-social-tagging-daten" class="slide level1">
+<h1>Aggregation von Social Tagging-Daten</h1>
+<ul>
+<li>3-Dimensionale Matrix (Tags, Benutzer, Dokumente)</li>
+<li>Jeder Tagging-Vorgang ist eine Koordinate</li>
+<li>etablierte Verfahren im Data Warehousing</li>
+</ul>
+</section>
+<section id="aggregation-von-social-tagging-daten-1" class="slide level1">
+<h1>Aggregation von Social Tagging-Daten</h1>
+<ul>
+<li>Aggregation über
+<ul>
+<li>alle Benutzer (Tags / Dokumente)</li>
+<li>alle Dokumente (Tags / Benutzer)</li>
+<li>alle Tags (Benutzer / Dokumente)</li>
+<li>Benutzer &amp; Tags = Persönliche Liste</li>
+<li>Benutzer &amp; Dokumente = Persönliche Themen</li>
+<li>…</li>
+</ul></li>
+</ul>
+</section>
+<section id="weitere-auswertungen-möglich" class="slide level1">
+<h1>Weitere Auswertungen möglich</h1>
+<ul>
+<li>Ranking über Verlinkung (FolkRank)</li>
+<li>Synonyme über Kozitation<br /> (Tags and gemeinsamen Dokumente)</li>
+<li>Hyponyme über Bibliographische Kopplung<br /> (gemeinsame Tags an anderen Dokumenten)</li>
+</ul>
+</section>
+<section id="arten-von-tagging-systeme" class="slide level1">
+<h1>Arten von Tagging-Systeme</h1>
+<ul>
+<li>Tagging <span class="math"> ≠ </span> Tagging</li>
+<li>Verschiedene Aspekte der Unterscheidung</li>
+<li>Akzeptanz &amp; Nutzen je nach Umsetzung</li>
+</ul>
+</section>
+<section id="arten-von-tagging-systemen" class="slide level1">
+<h1>Arten von Tagging-Systemen</h1>
+<dl>
+<dt>resource sources</dt>
+<dd>woher stammen die Dokumente?<br />(neu erstellt, frei gefunden, vorhandene Sammlung…)
+</dd>
+<dt>resource representation</dt>
+<dd>wie liegen Dokumente beim Tagging vor?
+</dd>
+<dt>resource connectivity</dt>
+<dd>Hierarchien &amp; Hyperlinks
+</dd>
+</dl>
+</section>
+<section id="arten-von-tagging-systemen-1" class="slide level1">
+<h1>Arten von Tagging-Systemen</h1>
+<dl>
+<dt>tagging-rights</dt>
+<dd>wer darf Tags vergeben?<br />(Autor, Bibliothekar, Benutzer, Rollen…)
+</dd>
+<dt>tag aggregation</dt>
+<dd>set-Model (ein Tag-Set pro Dokument)<br />bag-Model (jedem sein eigenes Tag-Set)
+</dd>
+</dl>
+</section>
+<section id="arten-von-tagging-systemen-2" class="slide level1">
+<h1>Arten von Tagging-Systemen</h1>
+<dl>
+<dt>tagging feedback</dt>
+<dd>Rückmeldung bei der Vergabe von Tags?
+</dd>
+<dt>automatic tagging</dt>
+<dd>(Teil)automatisches Tagging?
+</dd>
+</dl>
+</section>
+<section id="arten-von-tagging-systemen-3" class="slide level1">
+<h1>Arten von Tagging-Systemen</h1>
+<dl>
+<dt>tag control</dt>
+<dd>Kontrolliertes Vokabular?<br />(Synonyme, Umbenennung, Verknüpfung…)
+</dd>
+<dt>tag connectivity</dt>
+<dd>flach, Hierarchie, Thesaurus, Facetten…
+</dd>
+</dl>
+</section>
+<section id="arten-von-tagging-systemen-4" class="slide level1">
+<h1>Arten von Tagging-Systemen</h1>
+<ul>
+<li>Kriterien ähnlich bei allen Systemen zur Schlagwortvergabe</li>
+<li>Kriterien ähnlich bei allen Systemen zur Datenerfassung</li>
+</ul>
+</section>
+<!-- {{{{ dzslides core
+#
+#
+#     __  __  __       .  __   ___  __
+#    |  \  / /__` |    | |  \ |__  /__`
+#    |__/ /_ .__/ |___ | |__/ |___ .__/ core :€
+#
+#
+# The following block of code is not supposed to be edited.
+# But if you want to change the behavior of these slides,
+# feel free to hack it!
+#
+-->
+
+<div id="progress-bar"></div>
+
+<!-- Default Style -->
+<style>
+  * { margin: 0; padding: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  details { display: none; }
+  body {
+    width: 800px; height: 600px;
+    margin-left: -400px; margin-top: -300px;
+    position: absolute; top: 50%; left: 50%;
+    overflow: hidden;
+  }
+  section {
+    position: absolute;
+    pointer-events: none;
+    width: 100%; height: 100%;
+  }
+  section[aria-selected] { pointer-events: auto; }
+  html { overflow: hidden; }
+  body { display: none; }
+  body.loaded { display: block; }
+  .incremental {visibility: hidden; }
+  .incremental[active] {visibility: visible; }
+  #progress-bar{
+    bottom: 0;
+    position: absolute;
+    -moz-transition: width 400ms linear 0s;
+    -webkit-transition: width 400ms linear 0s;
+    -ms-transition: width 400ms linear 0s;
+    transition: width 400ms linear 0s;
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+  }
+  figure > * {
+    position: absolute;
+  }
+  figure > img, figure > video {
+    width: 100%; height: 100%;
+  }
+</style>
+
+<script>
+  var Dz = {
+    remoteWindows: [],
+    idx: -1,
+    step: 0,
+    slides: null,
+    progressBar : null,
+    params: {
+      autoplay: "1"
+    }
+  };
+
+  Dz.init = function() {
+    document.body.className = "loaded";
+    this.slides = $$("body > section");
+    this.progressBar = $("#progress-bar");
+    this.setupParams();
+    this.onhashchange();
+    this.setupTouchEvents();
+    this.onresize();
+  }
+  
+  Dz.setupParams = function() {
+    var p = window.location.search.substr(1).split('&');
+    p.forEach(function(e, i, a) {
+      var keyVal = e.split('=');
+      Dz.params[keyVal[0]] = decodeURIComponent(keyVal[1]);
+    });
+  // Specific params handling
+    if (!+this.params.autoplay)
+      $$.forEach($$("video"), function(v){ v.controls = true });
+  }
+
+  Dz.onkeydown = function(aEvent) {
+    // Don't intercept keyboard shortcuts
+    if (aEvent.altKey
+      || aEvent.ctrlKey
+      || aEvent.metaKey
+      || aEvent.shiftKey) {
+      return;
+    }
+    if ( aEvent.keyCode == 37 // left arrow
+      || aEvent.keyCode == 38 // up arrow
+      || aEvent.keyCode == 33 // page up
+    ) {
+      aEvent.preventDefault();
+      this.back();
+    }
+    if ( aEvent.keyCode == 39 // right arrow
+      || aEvent.keyCode == 40 // down arrow
+      || aEvent.keyCode == 34 // page down
+    ) {
+      aEvent.preventDefault();
+      this.forward();
+    }
+    if (aEvent.keyCode == 35) { // end
+      aEvent.preventDefault();
+      this.goEnd();
+    }
+    if (aEvent.keyCode == 36) { // home
+      aEvent.preventDefault();
+      this.goStart();
+    }
+    if (aEvent.keyCode == 32) { // space
+      aEvent.preventDefault();
+      this.toggleContent();
+    }
+    if (aEvent.keyCode == 70) { // f
+      aEvent.preventDefault();
+      this.goFullscreen();
+    }
+  }
+
+  /* Touch Events */
+
+  Dz.setupTouchEvents = function() {
+    var orgX, newX;
+    var tracking = false;
+
+    var db = document.body;
+    db.addEventListener("touchstart", start.bind(this), false);
+    db.addEventListener("touchmove", move.bind(this), false);
+
+    function start(aEvent) {
+      aEvent.preventDefault();
+      tracking = true;
+      orgX = aEvent.changedTouches[0].pageX;
+    }
+
+    function move(aEvent) {
+      if (!tracking) return;
+      newX = aEvent.changedTouches[0].pageX;
+      if (orgX - newX > 100) {
+        tracking = false;
+        this.forward();
+      } else {
+        if (orgX - newX < -100) {
+          tracking = false;
+          this.back();
+        }
+      }
+    }
+  }
+
+  /* Adapt the size of the slides to the window */
+
+  Dz.onresize = function() {
+    var db = document.body;
+    var sx = db.clientWidth / window.innerWidth;
+    var sy = db.clientHeight / window.innerHeight;
+    var transform = "scale(" + (1/Math.max(sx, sy)) + ")";
+
+    db.style.MozTransform = transform;
+    db.style.WebkitTransform = transform;
+    db.style.OTransform = transform;
+    db.style.msTransform = transform;
+    db.style.transform = transform;
+  }
+
+
+  Dz.getDetails = function(aIdx) {
+    var s = $("section:nth-of-type(" + aIdx + ")");
+    var d = s.$("details");
+    return d ? d.innerHTML : "";
+  }
+
+  Dz.onmessage = function(aEvent) {
+    var argv = aEvent.data.split(" "), argc = argv.length;
+    argv.forEach(function(e, i, a) { a[i] = decodeURIComponent(e) });
+    var win = aEvent.source;
+    if (argv[0] === "REGISTER" && argc === 1) {
+      this.remoteWindows.push(win);
+      this.postMsg(win, "REGISTERED", document.title, this.slides.length);
+      this.postMsg(win, "CURSOR", this.idx + "." + this.step);
+      return;
+    }
+    if (argv[0] === "BACK" && argc === 1)
+      this.back();
+    if (argv[0] === "FORWARD" && argc === 1)
+      this.forward();
+    if (argv[0] === "START" && argc === 1)
+      this.goStart();
+    if (argv[0] === "END" && argc === 1)
+      this.goEnd();
+    if (argv[0] === "TOGGLE_CONTENT" && argc === 1)
+      this.toggleContent();
+    if (argv[0] === "SET_CURSOR" && argc === 2)
+      window.location.hash = "#" + argv[1];
+    if (argv[0] === "GET_CURSOR" && argc === 1)
+      this.postMsg(win, "CURSOR", this.idx + "." + this.step);
+    if (argv[0] === "GET_NOTES" && argc === 1)
+      this.postMsg(win, "NOTES", this.getDetails(this.idx));
+  }
+
+  Dz.toggleContent = function() {
+    // If a Video is present in this new slide, play it.
+    // If a Video is present in the previous slide, stop it.
+    var s = $("section[aria-selected]");
+    if (s) {
+      var video = s.$("video");
+      if (video) {
+        if (video.ended || video.paused) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      }
+    }
+  }
+
+  Dz.setCursor = function(aIdx, aStep) {
+    // If the user change the slide number in the URL bar, jump
+    // to this slide.
+    aStep = (aStep != 0 && typeof aStep !== "undefined") ? "." + aStep : ".0";
+    window.location.hash = "#" + aIdx + aStep;
+  }
+
+  Dz.onhashchange = function() {
+    var cursor = window.location.hash.split("#"),
+        newidx = 1,
+        newstep = 0;
+    if (cursor.length == 2) {
+      newidx = ~~cursor[1].split(".")[0];
+      newstep = ~~cursor[1].split(".")[1];
+      if (newstep > Dz.slides[newidx - 1].$$('.incremental > *').length) {
+        newstep = 0;
+        newidx++;
+      }
+    }
+    this.setProgress(newidx, newstep);
+    if (newidx != this.idx) {
+      this.setSlide(newidx);
+    }
+    if (newstep != this.step) {
+      this.setIncremental(newstep);
+    }
+    for (var i = 0; i < this.remoteWindows.length; i++) {
+      this.postMsg(this.remoteWindows[i], "CURSOR", this.idx + "." + this.step);
+    }
+  }
+
+  Dz.back = function() {
+    if (this.idx == 1 && this.step == 0) {
+      return;
+    }
+    if (this.step == 0) {
+      this.setCursor(this.idx - 1,
+                     this.slides[this.idx - 2].$$('.incremental > *').length);
+    } else {
+      this.setCursor(this.idx, this.step - 1);
+    }
+  }
+
+  Dz.forward = function() {
+    if (this.idx >= this.slides.length &&
+        this.step >= this.slides[this.idx - 1].$$('.incremental > *').length) {
+        return;
+    }
+    if (this.step >= this.slides[this.idx - 1].$$('.incremental > *').length) {
+      this.setCursor(this.idx + 1, 0);
+    } else {
+      this.setCursor(this.idx, this.step + 1);
+    }
+  }
+
+  Dz.goStart = function() {
+    this.setCursor(1, 0);
+  }
+
+  Dz.goEnd = function() {
+    var lastIdx = this.slides.length;
+    var lastStep = this.slides[lastIdx - 1].$$('.incremental > *').length;
+    this.setCursor(lastIdx, lastStep);
+  }
+
+  Dz.setSlide = function(aIdx) {
+    this.idx = aIdx;
+    var old = $("section[aria-selected]");
+    var next = $("section:nth-of-type("+ this.idx +")");
+    if (old) {
+      old.removeAttribute("aria-selected");
+      var video = old.$("video");
+      if (video) {
+        video.pause();
+      }
+    }
+    if (next) {
+      next.setAttribute("aria-selected", "true");
+      var video = next.$("video");
+      if (video && !!+this.params.autoplay) {
+        video.play();
+      }
+    } else {
+      // That should not happen
+      this.idx = -1;
+      // console.warn("Slide doesn't exist.");
+    }
+  }
+
+  Dz.setIncremental = function(aStep) {
+    this.step = aStep;
+    var old = this.slides[this.idx - 1].$('.incremental > *[aria-selected]');
+    if (old) {
+      old.removeAttribute('aria-selected');
+    }
+    var incrementals = $$('.incremental');
+    if (this.step <= 0) {
+      $$.forEach(incrementals, function(aNode) {
+        aNode.removeAttribute('active');
+      });
+      return;
+    }
+    var next = this.slides[this.idx - 1].$$('.incremental > *')[this.step - 1];
+    if (next) {
+      next.setAttribute('aria-selected', true);
+      next.parentNode.setAttribute('active', true);
+      var found = false;
+      $$.forEach(incrementals, function(aNode) {
+        if (aNode != next.parentNode)
+          if (found)
+            aNode.removeAttribute('active');
+          else
+            aNode.setAttribute('active', true);
+        else
+          found = true;
+      });
+    } else {
+      setCursor(this.idx, 0);
+    }
+    return next;
+  }
+
+  Dz.goFullscreen = function() {
+    var html = $('html'),
+        requestFullscreen = html.requestFullscreen || html.requestFullScreen || html.mozRequestFullScreen || html.webkitRequestFullScreen;
+    if (requestFullscreen) {
+      requestFullscreen.apply(html);
+    }
+  }
+  
+  Dz.setProgress = function(aIdx, aStep) {
+    var slide = $("section:nth-of-type("+ aIdx +")");
+    if (!slide)
+      return;
+    var steps = slide.$$('.incremental > *').length + 1,
+        slideSize = 100 / (this.slides.length - 1),
+        stepSize = slideSize / steps;
+    this.progressBar.style.width = ((aIdx - 1) * slideSize + aStep * stepSize) + '%';
+  }
+  
+  Dz.postMsg = function(aWin, aMsg) { // [arg0, [arg1...]]
+    aMsg = [aMsg];
+    for (var i = 2; i < arguments.length; i++)
+      aMsg.push(encodeURIComponent(arguments[i]));
+    aWin.postMessage(aMsg.join(" "), "*");
+  }
+  
+  function init() {
+    Dz.init();
+    window.onkeydown = Dz.onkeydown.bind(Dz);
+    window.onresize = Dz.onresize.bind(Dz);
+    window.onhashchange = Dz.onhashchange.bind(Dz);
+    window.onmessage = Dz.onmessage.bind(Dz);
+  }
+
+  window.onload = init;
+</script>
+
+
+<script> // Helpers
+  if (!Function.prototype.bind) {
+    Function.prototype.bind = function (oThis) {
+
+      // closest thing possible to the ECMAScript 5 internal IsCallable
+      // function 
+      if (typeof this !== "function")
+      throw new TypeError(
+        "Function.prototype.bind - what is trying to be fBound is not callable"
+      );
+
+      var aArgs = Array.prototype.slice.call(arguments, 1),
+          fToBind = this,
+          fNOP = function () {},
+          fBound = function () {
+            return fToBind.apply( this instanceof fNOP ? this : oThis || window,
+                   aArgs.concat(Array.prototype.slice.call(arguments)));
+          };
+
+      fNOP.prototype = this.prototype;
+      fBound.prototype = new fNOP();
+
+      return fBound;
+    };
+  }
+
+  var $ = (HTMLElement.prototype.$ = function(aQuery) {
+    return this.querySelector(aQuery);
+  }).bind(document);
+
+  var $$ = (HTMLElement.prototype.$$ = function(aQuery) {
+    return this.querySelectorAll(aQuery);
+  }).bind(document);
+
+  $$.forEach = function(nodeList, fun) {
+    Array.prototype.forEach.call(nodeList, fun);
+  }
+
+</script>
+<!-- vim: set fdm=marker: }}} -->
+</body>
+</html>
