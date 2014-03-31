@@ -113,7 +113,7 @@ Illustrationen  $\rightarrow$  Contributor
 
 * Nachname, Vorname $\rightarrow$ Vorname Nachname
 * Sehr hilfreich: Reguläre Ausdrücke:\
-  `(.+), (.+)` $\Rightarrow$  `$1 $2`
+  `(.+), (.+)` $\Rightarrow$  `$2 $1`
 
 # Schwierigkeiten am Beispiel "Nachname, Vorname"
 
@@ -157,11 +157,10 @@ Prinzip in Unix und anderen Systemen
 
 Rekonstruktion einer Konvertierung
 
-Buch 
-* $\rightarrow$ PICA-Format 
-* $\rightarrow$ MARC-Format
-* $\rightarrow$ MODS-Format
-* $\rightarrow$ Dublin-Core
+* Dokument $\rightarrow$ PICA-Format 
+* PICA $\rightarrow$ MARC-Format
+* MARC $\rightarrow$ MODS-Format
+* MODS $\rightarrow$ Dublin-Core
 
 In Gruppen: 
 * Titel
