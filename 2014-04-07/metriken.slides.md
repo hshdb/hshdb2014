@@ -1,21 +1,25 @@
-% Publikations- und Wissenschaftsmetriken
+% Alternative Publikations- und Wissenschaftsmetriken
+% Dr. Jakob Voß
+% 2014-04-07
 
-# TODO
+# Bibliometrie
 
-* Bibliometrie
-* Motivation
-    * Messung & Erforschung von
-        * Einfluss
-        * Qualität
-        * Netzwerken
-    * Publikationsflut (exponentiell)
+* Messung & Erforschung von
+    * Einfluss
+    * Qualität
+    * Netzwerken
+* Grundlage: Zitationen
 
-# Qualität in der Wissenschaft
+# Motivation für Publikations- und Wissenschaftsmetriken
+
+Qualität in der Wissenschaft
 
 * Peer-Review
 * Reproduzierbarkeit
 
-Problem: zuviele Publikationen
+Information Overload
+
+* Problem: exponentielle Publikationsflut
 
 # Zitationen
 
