@@ -46,13 +46,10 @@ im [internen Repository](https://github.com/hshdb/hshdb2014-aufgaben).
     - **[Datenkonvertierung](2014-03-31/datenkonvertierung.slides.md)**
 
 `2014-04-07` 
-  : - **Repository-Software & -Workflows**: 
-      Softwareysteme (DSpace, EPub, OPUS, MyCore...),
-      Arten von Repositories und Archiven (arXiv, SSRRN, RePEC, Hochschulserver,
-      Internet Archive, Wikimedia Commons, private Sammlungen ...)
-    -  *Verfügbarkeitsanzeige*
-    -  *Crowdcrafting/PyBossa*
-    - **Crowdsourcing & Crowdfunding**
+    - *Crowdcrafting/PyBossa*
+    - **[Crowdsourcing & Crowdfunding](2014-03-07/crowdsourcing-und-funding.slides.md)**
+    - *Verfügbarkeitsanzeige*
+    - **[Hinweise zur Ausarbeitung](2014-03-07/hinweise-ausarbeitung.slides.md)**
 
 `2014-04-14` "Identifikation"
   : - **Identifier-Systeme**: 
@@ -127,6 +124,10 @@ im [internen Repository](https://github.com/hshdb/hshdb2014-aufgaben).
 Die folgenden ursprünglich vorgesehenen Themen werden bei Bedarf im Rahmen
 anderer Termine behandelt
 
+- **Repository-Software & -Workflows allgemein**: 
+   Softwareysteme (DSpace, EPub, OPUS, MyCore...),
+   Arten von Repositories und Archiven (arXiv, SSRRN, RePEC, Hochschulserver,
+   Internet Archive, Wikimedia Commons, private Sammlungen ...)
 - **Metriken:** Quantitative Bewertungsverfahren wissenschaftlicher Publikationen
 - **Datenjournalismus**
 
