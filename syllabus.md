@@ -45,11 +45,11 @@ im [internen Repository](https://github.com/hshdb/hshdb2014-aufgaben).
       Indexierung, Ranking vs Bool, Metasuche, Solr/VuFind... 
     - **[Datenkonvertierung](2014-03-31/datenkonvertierung.slides.md)**
 
-`2014-04-07` 
+`2014-04-07`
     - *Crowdcrafting/PyBossa*
-    - **[Crowdsourcing & Crowdfunding](2014-03-07/crowdsourcing-und-funding.slides.md)**
+    - **[Crowdsourcing & Crowdfunding](2014-04-07/crowdsourcing-und-funding.slides.md)**
     - *Verfügbarkeitsanzeige*
-    - **[Hinweise zur Ausarbeitung](2014-03-07/hinweise-ausarbeitung.slides.md)**
+    - **[Hinweise zur Ausarbeitung](2014-04-07/hinweise-ausarbeitung.slides.md)**
 
 `2014-04-14` "Identifikation"
   : - **Identifier-Systeme**: 
