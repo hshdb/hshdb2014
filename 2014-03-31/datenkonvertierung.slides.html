@@ -2,8 +2,8 @@
 <head>
 <meta charset="utf-8">
   <meta name="author" content="Dr. Jakob Voß" />
-  <meta name="dcterms.date" content="2014-03-31" />
-  <title>hshdb2014 - Suchmaschinen</title>
+  <meta name="dcterms.date" content="2014-04-07" />
+  <title>hshdb2014 - Datenkonvertierung</title>
   <style type="text/css">code{white-space: pre;}</style>
 <style>
   html { background-color: black; }
@@ -79,419 +79,295 @@
 </head>
 <body>
 <section>
-  <h1 class="title">Suchmaschinen</h1>
+  <h1 class="title">Datenkonvertierung</h1>
   <h2 class="author">Dr. Jakob Voß</h2>
-  <h3 class="date">2014-03-31</h3>
+  <h3 class="date">2014-04-07</h3>
 </section>
-<section id="eingangsfrage-wie-funktioniert-google" class="slide level1">
-<h1>Eingangsfrage: Wie funktioniert Google?</h1>
-<p>Modul <em>Information Retrieval aus dem Internet</em> (2. Semester)</p>
-</section>
-<section id="eingangsfrage-wie-funktioniert-google-1" class="slide level1">
-<h1>Eingangsfrage: Wie funktioniert Google?</h1>
+<section id="was-ist-datenkonvertierung" class="slide level1">
+<h1>Was ist Datenkonvertierung?</h1>
+<p>Überführung von Daten von einem Format in ein anderes Format</p>
 <ul>
-<li>Google kocht auch nur mit Wasser</li>
-<li><strong>Information Retrieval</strong></li>
-<li>Etablierte Konzepte und Verfahren, versteckt hinter Optimierung, Marketing &amp; Desinteresse</li>
-</ul>
-</section>
-<section id="eingangsfrage-wie-funktioniert-google-2" class="slide level1">
-<h1>Eingangsfrage: Wie funktioniert Google?</h1>
-<p><a href="http://research.google.com/">http://research.google.com/</a></p>
-<ul>
-<li>Google kocht auch nur mit Wasser, allerdings mit
-<ul>
-<li>Hochdruckkochtöpfen</li>
-<li>Meerwasserentsalzunganlagen</li>
-<li>Schwerwasser-Kernfusionsreaktoren</li>
+<li><a href="http://d-nb.info/gnd/4377497-0">http://d-nb.info/gnd/4377497-0</a><br /> Umsetzung (Informatik) = Konversion (Informatik)</li>
+<li><a href="https://www.wikidata.org/wiki/Q1783551">https://www.wikidata.org/wiki/Q1783551</a><br /> Data conversion</li>
 <li>…</li>
+</ul>
+</section>
+<section id="was-ist-datenkonvertierung-1" class="slide level1">
+<h1>Was ist Datenkonvertierung?</h1>
+<p>Überführung von Daten von einem Format in ein anderes Format</p>
+<dl>
+<dt>Überführung</dt>
+<dd>Konvertierung, Konversion, Transformation, Mapping…
+</dd>
+<dt>Daten</dt>
+<dd>Datensätze, digitale Objekte/Dokumente, Dateien…
+</dd>
+<dt>Format</dt>
+<dd>Datenstruktur, Dateiformat…
+</dd>
+</dl>
+<p>Quellformat <span class="math"> → </span> <em>Konvertierung</em> <span class="math"> → </span> Zielformat</p>
+</section>
+<section id="anwendungen-für-normalnutzer" class="slide level1">
+<h1>Anwendungen für Normalnutzer</h1>
+<ul>
+<li>Einfache Bild- u.Ä. Bearbeitungen von digitalen Dokumenten</li>
+<li>“Datei speichern unter…”</li>
+<li>Copy &amp; Paste</li>
+<li>Automatisch bei Kopieren und Verschicken von Daten</li>
+</ul>
+</section>
+<section id="anwendungen-für-informationsmanager" class="slide level1">
+<h1>Anwendungen für Informationsmanager</h1>
+<ul>
+<li>Import/Export von Daten</li>
+<li>Migration in neue Systeme</li>
+<li>Informationsintegration</li>
+</ul>
+</section>
+<section id="arten-von-konvertierungen" class="slide level1">
+<h1>Arten von Konvertierungen</h1>
+<ul>
+<li>Verlustbehaftet (z.B. Farbbild in Graustufen)</li>
+<li>Verlustfrei<sup><a href="#fn1" class="footnoteRef" id="fnref1">1</a></sup> (z.B. PNG nach TIFF)</li>
+</ul>
+</section>
+<section id="regelbasierte-überführung-von-daten" class="slide level1">
+<h1>Regelbasierte Überführung von Daten</h1>
+<p>Quellformat <span class="math"> → </span> <em>Konvertierungsregeln</em> <span class="math"> → </span> Zielformat</p>
+</section>
+<section id="warum-regelbasiert" class="slide level1">
+<h1>Warum regelbasiert?</h1>
+<ul>
+<li><p>Konvertierung (meist) für viele Datensätze</p></li>
+<li><p>Ohne Regeln sind alles Einzelfälle</p></li>
+<li><p>Allgemeine Be- oder Verarbeitungen statt <del>Konvertierungen</del></p></li>
+</ul>
+</section>
+<section id="beispiel-bildbearbeitung" class="slide level1">
+<h1>Beispiel: Bildbearbeitung</h1>
+<dl>
+<dt>Regelbasiert</dt>
+<dd>Thumbnail erstellen
+</dd>
+<dt>Manuell</dt>
+<dd>Bildmotiv passend zuschneiden
+</dd>
+</dl>
+</section>
+<section id="beispiel-konvertierung-in-großbuchstaben" class="slide level1">
+<h1>Beispiel: Konvertierung in Großbuchstaben</h1>
+<ul>
+<li>Einfache Regel</li>
+<li>Problemfälle
+<ul>
+<li>Unklare Regeln</li>
+<li>Unvorhergesehene Quelldaten</li>
 </ul></li>
 </ul>
 </section>
-<section id="kernbestandteile-einer-suchmaschine" class="slide level1">
-<h1>Kernbestandteile einer Suchmaschine</h1>
+<section id="regelbasierte-überführung-von-daten-1" class="slide level1">
+<h1>Regelbasierte Überführung von Daten</h1>
 <ul>
-<li>Datenquellen/-bestand</li>
-<li><strong>Index</strong></li>
-<li><strong>Anfragesprache</strong></li>
-<li>Suchoberfläche</li>
-</ul>
-</section>
-<section id="beispiel-gbv-zentral-index" class="slide level1">
-<h1>Beispiel: GBV-Zentral Index</h1>
-<p><a href="http://www.gbv.de/wikis/cls/findex.gbv.de">http://www.gbv.de/wikis/cls/findex.gbv.de</a></p>
+<li>Eindeutige Regeln bilden einen <strong>Algorithmus</strong>
 <ul>
-<li>Suchmaschinenindex aller bibliographischen Daten des GBV</li>
-<li>Über 110 Millionen Datensätze
-<ul>
-<li>ca. 40 Millionen Datensätze des GBV Gesamtkatalog</li>
-<li>ca. 43 Millionen Artikeldaten Online Contents</li>
-<li>ca. 23 Millionen Artikeldaten der Nationallizenzen</li>
-<li>Weitere Inhalte, z.B. DOAJ</li>
+<li>semi-formal als Tabelle, Diagramm, Beschreibung…</li>
+<li>formal als Implementierung in einer Programmiersprache</li>
 </ul></li>
-<li>Serviceangebot der VZG für GBV-Bibliotheken zur Verwendung in Discovery-Interfaces (VuFind u.A.)</li>
+<li>Eindeutige Konvertierungsvorschrift sind <em>immer</em> Programme!</li>
 </ul>
+<p>Konvertierungs-programm, -skript, -mapping, -tabelle…</p>
 </section>
-<section id="beispiel-google-anfragesyntax" class="slide level1">
-<h1>Beispiel: Google-Anfragesyntax</h1>
-<p><a href="https://support.google.com/websearch/answer/136861">https://support.google.com/websearch/answer/136861</a></p>
+<section class="slide level1">
+
+<figure>
+<img src="../img/Euclid_flowchart_1.png" />
+</figure>
+</section>
+<section id="algorithmen-und-programme" class="slide level1">
+<h1>Algorithmen und Programme</h1>
 <ul>
-<li>Wortgruppen in Anführungszeichen (<code>&quot;Äpfel und Birnen&quot;</code>)</li>
-<li>Oder-Verknüpfung (<code>Äpfel OR Birnen</code>)</li>
-<li>Negation (<code>Äpfel -Birnen</code>)</li>
-<li>Platzhalter (<code>Äpfel und * vergleichen</code>)</li>
-<li>Zahlenbreiche (<code>11...13 Uhr</code>)</li>
-<li>Domain-Beschränkung (<code>site:hs-hannover.de</code>)</li>
-<li>Mit Link auf eine andere Seite (<code>link:hs-hannover.de</code>)</li>
-<li>Ähnliche Seiten, Info und Cache (<code>related:</code>, <code>info:</code>,<code>cache:</code>)</li>
+<li>Gegenstand der Informatik</li>
+<li>Formuliert in einer Programmiersprache</li>
+<li>Können beliebig komplex sein</li>
+<li>Lassen sich nur schwer überprüfen</li>
 </ul>
 </section>
-<section id="funktionsweise-eine-suche-indexbasiert" class="slide level1">
-<h1>Funktionsweise eine Suche (indexbasiert)</h1>
-<ol type="1">
-<li>Interpretation der Anfrage</li>
-<li><strong>Ermittlung &amp; Ranking oder Ergebnisse</strong></li>
-<li>Darstellung der Ergebnisse</li>
-</ol>
-</section>
-<section id="ermittlung-ranking-der-ergebnisse" class="slide level1">
-<h1>Ermittlung &amp; Ranking der Ergebnisse</h1>
+<section id="programme-zur-datenkonvertierung" class="slide level1">
+<h1>Programme zur Datenkonvertierung</h1>
 <ul>
-<li>Boolesche Algebra und Relationen</li>
-<li>Ähnlichkeitsfunktion</li>
-</ul>
-</section>
-<section id="zwei-verschiedene-suchparadigmen" class="slide level1">
-<h1>Zwei verschiedene Suchparadigmen</h1>
-<p><strong>Paradigma</strong></p>
+<li>Oft weniger komplex (zumindest in Teilen)</li>
+<li>Weniger umfangreiche Programmierkenntnisse</li>
+<li>Nicht alle Datenkonvertierer sind Programmierer</li>
+<li>Aufteilung in Beschreibung und Implementierung
 <ul>
-<li>Vorherrschende Denkweise und Denkmuster</li>
-<li>akzeptierte / nicht hinterfragte Grundannahmen</li>
-<li>Mentales Modell<sup><a href="#fn1" class="footnoteRef" id="fnref1">1</a></sup></li>
+<li>Beschreibung und Implementierung weichen voneinander ab</li>
+<li>Regeln müssen angepasst, korrigiert, verändert werden</li>
+</ul></li>
+<li>Aufteilung in Programm und Konfiguration (DSL)</li>
 </ul>
-<p>Menschliche Sichtweisen ändern sich langsam. Sehr langsam.</p>
 </section>
-<section id="zwei-verschiedene-suchparadigmen-1" class="slide level1">
-<h1>Zwei verschiedene Suchparadigmen</h1>
-<ul>
-<li>“Datenbank” (z.B. OPAC, Wikidata..)</li>
-<li>“Discovery-Interface” (z.B. VuFind, Google…)</li>
-</ul>
-<p><em>Achtung: Suche <span class="math"> ≠ </span> Datenbestand!</em></p>
-</section>
-<section id="zwei-verschiedene-suchparadigmen-2" class="slide level1">
-<h1>Zwei verschiedene Suchparadigmen</h1>
+<section id="beispiel-konkordanz-tabelle" class="slide level1">
+<h1>Beispiel: (Konkordanz-)Tabelle</h1>
 <table>
-<col style="width: 54%" /><col style="width: 45%" /><thead>
-<tr class="header">
-<th style="text-align: center;">Boolesche Anfrage</th>
-<th style="text-align: left;">Ranking</th>
-</tr>
-</thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">präzise Suchanfrage<br />in spezieller Syntax</td>
-<td style="text-align: left;">beliebige, einfache Suchanfragen</td>
+<td style="text-align: left;">Datum</td>
+<td style="text-align: center;"><span class="math"> → </span></td>
+<td style="text-align: left;">Date</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Erlernen notwendig</td>
-<td style="text-align: left;">intuitiv benutzbar</td>
+<td style="text-align: left;">Autor</td>
+<td style="text-align: center;"><span class="math"> → </span></td>
+<td style="text-align: left;">Creator</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">exakte Treffer</td>
-<td style="text-align: left;">möglichst passende Treffer</td>
+<td style="text-align: left;">Übersetzung</td>
+<td style="text-align: center;"><span class="math"> → </span></td>
+<td style="text-align: left;">Contributor</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">geringe Fehlertoleranz<br />(“0 Treffer”)</td>
-<td style="text-align: left;">fehlertolerant aber falsch-positive</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Treffer unsortiert oder<br />nach klarem Kriterium</td>
-<td style="text-align: left;">Sortiert nach “Relevanz”</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Szenario: “bekannte” Dokumente finden</td>
-<td style="text-align: left;">Szenario: Dokumente “entdecken”</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Mathematik sichtbar<br />(Boolesche Algebra)</td>
-<td style="text-align: left;">Mathematik versteht (Vektorraum)</td>
+<td style="text-align: left;">Illustrationen</td>
+<td style="text-align: center;"><span class="math"> → </span></td>
+<td style="text-align: left;">Contributor</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="kernbestandteile-einer-suchmaschine-1" class="slide level1">
-<h1>Kernbestandteile einer Suchmaschine</h1>
+<section id="beispiel-ersetzungsregeln" class="slide level1">
+<h1>Beispiel: Ersetzungsregeln</h1>
 <ul>
-<li><strong>Datenquellen/-bestand</strong></li>
-<li><strong>Index</strong></li>
-<li>Anfragesprache</li>
-<li>Suchoberfläche</li>
-</ul>
-<p><em>Siehe dazu auch die Einheiten zur Aggregation von Metadaten und zu Crawling &amp; Scraping.</em></p>
-</section>
-<section id="arten-von-suchmaschinen-nach-datenbestand-index" class="slide level1">
-<h1>Arten von Suchmaschinen (nach Datenbestand &amp; Index)</h1>
-<ul>
-<li>Indexbasierte Suchmaschine</li>
-<li>Föderierte Suchmaschine</li>
-<li>Metasuchmaschine</li>
+<li>Nachname, Vorname <span class="math"> → </span> Vorname Nachname</li>
+<li>Sehr hilfreich: Reguläre Ausdrücke:<br /> <code>(.+), (.+)</code> <span class="math"> ⇒ </span> <code>$2 $1</code></li>
 </ul>
 </section>
-<section class="slide level1">
-
-<figure>
-<img src="../img/Search-engine-diagram-de.png" />
-</figure>
-</section>
-<section class="slide level1">
-
-<figure>
-<img src="../img/Federated-search-de.png" />
-</figure>
-</section>
-<section class="slide level1">
-
-<figure>
-<img src="../img/Meta-search-de.png" />
-</figure>
-</section>
-<section id="kernbestandteile-einer-suchmaschine-2" class="slide level1">
-<h1>Kernbestandteile einer Suchmaschine</h1>
+<section id="schwierigkeiten-am-beispiel-nachname-vorname" class="slide level1">
+<h1>Schwierigkeiten am Beispiel “Nachname, Vorname”</h1>
 <ul>
-<li>Datenquellen/-bestand</li>
-<li><strong>Index</strong></li>
-<li>Anfragesprache</li>
-<li>Suchoberfläche</li>
-</ul>
-</section>
-<section id="index" class="slide level1">
-<h1>Index</h1>
-<ul>
-<li>Erstellung aus dem Datenbestand (Dokumenten)
-<ul>
-<li>Manuelle Erstellung von Metadaten (siehe Einheit zu <em>Tagging &amp; Erschließung</em>)</li>
-<li>Automatische Indexierung</li>
-</ul></li>
-<li>Speicherung in Indexstrukturen zur schnellen Abfrage</li>
-</ul>
-</section>
-<section id="indexarten" class="slide level1">
-<h1>Indexarten</h1>
-<dl>
-<dt>Volltextindex</dt>
-<dd>Verarbeitung natürlicher Sprache
-</dd>
-<dt>Feldbasierter Index</dt>
-<dd>vorhandene Daten (z.B. Jahreszahl)
-</dd>
-<dt>Objekt-Index</dt>
-<dd>Datenmodell (z.B. Bilder, Koordinaten…)
-</dd>
-</dl>
-<p>Ein gesamter Suchindex enthält meist verschiedene Teilindizes.</p>
-</section>
-<section id="beispiel-volltextindexierung" class="slide level1">
-<h1>Beispiel Volltextindexierung</h1>
-<ul>
-<li>Worthäufigkeiten und inverse Dokumentenhäufigkeit
-<ul>
-<li><strong>tf</strong> Wort häufig im Text: relevant für Text</li>
-<li><strong>idf</strong> Wort häufig in Texten: wenig relevant</li>
-</ul></li>
-<li>Verbesserung durch Textlinguistische Verfahren: Natural Language Processing (NLP)
-<ul>
-<li>Flexion (“Äpfel” <span class="math"> ⇒ </span> “Apfel”)</li>
-<li>Analyse von Dokument- und Satzstruktur etc.</li>
-<li>Named-Entity Recognition</li>
-</ul></li>
-</ul>
-</section>
-<section id="aufbau-eines-index" class="slide level1">
-<h1>Aufbau eines Index</h1>
-<ul>
-<li>Invertierte Datei</li>
-<li>Beispiel: Indexansicht bei PSI (GBV-Kataloge)<br /> <a href="http://gso.gbv.de/DB=2.1/PPNSET?PPN=640209335&amp;PRS=PP%7F">http://gso.gbv.de/DB=2.1/PPNSET?PPN=640209335&amp;PRS=PP%7F</a></li>
-</ul>
-</section>
-<section id="beispiel-gbv-zentral-index-1" class="slide level1">
-<h1>Beispiel: GBV-Zentral Index</h1>
-<p><a href="http://www.gbv.de/wikis/cls/findex.gbv.de">http://www.gbv.de/wikis/cls/findex.gbv.de</a></p>
-<ul>
-<li>Basierend auf der Suchmaschinen-Software <em>Solr</em></li>
-<li>Läuft als “Cloud” auf mehreren Rechnern</li>
-<li>Konfiguration siehe <a href="https://github.com/gbv/findex-config/blob/master/SolrCloud/solrmarc_config/VZG_index.properties">https://github.com/gbv/findex-config/blob/master/SolrCloud/solrmarc_config/VZG_index.properties</a></li>
-</ul>
-</section>
-<section id="übung" class="slide level1">
-<h1>Übung</h1>
-<p>Datensatz an der HS Hannover (ISIL DE-960), z.B. Thomas S. Kuhn’s “Die Struktur wissenschaftlicher Revolutionen”</p>
-<ul>
-<li>Im OPAC <a href="http://opac.tib.uni-hannover.de/DB=4/">http://opac.tib.uni-hannover.de/DB=4/</a></li>
-<li>In VuFind <a href="https://katalog.bib.hs-hannover.de/">https://katalog.bib.hs-hannover.de/</a></li>
-<li>MARC-Datensatz (per unAPI oder VuFind-Internformat-Ansicht)</li>
-<li>Analyse der Solr-Konfiguration (siehe findex-config)</li>
-<li>Eingrenzung Suche nach Autor und Publikationsdatum</li>
-</ul>
-</section>
-<section id="rankingverfahren" class="slide level1">
-<h1>Rankingverfahren</h1>
-<ul>
-<li>Vektorraummodell</li>
-<li>tf-idf</li>
-<li>PageRank (Links zwischen Dokumenten)</li>
+<li>“Otto”</li>
+<li>“Katharin die Große, Kaiserin von Russland”</li>
+<li>“Welikaja, Jekaterina (russ. Великая, Екатерина)”</li>
 <li>…</li>
 </ul>
 </section>
-<section id="möglichkeiten-zur-beeinflussung-des-rankings" class="slide level1">
-<h1>Möglichkeiten zur Beeinflussung des Rankings</h1>
+<section id="technische-schwierigkeiten-am-beispiel-dieser-folien" class="slide level1">
+<h1>Technische Schwierigkeiten am Beispiel dieser Folien</h1>
+<p><code>datenkonvertierung.slides.md</code> (Markdown in Unicode)<br /><span class="math"> → </span> LaTeX <span class="math"> → </span> <code>datenkonvertierung.slides.pdf</code> (PDF)</p>
+</section>
+<section id="mappings-vs.konvertierungen" class="slide level1">
+<h1>Mappings vs. Konvertierungen</h1>
 <ul>
-<li>Indexanreicherung (Strategie SEO)</li>
-<li>Anfrageexpansion (Strategie Werbung)</li>
+<li>Einfache Mappings</li>
+<li>Transformationen der Struktur</li>
 </ul>
 </section>
-<section id="möglichkeiten-zur-beinflussing-des-rankings" class="slide level1">
-<h1>Möglichkeiten zur Beinflussing des Rankings</h1>
+<section id="datenverarbeitung-durch-konvertierungen" class="slide level1">
+<h1>Datenverarbeitung durch Konvertierungen</h1>
 <ul>
-<li>Möglichst viele verschiedene Dokumenteigenschaften
-<ul>
-<li>Inhalt, Herkunft, Bewertung, …</li>
-<li>Reichhaltige Metadaten und Volltexte</li>
-</ul></li>
-<li>Möglichst verschiedene Eigenschaften der Anfrage
-<ul>
-<li>Unterschiedliche Interpretationen an spezielle Suchmaschinen</li>
-<li>Personalisierung (Account, Standort u.v.a.m.)</li>
-</ul></li>
-</ul>
-<p>Google bezieht nach eigenen Angaben mehr als 200 Faktoren ins Ranking ein <sup><a href="#fn2" class="footnoteRef" id="fnref2">2</a></sup></p>
-</section>
-<section id="kernbestandteile-einer-suchmaschine-3" class="slide level1">
-<h1>Kernbestandteile einer Suchmaschine</h1>
-<ul>
-<li>Datenquellen/-bestand</li>
-<li>Index</li>
-<li><strong>Anfragesprache</strong></li>
-<li>Suchoberfläche</li>
+<li>a -&gt; A</li>
+<li>b -&gt; B</li>
+<li>c -&gt; C</li>
+<li>…</li>
 </ul>
 </section>
-<section id="anfragesprache" class="slide level1">
-<h1>Anfragesprache</h1>
+<section id="datenverarbeitung-durch-aggregtionanreicherung" class="slide level1">
+<h1>Datenverarbeitung durch Aggregtion/Anreicherung</h1>
 <ul>
-<li>Discovery-Interface:<br /> Anfrage zum Zusammenklicken und Expandieren</li>
-<li>Datenbank:<br /> Boolesche Anfrage</li>
-</ul>
-<p>Kombinationen möglich!</p>
-</section>
-<section id="boolesche-anfragen-beispiele" class="slide level1">
-<h1>Boolesche Anfragen: Beispiele</h1>
-<ul>
-<li>Operatoren auf Ergebnismennegen (<code>AND</code>, <code>OR</code>, <code>NOT</code>)</li>
-<li>Ggf. weitere Verknüpfungen durch Relationen</li>
-<li>Ggf. Sortierung nach Kriterium (<code>ORDER BY</code>)</li>
-<li>Beispiele
-<ul>
-<li>SQL</li>
-<li>Suchanfrage im OPAC</li>
-<li><a href="http://wdq.wmflabs.org">Wikidata-Query</a></li>
-</ul></li>
+<li>a &amp; b -&gt; ab</li>
+<li>a &amp; X -&gt; C</li>
 </ul>
 </section>
-<section id="beispiel-eine-booleschen-anfragesprache-wikidata-query" class="slide level1">
-<h1>Beispiel eine Booleschen Anfragesprache: WikiData-Query</h1>
-<ul>
-<li>author (P50): Thomas Kuhn (Q184980)<br /> <code>claim[50:184980]</code></li>
-<li>Komplexere Beispiele siehe<br /> <a href="http://wdq.wmflabs.org/api_documentation.html">http://wdq.wmflabs.org/api_documentation.html</a></li>
-</ul>
-</section>
-<section id="beispiel-solr-suchsyntax" class="slide level1">
-<h1>Beispiel: Solr-Suchsyntax</h1>
-<p>Publikationen von Thomas S. Kuhn seit 1980<br /><code>author:[Thomas S. Kuhn] AND publishDate:[1980 TO *]</code></p>
-</section>
-<section id="kernbestandteile-einer-suchmaschine-4" class="slide level1">
-<h1>Kernbestandteile einer Suchmaschine</h1>
-<ul>
-<li>Datenquellen/-bestand</li>
-<li>Index</li>
-<li>Anfragesprache</li>
-<li><strong>Suchoberfläche</strong></li>
-</ul>
-</section>
-<section id="suchoberfläche" class="slide level1">
-<h1>Suchoberfläche</h1>
+<section id="konvertierungs--und-verarbeitungs-pipelines" class="slide level1">
+<h1>Konvertierungs- und Verarbeitungs-Pipelines</h1>
+<p>a &amp; b -&gt; ab -&gt; AB -&gt; BA …</p>
+<p>Prinzip in Unix und anderen Systemen</p>
 <figure>
-<img src="../img/simplicity.png" />
+<img src="../img/pipes-memo.jpg" />
 </figure>
 </section>
-<section id="suchoberfläche-1" class="slide level1">
-<h1>Suchoberfläche</h1>
+<section id="übung" class="slide level1">
+<h1>Übung</h1>
+<p>Rekonstruktion einer Konvertierung</p>
 <ul>
-<li>Prinzipiell freie Gestaltung
+<li>Dokument <span class="math"> → </span> PICA-Format</li>
+<li>PICA <span class="math"> → </span> MARC-Format</li>
+<li>MARC <span class="math"> → </span> MODS-Format</li>
+<li>MODS <span class="math"> → </span> Dublin-Core</li>
+</ul>
+<p>In Gruppen: * Titel * Contributor * Date * Subject</p>
+</section>
+<section id="daten-und-formate" class="slide level1">
+<h1>Daten und Formate</h1>
 <ul>
-<li>Sucheingabe</li>
-<li>Präsentation von Ergebnissen</li>
-</ul></li>
-<li><strong>Usability</strong> durch User Experience (UX)</li>
-<li>“So einfach wie möglich, so kompliziert wie nötig”</li>
-<li>Nutzertests!</li>
+<li>Format: Menge von möglichen Datensätzen</li>
+<li>Konvertierung aus bzw. in ein Format sollte das Format kennen, d.h.</li>
+<li>alle möglichen Sonderfälle berücksichtigen</li>
+<li>ungültige Datensätze erkennen und abweisen</li>
+<li>Spezialfall Einmal-Konvertierung</li>
 </ul>
 </section>
-<section id="suchoberfläche-facettierungdrill-down" class="slide level1">
-<h1>Suchoberfläche: Facettierung/Drill-Down</h1>
+<section id="aufbau-von-daten" class="slide level1">
+<h1>Aufbau von Daten</h1>
+<p>Werte &amp; Struktur (mit unterschiedlichen Strukturierungsgraden)</p>
+<figure>
+<img src="../img/datamodeling.png" />
+</figure>
+<p><em>siehe Einheit zu Digitalität</em></p>
+</section>
+<section id="eigenschaften-von-konvertierungsregeln" class="slide level1">
+<h1>Eigenschaften von Konvertierungsregeln</h1>
 <ul>
-<li>Prinzipiell gute Idee
+<li>Konvertierung als Mathematische Funktion/Relation</li>
+<li>Ausgangsmenge <span class="math"> → </span> Zielmenge</li>
+</ul>
+<p>Verschiedene Eigenschaften</p>
 <ul>
-<li>wenn die Datengrundlage es hergibt</li>
-<li>wenn es richtig umgesetzt wird</li>
+<li>Deterministisch</li>
+<li>Links-Total (vollständig definiert)</li>
+<li>Rechts-total (surjektiv)</li>
+<li>eindeutig (injektiv)</li>
+<li>Umkehrbar (bijektiv)</li>
+</ul>
+<p><strong>Bestimmen, welche Informationen in Daten stecken können!</strong></p>
+</section>
+<section id="qualitätskontrolle" class="slide level1">
+<h1>Qualitätskontrolle</h1>
+<ul>
+<li>Sicherstellen, dass Konvertierung “richtig” ist</li>
+<li>Richtige Konvertierung nach bekannten Regeln</li>
+<li>Richtige Konvertierung nach Beispielen</li>
+</ul>
+</section>
+<section id="qualitätskontrolle-1" class="slide level1">
+<h1>Qualitätskontrolle</h1>
+<ul>
+<li>Testfälle
+<ul>
+<li>Eingabe <span class="math"> → <sup>? </sup></span> erwartete Ausgabe</li>
+</ul></li>
+<li>Fehlererkennung
+<ul>
+<li>Eingabe <span class="math"> → </span> Ausgabe <span class="math"> = <sup>? </sup></span> erwartete Eigenschaften</li>
 </ul></li>
 </ul>
-<p>Beispiel: VuFind-Prototyp der UB Magdeburg<br /><a href="http://ubfind.ovgu.de/">http://ubfind.ovgu.de/</a></p>
 </section>
-<section id="suchmaschinen-software" class="slide level1">
-<h1>Suchmaschinen-Software</h1>
+<section id="zusammenfassung" class="slide level1">
+<h1>Zusammenfassung</h1>
 <ul>
-<li>Komponenten für einzelne Bestandteile
-<ul>
-<li>Crawler</li>
-<li>Datenintegration/aggregation</li>
-<li>Suchindex</li>
-<li>Discovery-Interface</li>
-</ul></li>
+<li>Überall wo Daten verarbeitet werden, werden auch Daten konvertiert</li>
+<li>Datenkonvertierung ist meist etwas einfacher als Programmierung</li>
+<li>Ähnliche Möglichkeiten &amp; Probleme</li>
+<li>Ohne Datenkonvertierung gibt es Mehraufwand &amp; Inkonsistenzen</li>
 </ul>
 </section>
-<section id="suchmaschinen-software-1" class="slide level1">
-<h1>Suchmaschinen-Software</h1>
-<dl>
-<dt>Lucene</dt>
-<dd>Suchindex
-</dd>
-<dt>Solr</dt>
-<dd>Server und HTTP-API für Lucene
-</dd>
-<dt>ElasticSearch</dt>
-<dd>Alternativer Server für Lucene, etwas einfacher
-</dd>
-<dt>VuFind</dt>
-<dd>Solr-Index-Suchoberfläche für Bibliotheken
-</dd>
-<dt>Blacklight</dt>
-<dd>Alternatives Solr-Discovery-Interface für Bibliotheken
-</dd>
-<dt>YaCy</dt>
-<dd>P2P-Suchmaschine<br />Beispielanwendung <a href="http://sciencenet.kit.edu/">http://sciencenet.kit.edu/</a>
-</dd>
-</dl>
-</section>
-<section id="literatur-quellen" class="slide level1">
-<h1>Literatur &amp; Quellen</h1>
-<p>Vergleich der Suchparadigmen frei nach Till Kinstler.</p>
-<p>Dirk Lewandowski (Hrsg.): Handbuch Internetsuchmaschinen (bisher drei Ausgaben)</p>
+<section id="quellen-und-literatur" class="slide level1">
+<h1>Quellen und Literatur</h1>
+<p>Flowchart mit Euklids Algorithmus CC-BY <a href="https://commons.wikimedia.org/wiki/User:Wvbailey&gt;">Wvbailey@commons</a>]</p>
 </section>
 <section class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>vgl. @Christensen2012 zu bibliothekarischen mentalen Modellen (OPAC) vs. Nutzer-Modellen (Discovery-Interface)<a href="#fnref1">↩</a></p></li>
-<li id="fn2"><p>Siehe “So funktioniert die Suche” <a href="http://www.google.de/insidesearch/howsearchworks/thestory/">http://www.google.de/insidesearch/howsearchworks/thestory/</a><a href="#fnref2">↩</a></p></li>
+<li id="fn1"><p>Je nach Anwendung, welche Teile relevant sind!<a href="#fnref1">↩</a></p></li>
 </ol>
 </section>
 <!-- {{{{ dzslides core
