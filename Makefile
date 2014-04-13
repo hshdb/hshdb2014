@@ -22,7 +22,8 @@ total: all
 # build slides or paper in local directory
 
 # TODO: relative path to includir and css/ 
-BOOTSTRAP=$(realpath $(CURDIR)css)
+#BOOTSTRAP=$(realpath $(CURDIR)css)
+BOOTSTRAP=css
 
 BEAMER=$(realpath $(CURDIR)beamer-template)
 

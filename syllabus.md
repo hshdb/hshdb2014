@@ -46,18 +46,16 @@ im [internen Repository](https://github.com/hshdb/hshdb2014-aufgaben).
     - **[Datenkonvertierung](2014-03-31/datenkonvertierung.slides.md)**
 
 `2014-04-07`
-    - *Crowdcrafting/PyBossa*
+  : - *Crowdcrafting/PyBossa*
     - **[Crowdsourcing & Crowdfunding](2014-04-07/crowdsourcing-und-funding.slides.md)**
     - *Verfügbarkeitsanzeige*
     - **[Hinweise zur Ausarbeitung](2014-04-07/hinweise-ausarbeitung.slides.md)**
 
 `2014-04-14` "Identifikation"
-  : - **Identifier-Systeme**: 
-      ISBN, DOI, URI, Handle...
+  : - **[Identifier-Systeme](2014-04-14/identifier.slides.md)**: 
     - *Werk-Identifier*
-    - **Linked Open Data**:
-      RDF & Semantic Web in Bibliotheken
     - *HsH in RDF*
+    - **[Linked Open Data](2014-04-14/semanticweb.slides.md)**:
 
 `2014-04-22`
   : *keine Lehrveranstaltung* (Ostermontag)
