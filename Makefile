@@ -1,4 +1,4 @@
-.SUFFIXES: .md .html .pdf
+.SUFFIXES: .md .html .pdf .tex
 .PHONY: clean
 
 info:
@@ -9,6 +9,7 @@ CURDIR := $(dir $(lastword $(MAKEFILE_LIST)))
 html: $(patsubst %.md,%.html,$(wildcard *.md))
 pdf: $(patsubst %.md,%.pdf,$(wildcard *.md))
 bib: $(patsubst %.yaml,%.bib,$(wildcard *.yaml))
+tex: $(patsubst %.md,%.tex,$(wildcard *.md))
 
 all: html pdf
 
@@ -45,6 +46,16 @@ PDF_SLIDES_FILTER=sed 's/\.gif)/.png)/' | ppp
 .md.tmp:
 
 .md.pdf: bib
+	@cd `dirname $<`; \
+	FILENAME="$(basename $(basename $(notdir $<)))"; \
+	[ -e "$$FILENAME.bib" ] && BIB="--bibliography $$FILENAME.bib"; \
+	if [ "$(suffix $(basename $<))" = ".slides" ]; then \
+		cat $(notdir $<) | $(PDF_SLIDES_FILTER) | pandoc $(SLIDES_PDF) $$BIB - -o $(notdir $@) ;\
+	else \
+		pandoc $(PAPER_PDF) $$BIB $(notdir $<) -o $(notdir $@) ;\
+	fi
+
+.md.tex: bib
 	@cd `dirname $<`; \
 	FILENAME="$(basename $(basename $(notdir $<)))"; \
 	[ -e "$$FILENAME.bib" ] && BIB="--bibliography $$FILENAME.bib"; \
