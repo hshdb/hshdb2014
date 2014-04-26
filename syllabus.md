@@ -52,22 +52,22 @@ im [internen Repository](https://github.com/hshdb/hshdb2014-aufgaben).
     - **[Hinweise zur Ausarbeitung](2014-04-07/hinweise-ausarbeitung.slides.md)**
 
 `2014-04-14` "Identifikation"
-  : - **[Identifier-Systeme](2014-04-14/identifier.slides.md)**: 
-    - *Werk-Identifier*
+  : - **[Identifier-Systeme](2014-04-14/identifier.slides.md)** 
     - *HsH in RDF*
-    - **[Linked Open Data](2014-04-14/semanticweb.slides.md)**:
+    - **[Linked Open Data](2014-04-14/semanticweb.slides.md)**
 
 `2014-04-22`
   : *keine Lehrveranstaltung* (Ostermontag)
 
 `2014-04-28` "Kommunikation"
-  : - **Digitale Publikation**:
-      Publikationsformen, Autorensysteme, OJS, Wikis...
-    -  *Konsultation Kommunikationssysteme* (18.3. bis 17.4).
+  : - **[Wissenschaftliches Publizieren](2014-04-28/wissenschaft.slides.md)**
+    - **[Publikations- und Wissenschaftsmetriken](2014-04-28/metriken.slides.md)**
+    - *Konsultation Kommunikationssysteme* (18.3. bis 17.4).
+    - *Fachzeitschriften*
+    - Publikationsformen, Autorensysteme, Fachzeitschriften, OJS, Wikis...
     - **Digitale Kommunikation**
        Communities, Soziale Netzwerke & Kommunikationsformen
        (Fachzeitschriften, ResearchGate, Twitter...)
-    - *Fachzeitschriften*
 
 `2014-05-05` "Spezifikation"
   : - **Datenformate und Standards:**
@@ -99,7 +99,7 @@ im [internen Repository](https://github.com/hshdb/hshdb2014-aufgaben).
       Kataloge, Fachdatenbanken, Reference Management... (auch: DOAJ)
     -  *Semesterapparate*
     - **Forschungsdaten:** Big Data & Data Science
-    -  *Nanopublikationen* (nicht 28.4. bis 12.5.)
+    -  *Nanopublikationen*
 
 `2014-06-02` "Lernen"
   : - **Forschungs- & Lernumgebungen & -Portale:**

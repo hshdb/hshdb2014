@@ -1,6 +1,24 @@
 % Alternative Publikations- und Wissenschaftsmetriken
 % Dr. Jakob Voß
-% 2014-04-07
+% 2014-04-28
+
+
+---
+
+TODO: image/diagram on forms of altmetrics
+
+-
+TODO:
+
+**Effektivität von Peer Review**
+
+Rigour vs Timing
+(see: "the varieties of peer review" 2014-04-18)
+
+post-publication peer review
+
+----
+
 
 # Bibliometrie
 
@@ -24,11 +42,11 @@ Information Overload
 # Zitationen
 
 * Was ist das?
-* Warum wird Zitiert?
+* Warum wird zitiert?
 * Wann wird zitiert (Zeiträume)
 * uncitedness
 
-Siehe Preprint-Server und OA...
+TODO: Siehe Preprint-Server und OA...
 
 # Bibliometrische Verfahren
 
@@ -39,7 +57,7 @@ Siehe Preprint-Server und OA...
 Grundprobleme
 
 * Quantität statt Qualität
-* Ein- statt Mehrdimensionalität.
+* Ein- statt Mehrdimensionalität
 
 # Anbieter
 
