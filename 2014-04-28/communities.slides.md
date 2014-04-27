@@ -2,6 +2,9 @@
 % Dr. Jakob Voß
 % 2014-04-28
 
+* Wissenschaftsblogs
+* Twitter
+
 - Publikationsformen, Autorensysteme, Fachzeitschriften, OJS, Wikis...
 
 - Digitale Communities, Soziale Netzwerke & Kommunikationsformen

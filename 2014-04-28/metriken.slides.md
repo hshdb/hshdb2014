@@ -2,22 +2,6 @@
 % Dr. Jakob Voß
 % 2014-04-28
 
-
----
-
-TODO: image/diagram on forms of altmetrics
-
--
-TODO:
-
-**Effektivität von Peer Review**
-
-Rigour vs Timing
-(see: "the varieties of peer review" 2014-04-18)
-
-post-publication peer review
-
-
 # Bibliometrie
 
 * Messung & Erforschung von
@@ -44,8 +28,6 @@ Information Overload
 * Wann wird zitiert (Zeiträume)
 * uncitedness
 
-TODO: Siehe Preprint-Server und OA...
-
 # Bibliometrische Verfahren
 
 * Impact-Factor (Zeitschriften)
@@ -57,18 +39,22 @@ Grundprobleme
 * Quantität statt Qualität
 * Ein- statt Mehrdimensionalität
 
-# Anbieter
+# Anbieter von Metriken
 
-* Journal Citation Reports, Scopus, Web of Science...
+Zitationsdatenbanken
 
+* Science Citation Index (Web of Science):
+* Scopus
+* Google Scholar
+* ...
 
-# Lösungen?
+# Alternativen?
 
-Idee, Anzahl der Veröffentlichungen zu Begrenzen:
+---
+
+Beispielsweise die Anzahl von Publikationen begrenzen?
 
 <http://scienceblogs.de/astrodicticum-simplex/2014/01/30/fuenf-artikel-und-schluss-soll-die-publikationstaetigkeit-von-wissenschaftlern-begrenzt-werden/>
-
-Bessere Verfahren
 
 # Altmetrics
 
@@ -102,8 +88,6 @@ Bessere Verfahren
 * Leichte Korrelation einiger Metriken mit Zitationen
 * insgesamt eher uneinheitlich
 * egal?
-
-<http://www.mendeley.com/groups/586171/altmetrics/papers/>
 
 # Anbieter von Altmetric-Werkzeugen
 
@@ -154,10 +138,20 @@ Bessere Verfahren
     * Zitationen
     * Altmetrics
 
-# Der digitale Wandel geht weiter
+# Digitaler Wandel, vereinfach ausgedrückt
 
 * Digitale Bibliotheken = Bibliothek + Digital
 * Digital Humanities / Open Science = Wissenschaft + Digital
 * Altmetrics = Bibliometrie + Digital
 * ...
+
+---
+
+Zusätzliche Bilder
+
+* image/diagram on forms of altmetrics
+* "the varieties of peer review" 2014-04-18 : Rigour vs Timing
+
+
+
 
