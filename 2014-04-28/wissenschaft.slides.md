@@ -8,10 +8,19 @@
 * Manuskripte und Bibliotheken
 * Briefe
 * Buchdruck
-* Fachzeitschriften
+* Fachzeitschriften (seit 1665)
 * Bibliographien
 * Indexierungsdienste
 * Internet & WWW
+
+# Direkte Fachkommunikation
+
+Sokrates Kritik an der Schrift:^[Nach Platons Dialog Sokrates mit Phaidros]
+
+* schwächt das Gedächtnis und eigenes Denken
+* täuscht Verstehen und Wissen vor (deshalb: paraphrasieren)
+* ermöglicht kein Nachfragen
+* kann sich nicht gegen Missverständnise und Fehlinterpretation schützen
 
 # Anfänge
 
@@ -23,14 +32,14 @@
 
 * Buchdruck
     * Monographien, Sammelbände, Nachschlagewerke, Lehrbücher...
-* Fachzeitschriften
+* Fachzeitschriften (seit 1665)
     * zunächst Sammlung von Briefen
-    * Etabliertes System von Fachzeitschriften
+    * Qualitätssicherung durch Einreichung und Review
 * Bibliographien
 
 # Transformation
 
-* Indexierungsdienste
+* Indexierungsdienste und Bibliometrie
     * Erhöhte Auffindbarkeit
     * Ermöglichen Messung von Publikationen^[siehe Einheit zu Metriken später heute]
 * Internet & WWW
@@ -40,12 +49,16 @@
 
 # Fachzeitschriften
 
-TODO: so funktioniert eine wissenschaftliche Fachzeitschrift
+Wandel von informeller Konversation zu formeller Publikation:
 
-* Peer-Review
-* langwieriges Verfahren
-* Zitationen
-* ...
+* Einreichung
+* Peer-Review durch Gutachter
+    * ggf. per Doppelblindgutachten
+    * ggf. Korrekturen
+* verzögerte Publikation
+* Zitation mittels Literaturangaben
+
+Zeitschriften-Reputation in Rankings
 
 
 # Der wissenschaftliche Publikationsprozess
@@ -134,30 +147,44 @@ digraph {
 * Buchdruck
 * Fachzeitschriften
 * Bibliographien
-* Indexierungsdienste
+* **Indexierungsdienste**
 * **Internet & WWW**
 
-----
+# Zitationsdatenbanken und Indexierungsdienste
 
-* Internet & WWW
-    * Ermöglicht direkte Fachkommunikation und 
-      direkten Austausch von Manuskripten (sic!)
+* Was wurde wann und wo von wem publiziert?
+* Wer zitiert was in welchem Kontext?
 
-* Preprint-Server
+Beispiele
 
-* Open Journal Systems (OJS)
+* Science Citation Index (Web of Science):
+  gegr. 1960 von Eugene Garfield, inzwischen Thomson Reuters
+* Scopus von Elsevier
+* Google Scholar
 
-----
+# Internet & WWW
 
-Ausblick:
-Indexierungsdienste und Bibliographien
-see: nature.com: "credit where credit is due"
+* Direkte Fachkommunikation & Austausch von Dokumenten
+* Mögliche "Rückkehr" von formeller Publikation zu informeller Konversation
+* Transparent und messbar ("Altmetrics")
 
-----
+# Ende der Fachzeitschriften?
 
-I.) Publikationsformen, Autorensysteme, OJS, Wikis ...
+* Bedeutung von Monographien nimmt beständig ab
+* Gleiches in Zukunft für Fachzeitschriften?
+    * Qualitässicherung und Review
+    * Distribution
+    * Archivierung
+* Insgesamt weiter exponentielles Wachstum and Publikationen
 
-II.) Digitale Kommunikation Communities, 
-Soziale Netzwerke & Kommunikationsformen
-(Fachzeitschriften, ResearchGate, Twitter...)
+# Transformation von Fachzeitschriften!
+
+* Dynamische Publikationen (Beispiel: Living Reviews)
+* Overlay-Journals
+* Differenzierung von
+  Autorenschaften^[<http://www.nature.com/news/publishing-credit-where-credit-is-due-1.15033>]
+
+# Beispiel: Open Journal Systems (OJS) und Fidus Writer
+
+<https://de.wikipedia.org/wiki/Open_Journal_Systems>
 

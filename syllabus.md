@@ -62,12 +62,9 @@ im [internen Repository](https://github.com/hshdb/hshdb2014-aufgaben).
 `2014-04-28` "Kommunikation"
   : - **[Wissenschaftliches Publizieren](2014-04-28/wissenschaft.slides.md)**
     - **[Publikations- und Wissenschaftsmetriken](2014-04-28/metriken.slides.md)**
-    - *Konsultation Kommunikationssysteme* (18.3. bis 17.4).
-    - *Fachzeitschriften*
-    - Publikationsformen, Autorensysteme, Fachzeitschriften, OJS, Wikis...
-    - **Digitale Kommunikation**
-       Communities, Soziale Netzwerke & Kommunikationsformen
-       (Fachzeitschriften, ResearchGate, Twitter...)
+    - **[Digitale Communities](2014-04-28/communities.slides.md)**
+    - *Konsultation Kommunikationssysteme*
+    - *BID-Fachzeitschriften*
 
 `2014-05-05` "Spezifikation"
   : - **Datenformate und Standards:**

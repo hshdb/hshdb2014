@@ -17,8 +17,6 @@ Rigour vs Timing
 
 post-publication peer review
 
-----
-
 
 # Bibliometrie
 
@@ -50,8 +48,8 @@ TODO: Siehe Preprint-Server und OA...
 
 # Bibliometrische Verfahren
 
-* Impact-Factor
-* h-Index
+* Impact-Factor (Zeitschriften)
+* h-Index (Autoren)
 * ...
 
 Grundprobleme
