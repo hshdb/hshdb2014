@@ -138,20 +138,9 @@ Beispielsweise die Anzahl von Publikationen begrenzen?
     * Zitationen
     * Altmetrics
 
-# Digitaler Wandel, vereinfach ausgedrückt
+# Digitaler Wandel, sehr vereinfach ausgedrückt
 
-* Digitale Bibliotheken = Bibliothek + Digital
-* Digital Humanities / Open Science = Wissenschaft + Digital
-* Altmetrics = Bibliometrie + Digital
-* ...
-
----
-
-Zusätzliche Bilder
-
-* image/diagram on forms of altmetrics
-* "the varieties of peer review" 2014-04-18 : Rigour vs Timing
-
-
-
+* Digitale Bibliotheken: Bibliothek + Digital
+* Digital Humanities / Open Science: Wissenschaft + Digital
+* Altmetrics: Bibliometrie + Digital
 
