@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+  <meta name="author" content="Dr. Jakob Voß" />
+  <meta name="dcterms.date" content="2014-05-05" />
+  <title>hshdb2014 - Datenformate und Standards</title>
+  <style type="text/css">code{white-space: pre;}</style>
+<style>
+  html { background-color: black; }
+  body { background-color: white; border-radius: 12px}
+  /* A section is a slide. It's size is 800x600, and this will never change */
+  section {
+      font-family: Arial, serif;
+      font-size: 20pt;
+    }
+  address, blockquote, dl, fieldset, form, h1, h2, h3, h4, h5, h6, hr, ol, p, pre, table, ul, dl { padding: 10px 20px 10px 20px; }
+  h1, h2, h3 {
+    text-align: center;
+    margin: 10pt 10pt 20pt 10pt;
+  }
+  ul, ol {
+    margin: 10px 10px 10px 50px;
+  }
+  section.titleslide h1 { margin-top: 200px; }
+  h1.title { margin-top: 150px; }
+  h1 { font-size: 180%; }
+  h2 { font-size: 120%; }
+  h3 { font-size: 100%; }
+  q { quotes: "“" "”" "‘" "’"; }
+  blockquote { font-style: italic }
+  /* Figures are displayed full-page, with the caption on
+     top of the image/video */
+  figure {
+    background-color: black;
+  }
+  figcaption {
+    margin: 70px;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 40px;
+    text-align: right;
+    background-color: #F3F4F8;
+    border-top: 1px solid #CCC;
+  }
+
+  /* Transition effect */
+  /* Feel free to change the transition effect for original
+     animations. See here:
+     https://developer.mozilla.org/en/CSS/CSS_transitions
+     How to use CSS3 Transitions: */
+  section {
+      -moz-transition: left 400ms linear 0s;
+      -webkit-transition: left 400ms linear 0s;
+      -ms-transition: left 400ms linear 0s;
+      transition: left 400ms linear 0s;
+  }
+
+  /* Before */
+  section { left: -150%; }
+  /* Now */
+  section[aria-selected] { left: 0; }
+  /* After */
+  section[aria-selected] ~ section { left: +150%; }
+
+  /* Incremental elements */
+
+  /* By default, visible */
+  .incremental > * { opacity: 1; }
+
+  /* The current item */
+  .incremental > *[aria-selected] { color: red; opacity: 1; }
+
+  /* The items to-be-selected */
+  .incremental > *[aria-selected] ~ * { opacity: 0.2; }
+</style>
+</head>
+<body>
+<section>
+  <h1 class="title">Datenformate und Standards</h1>
+  <h2 class="author">Dr. Jakob Voß</h2>
+  <h3 class="date">2014-05-05</h3>
+</section>
+<section id="übersicht" class="slide level1">
+<h1>Übersicht</h1>
+<ul>
+<li>Grundlagen</li>
+<li>Allgemeine Datenstrukturierungsprachen</li>
+<li>Konkrete Daten- und Dateiformate</li>
+<li>Standards und Schemata</li>
+</ul>
+</section>
+<section id="verwandte-themen-dieser-lehrveranstaltung" class="slide level1">
+<h1>Verwandte Themen dieser Lehrveranstaltung</h1>
+<ul>
+<li><strong>Digitalität</strong> am 17.3.2014</li>
+<li><strong>Datenkonvertierung</strong> am 4.7.2014</li>
+<li><strong>Identifier-Systeme</strong> am 14.4.2014</li>
+<li><strong>Digitalisierung</strong> am 12.5.2014</li>
+</ul>
+</section>
+<section id="was-ist-digitalität" class="slide level1">
+<h1>Was ist Digitalität?</h1>
+<ul>
+<li>Daten als Unterschiede (“<span class="math"><em>x</em></span> being distinct from <span class="math"><em>y</em></span>”)</li>
+<li>Daten als Fakten, Beobachtungen und/oder <strong>Nachrichten</strong></li>
+<li>Daten als unzweifelhafte <strong>Auswahl aus</strong> einer klar definierter <strong>Menge möglicher Werte</strong> (z.B. 0 oder 1, ein Unicode-Zeichen…)</li>
+</ul>
+</section>
+<section id="daten-basieren-auf-datenmodellierung" class="slide level1">
+<h1>Daten basieren auf Datenmodellierung</h1>
+<figure>
+<img src="../img/datamodeling.png" />
+</figure>
+</section>
+<section id="was-ist-datenkonvertierung" class="slide level1">
+<h1>Was ist Datenkonvertierung?</h1>
+<p>Überführung von Daten von einem Format in ein anderes Format</p>
+<dl>
+<dt>Überführung</dt>
+<dd>Konvertierung, Konversion, Transformation, Mapping…
+</dd>
+<dt>Daten</dt>
+<dd>Datensätze, digitale Objekte/Dokumente, Dateien…
+</dd>
+<dt>Format</dt>
+<dd>Datenstruktur, Dateiformat…
+</dd>
+</dl>
+</section>
+<section id="regelbasierte-überführung-von-daten" class="slide level1">
+<h1>Regelbasierte Überführung von Daten</h1>
+<p>Quellformat <span class="math"> → </span> <em>Konvertierung</em> <span class="math"> → </span> Zielformat</p>
+</section>
+<section id="beispiel-ersetzungsregeln-zur-datenkonvertierung" class="slide level1">
+<h1>Beispiel: Ersetzungsregeln zur Datenkonvertierung</h1>
+<ul>
+<li>Nachname, Vorname <span class="math"> → </span> Vorname Nachname</li>
+<li>Sehr hilfreich: Reguläre Ausdrücke:<br /> <code>(.+), (.+)</code> <span class="math"> ⇒ </span> <code>$2 $1</code></li>
+</ul>
+<p><em>Was sind an diesem Beispiel die Formate?</em></p>
+<p><em>Wie könnten diese Formate als Standard definiert werden?</em></p>
+</section>
+<section id="identifier-systeme" class="slide level1">
+<h1>Identifier-Systeme</h1>
+<ul>
+<li>Künstliche Merkmale zur Identifizierung eines Objektes</li>
+<li>Meist eindeutig (nicht homonym und möglichst nicht synonym)</li>
+<li>Oft strukturiert und organisiert (Namensräume, Qualifikatoren…)</li>
+</ul>
+<p>In Datenformaten an verschiedenen Stellen relevant, z.B. als Index, (Feld)name oder Pfad.</p>
+</section>
+<section id="was-ist-digitalisierung" class="slide level1">
+<h1>Was ist Digitalisierung?</h1>
+<p>Überführung von analogen Signalen (Zeit, Lautstärke, Farbe, Größe…) in digital kodierte Werte.</p>
+<figure>
+<img src="../img/digital-signal.png" />
+</figure>
+</section>
+<section id="bestandteile-von-daten-bzw.-digitalen-kodierungen" class="slide level1">
+<h1>Bestandteile von Daten bzw. digitalen Kodierungen</h1>
+<dl>
+<dt>Quantisierung</dt>
+<dd>Begrenzte Menge zulässiger <strong>Werte</strong><br />(z.B. Rot, Grün- und Blauanteil je 0 bis 255)
+</dd>
+<dt>Datenformate</dt>
+<dd>Definierte <strong>Strukturen</strong><br />(z.B. Felder, Dimensionen, Ordnungsmethoden, Muster…)
+</dd>
+</dl>
+</section>
+<section id="allgemeine-datenstrukturierungsprachen" class="slide level1">
+<h1>Allgemeine Datenstrukturierungsprachen</h1>
+<ol type="1">
+<li>Zeichenketten (Strings)</li>
+<li>Comma Separated Values (CSV)</li>
+<li>JavaScript Object Notation (JSON)</li>
+<li>Extensible Markup Language (XML)</li>
+<li>Resource Description Framework (RDF)</li>
+</ol>
+<p>Verwandte Systeme (hier aber ausgelassen):</p>
+<ul>
+<li>Datenbanken</li>
+<li>Dateisysteme</li>
+<li>data binding languages</li>
+</ul>
+</section>
+<section id="dss-15-zeichenketten" class="slide level1">
+<h1>DSS 1/5: Zeichenketten</h1>
+<ul>
+<li>Liste von Zeichen</li>
+<li>Unicode, ASCII…</li>
+<li>Wenig Struktur</li>
+<li>Spezialfall: leere Zeichenkette (<code>&quot;&quot;</code>)</li>
+</ul>
+</section>
+<section id="kodierung-von-zeichenketten" class="slide level1">
+<h1>Kodierung von Zeichenketten</h1>
+<ul>
+<li>Alles einer vorher angegebenen Länge</li>
+<li>Alles bis zum Ende-Zeichen (z.B. Null-Byte)</li>
+</ul>
+<p>Beispiel: Zeichenketten in Anführungszeichen (<code>&quot;Hallo&quot;</code>)</p>
+<p><em>Was wenn die Zeichenkette Anführungszeichen enthält?</em></p>
+</section>
+<section id="typisches-verfahren-escape-sequenzen" class="slide level1">
+<h1>Typisches Verfahren: Escape-Sequenzen</h1>
+<ul>
+<li>Escape-Sequenz für Anführungszeichen <code>\&quot;</code></li>
+<li>Escape-Sequenz für Escape-Zeichen <code>\\</code></li>
+<li>Escape-Sequenzen für Sonderzeichen
+<ul>
+<li><code>\n</code> : Zeilenumbrung</li>
+<li><code>\t</code> : Tabulator</li>
+<li><code>\uXXXX</code> : Unicode-Zeichen mit beliebigem Code XXXX</li>
+<li>…</li>
+</ul></li>
+</ul>
+</section>
+<section id="comma-separated-values-csv" class="slide level1">
+<h1>2/5: Comma Separated Values (CSV)</h1>
+<ul>
+<li>Liste von Zeilen mit Liste von Werten</li>
+<li>Viele verschiedene Varianten
+<ul>
+<li>Trennzeichen (Komma, Tabulator, Semikolon…)</li>
+<li>Kopfzeile</li>
+<li>Zeichenkodierung (ASCII, Unicode…)</li>
+<li>Escape-Sequenzen (z.B. für Zeilenumbrüche)</li>
+</ul></li>
+</ul>
+</section>
+<section id="javascript-object-notation-json" class="slide level1">
+<h1>3/5: JavaScript Object Notation (JSON)</h1>
+<ul>
+<li>vorgeschlagen 2002 von Douglas Crockford</li>
+<li>Datenstruktur stammt aus der Programmiersprache JavaScript</li>
+<li>Relativ einfache Syntax</li>
+<li>Sehr populär, vor allem in Webanwendungen</li>
+<li>Erste Spezifikation und Dokumentation unter <a href="http://json.org/">http://json.org/</a></li>
+</ul>
+</section>
+<section id="bestandteile-von-json" class="slide level1">
+<h1>Bestandteile von JSON</h1>
+<ul>
+<li>Arrays (Listen)</li>
+<li>Objekte (Key/Value-Menge)</li>
+<li>Zahlen (Ganzzahlen und [Fließ]kommazahlen)</li>
+<li>Zeichenketten (Unicode)</li>
+<li>Boolesche Werte (<code>true</code>/<code>false</code>)</li>
+<li>Nullwert (<code>null</code>)</li>
+</ul>
+</section>
+<section id="json-syntax-als-diagram-ausschnitt" class="slide level1">
+<h1>JSON-Syntax als Diagram (Ausschnitt)</h1>
+<figure>
+<img src="../img/json-array.png" />
+</figure>
+<figure>
+<img src="../img/json-object.png" />
+</figure>
+</section>
+<section id="json-syntax" class="slide level1">
+<h1>JSON-Syntax</h1>
+<ul>
+<li>Leerzeilen und -zeichen sind irrelevant</li>
+<li>Zahlen, Boolesche Werte und Nullwerte direkt<br /> (<code>42</code>, <code>3.1</code>, <code>false</code>, <code>null</code>…)</li>
+<li>Zeichenkette in Anführungszeichen<br /> <code>&quot;Und sie so:\n\&quot;na toll!\&quot;&quot;</code></li>
+<li>Arrays in eckigen Klammern<br /> <code>[ [ 42, 3.1, ], [ ], [ null, 23, &quot;na, du?!&quot; ] ]</code></li>
+<li>Objekte in geschweiften Klammern mit Doppelpunkten <code>{ &quot;Name&quot;: &quot;Alice&quot;, &quot;Alter&quot;: 25, &quot;Geschlecht&quot;: null }</code></li>
+</ul>
+</section>
+<section id="extensible-markup-language-xml" class="slide level1">
+<h1>4/5 Extensible Markup Language (XML)</h1>
+<ul>
+<li>Baumstruktur bestene aus <strong>Elementen</strong></li>
+<li>Genau ein Wurzelelement</li>
+<li>Jedes Element kann
+<ul>
+<li>Zeichenketten und Kinder-Elementen enthalten<br /> (Sonderfälle Mixed-Content und Empty Tags)</li>
+<li>Attribute haben *</li>
+</ul></li>
+<li>Weitere Besonderheiten, die meist nicht gebraucht werden und XML nur viel zu kompliziert machen (DTD, PIs, namespaces…)</li>
+</ul>
+</section>
+<section id="xml-syntax" class="slide level1">
+<h1>XML-Syntax</h1>
+<ul>
+<li>Elemente bestehen aus Start- und End-Tag</li>
+<li>Escape-Sequenzen für Sonderzeichen an verschiedenen Stellen</li>
+<li>Whitespace ist an verschiedenen Stellen irrelevant</li>
+</ul>
+<p><em>Beispiel: Beliebige XHTML-Seite</em></p>
+</section>
+<section id="resource-description-framework-rdf" class="slide level1">
+<h1>5/5 Resource Description Framework (RDF)</h1>
+<p>Siehe Einheit zu Semantic Web und Linked Open Data am 14.4.2014</p>
+<ul>
+<li>RDF-Tripel Subjekt (URI oder blank node), Prädikat (URI) und Objekt (URI, blank node oder Literal)</li>
+<li>Vorteile:
+<ul>
+<li>Zusammenführen und Ausschneiden immer möglich</li>
+<li>Einigung auf einheitliche URIs realistisch</li>
+</ul></li>
+<li>Seralisierung in verschiedenen Formaten (u.A. Turtle)</li>
+</ul>
+</section>
+<section id="grundsätzliche-strukturen" class="slide level1">
+<h1>Grundsätzliche Strukturen</h1>
+<p>Allgemeinen Datenstrukturierungsprachen basieren im Wesentlichen auf allgemeinen Strukturierungsmustern.</p>
+<dl>
+<dt>Listen</dt>
+<dd>Strings
+</dd>
+<dt>Tabellen</dt>
+<dd>CSV
+</dd>
+<dt>Hierarchien/Bäume</dt>
+<dd>JSON, XML
+</dd>
+<dt>Zuordnungen/Identifier</dt>
+<dd>JSON-Objekte, XML-Attribute
+</dd>
+<dt>Graphen</dt>
+<dd>RDF
+</dd>
+</dl>
+<p>Weitere Strukturierungsmuster existieren auch in allen anderen Datenstrukturen und -Formaten.</p>
+</section>
+<section id="konvertierung-allgemeiner-strukturierungssprachen" class="slide level1">
+<h1>Konvertierung allgemeiner Strukturierungssprachen</h1>
+<p>Beispiel: CSV nach JSON oder XML<br /><a href="https://shancarter.github.io/mr-data-converter/">https://shancarter.github.io/mr-data-converter/</a></p>
+</section>
+<section id="konkrete-daten--und-dateiformate" class="slide level1">
+<h1>Konkrete Daten- und Dateiformate</h1>
+<ul>
+<li>Beispiele sind
+<ul>
+<li>immer konkret</li>
+<li>anschaulich</li>
+<li>ggf. zu speziell</li>
+</ul></li>
+</ul>
+<p>Was ist Beispiel, was gehört zum Format?</p>
+</section>
+<section id="json-beispiel-tweet" class="slide level1">
+<h1>JSON-Beispiel: Tweet</h1>
+<pre><code>{
+  &quot;text&quot;: &quot;Old librarians like books. New librarians like data. Good librarians like people.&quot;,
+  &quot;id&quot;: &quot;438186931139383296&quot;,
+  &quot;retweet_count&quot;: &quot;117&quot;,
+  &quot;favourites_count&quot;: &quot;73&quot;,
+  &quot;source&quot;: &quot;web&quot;,
+  &quot;user&quot;: {
+    &quot;name&quot;: &quot;nichtich&quot;,
+    &quot;location&quot;: &quot;Nauru&quot;
+  }
+}</code></pre>
+</section>
+<section id="beispiele-für-xml" class="slide level1">
+<h1>Beispiele für XML</h1>
+<ul>
+<li>Sitemaps</li>
+<li>OAI-PMH</li>
+<li>TEI</li>
+<li>…</li>
+</ul>
+</section>
+<section id="beispiele-für-rdf" class="slide level1">
+<h1>Beispiele für RDF</h1>
+<ul>
+<li>Jede RDF-Ontologie definiert ein eigenes Format</li>
+<li>Bei RDF lassen sich Formate auch mischen</li>
+</ul>
+</section>
+<section id="beispiel-für-format-mit-eigener-strukturierung-bibtex" class="slide level1">
+<h1>Beispiel für Format mit eigener Strukturierung: BibTeX</h1>
+<pre><code>@misc{voss2014librarians,
+  author = {Voß, Jakob},
+  title  = {Old librarians like books. 
+            New librarians like data. 
+            Good librarians like people.}
+  booktitle = {Twitter},
+  year   = {2014},
+  day    = {28},
+  month  = {2},
+  url = {https://twitter.com/nichtich/status/438186931139383296}
+}</code></pre>
+</section>
+<section id="standards-und-schemata" class="slide level1">
+<h1>Standards und Schemata</h1>
+<ul>
+<li>Im Zweifelsfall Nachlesen (“RTFM”)</li>
+<li>Spezifikationen sind wie Gesetzestexte</li>
+<li>Verschiedene Standard-Gremien und Organisationen (W3C, IETF, ISO…)</li>
+</ul>
+</section>
+<section id="anforderungen-an-standards-für-datenformate" class="slide level1">
+<h1>Anforderungen an Standards für Datenformate</h1>
+<ul>
+<li>Verständlich</li>
+<li>Eindeutig</li>
+<li>Leicht zu Implementieren</li>
+</ul>
+<p>Negativbeispiel u.A. Office Open XML (ISO/IEC 29500) mit 6000 Seiten</p>
+</section>
+<section id="bestandteile-einer-spezifikation" class="slide level1">
+<h1>Bestandteile einer Spezifikation</h1>
+<ul>
+<li>Formale Spezifikation (z.B. Schema-Sprache, Reguläre Ausdrücke etc.)</li>
+<li>Informelle Beschreibung (mit zwingenden und erklärenden Teilen)</li>
+<li>Bezugnahme auf andere Spezifikationen</li>
+</ul>
+</section>
+<section id="beispiel-spezifikation-von-json-als-rfc" class="slide level1">
+<h1>Beispiel: Spezifikation von JSON als RFC</h1>
+<ul>
+<li>Request for Comment (RFC)</li>
+<li>RFC 7159: 2014 (vorher RFC 4627: 2006, vorher json.org: 2002)</li>
+</ul>
+<p><a href="http://rfc7159.net/rfc7159">http://rfc7159.net/rfc7159</a></p>
+</section>
+<section id="beispiel-json-spezifikation" class="slide level1">
+<h1>Beispiel: JSON-Spezifikation</h1>
+<figure>
+<img src="../img/json-object.png" />
+</figure>
+<pre><code>Object := &quot;{&quot; ( Pair ( &quot;,&quot; Pair )* )? &quot;}&quot;
+Pair   := Space* Key Space* &quot;:&quot; Space* Value
+Space  := #x20 | #x09 | #x0A | #x0D</code></pre>
+</section>
+<section id="beispiel-open-search-suggestions" class="slide level1">
+<h1>Beispiel: Open Search Suggestions</h1>
+<p>HTML <span class="math"> → </span> OSD-XML <span class="math"> → </span> Suggestions-JSON</p>
+</section>
+<section id="zusammenfassung" class="slide level1">
+<h1>Zusammenfassung</h1>
+<ul>
+<li>Allgemeine Sprachen und Muster zur Datenstrukturierung (CSV, JSON, XML, RDF…)</li>
+<li>Konkrete Formate basieren meist auf Datenstrukturierungssprachen</li>
+<li>Definition durch Spezifikationen und Schemata</li>
+</ul>
+</section>
+<!-- {{{{ dzslides core
+#
+#
+#     __  __  __       .  __   ___  __
+#    |  \  / /__` |    | |  \ |__  /__`
+#    |__/ /_ .__/ |___ | |__/ |___ .__/ core :€
+#
+#
+# The following block of code is not supposed to be edited.
+# But if you want to change the behavior of these slides,
+# feel free to hack it!
+#
+-->
+
+<div id="progress-bar"></div>
+
+<!-- Default Style -->
+<style>
+  * { margin: 0; padding: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  details { display: none; }
+  body {
+    width: 800px; height: 600px;
+    margin-left: -400px; margin-top: -300px;
+    position: absolute; top: 50%; left: 50%;
+    overflow: hidden;
+  }
+  section {
+    position: absolute;
+    pointer-events: none;
+    width: 100%; height: 100%;
+  }
+  section[aria-selected] { pointer-events: auto; }
+  html { overflow: hidden; }
+  body { display: none; }
+  body.loaded { display: block; }
+  .incremental {visibility: hidden; }
+  .incremental[active] {visibility: visible; }
+  #progress-bar{
+    bottom: 0;
+    position: absolute;
+    -moz-transition: width 400ms linear 0s;
+    -webkit-transition: width 400ms linear 0s;
+    -ms-transition: width 400ms linear 0s;
+    transition: width 400ms linear 0s;
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+  }
+  figure > * {
+    position: absolute;
+  }
+  figure > img, figure > video {
+    width: 100%; height: 100%;
+  }
+</style>
+
+<script>
+  var Dz = {
+    remoteWindows: [],
+    idx: -1,
+    step: 0,
+    slides: null,
+    progressBar : null,
+    params: {
+      autoplay: "1"
+    }
+  };
+
+  Dz.init = function() {
+    document.body.className = "loaded";
+    this.slides = $$("body > section");
+    this.progressBar = $("#progress-bar");
+    this.setupParams();
+    this.onhashchange();
+    this.setupTouchEvents();
+    this.onresize();
+  }
+  
+  Dz.setupParams = function() {
+    var p = window.location.search.substr(1).split('&');
+    p.forEach(function(e, i, a) {
+      var keyVal = e.split('=');
+      Dz.params[keyVal[0]] = decodeURIComponent(keyVal[1]);
+    });
+  // Specific params handling
+    if (!+this.params.autoplay)
+      $$.forEach($$("video"), function(v){ v.controls = true });
+  }
+
+  Dz.onkeydown = function(aEvent) {
+    // Don't intercept keyboard shortcuts
+    if (aEvent.altKey
+      || aEvent.ctrlKey
+      || aEvent.metaKey
+      || aEvent.shiftKey) {
+      return;
+    }
+    if ( aEvent.keyCode == 37 // left arrow
+      || aEvent.keyCode == 38 // up arrow
+      || aEvent.keyCode == 33 // page up
+    ) {
+      aEvent.preventDefault();
+      this.back();
+    }
+    if ( aEvent.keyCode == 39 // right arrow
+      || aEvent.keyCode == 40 // down arrow
+      || aEvent.keyCode == 34 // page down
+    ) {
+      aEvent.preventDefault();
+      this.forward();
+    }
+    if (aEvent.keyCode == 35) { // end
+      aEvent.preventDefault();
+      this.goEnd();
+    }
+    if (aEvent.keyCode == 36) { // home
+      aEvent.preventDefault();
+      this.goStart();
+    }
+    if (aEvent.keyCode == 32) { // space
+      aEvent.preventDefault();
+      this.toggleContent();
+    }
+    if (aEvent.keyCode == 70) { // f
+      aEvent.preventDefault();
+      this.goFullscreen();
+    }
+  }
+
+  /* Touch Events */
+
+  Dz.setupTouchEvents = function() {
+    var orgX, newX;
+    var tracking = false;
+
+    var db = document.body;
+    db.addEventListener("touchstart", start.bind(this), false);
+    db.addEventListener("touchmove", move.bind(this), false);
+
+    function start(aEvent) {
+      aEvent.preventDefault();
+      tracking = true;
+      orgX = aEvent.changedTouches[0].pageX;
+    }
+
+    function move(aEvent) {
+      if (!tracking) return;
+      newX = aEvent.changedTouches[0].pageX;
+      if (orgX - newX > 100) {
+        tracking = false;
+        this.forward();
+      } else {
+        if (orgX - newX < -100) {
+          tracking = false;
+          this.back();
+        }
+      }
+    }
+  }
+
+  /* Adapt the size of the slides to the window */
+
+  Dz.onresize = function() {
+    var db = document.body;
+    var sx = db.clientWidth / window.innerWidth;
+    var sy = db.clientHeight / window.innerHeight;
+    var transform = "scale(" + (1/Math.max(sx, sy)) + ")";
+
+    db.style.MozTransform = transform;
+    db.style.WebkitTransform = transform;
+    db.style.OTransform = transform;
+    db.style.msTransform = transform;
+    db.style.transform = transform;
+  }
+
+
+  Dz.getDetails = function(aIdx) {
+    var s = $("section:nth-of-type(" + aIdx + ")");
+    var d = s.$("details");
+    return d ? d.innerHTML : "";
+  }
+
+  Dz.onmessage = function(aEvent) {
+    var argv = aEvent.data.split(" "), argc = argv.length;
+    argv.forEach(function(e, i, a) { a[i] = decodeURIComponent(e) });
+    var win = aEvent.source;
+    if (argv[0] === "REGISTER" && argc === 1) {
+      this.remoteWindows.push(win);
+      this.postMsg(win, "REGISTERED", document.title, this.slides.length);
+      this.postMsg(win, "CURSOR", this.idx + "." + this.step);
+      return;
+    }
+    if (argv[0] === "BACK" && argc === 1)
+      this.back();
+    if (argv[0] === "FORWARD" && argc === 1)
+      this.forward();
+    if (argv[0] === "START" && argc === 1)
+      this.goStart();
+    if (argv[0] === "END" && argc === 1)
+      this.goEnd();
+    if (argv[0] === "TOGGLE_CONTENT" && argc === 1)
+      this.toggleContent();
+    if (argv[0] === "SET_CURSOR" && argc === 2)
+      window.location.hash = "#" + argv[1];
+    if (argv[0] === "GET_CURSOR" && argc === 1)
+      this.postMsg(win, "CURSOR", this.idx + "." + this.step);
+    if (argv[0] === "GET_NOTES" && argc === 1)
+      this.postMsg(win, "NOTES", this.getDetails(this.idx));
+  }
+
+  Dz.toggleContent = function() {
+    // If a Video is present in this new slide, play it.
+    // If a Video is present in the previous slide, stop it.
+    var s = $("section[aria-selected]");
+    if (s) {
+      var video = s.$("video");
+      if (video) {
+        if (video.ended || video.paused) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      }
+    }
+  }
+
+  Dz.setCursor = function(aIdx, aStep) {
+    // If the user change the slide number in the URL bar, jump
+    // to this slide.
+    aStep = (aStep != 0 && typeof aStep !== "undefined") ? "." + aStep : ".0";
+    window.location.hash = "#" + aIdx + aStep;
+  }
+
+  Dz.onhashchange = function() {
+    var cursor = window.location.hash.split("#"),
+        newidx = 1,
+        newstep = 0;
+    if (cursor.length == 2) {
+      newidx = ~~cursor[1].split(".")[0];
+      newstep = ~~cursor[1].split(".")[1];
+      if (newstep > Dz.slides[newidx - 1].$$('.incremental > *').length) {
+        newstep = 0;
+        newidx++;
+      }
+    }
+    this.setProgress(newidx, newstep);
+    if (newidx != this.idx) {
+      this.setSlide(newidx);
+    }
+    if (newstep != this.step) {
+      this.setIncremental(newstep);
+    }
+    for (var i = 0; i < this.remoteWindows.length; i++) {
+      this.postMsg(this.remoteWindows[i], "CURSOR", this.idx + "." + this.step);
+    }
+  }
+
+  Dz.back = function() {
+    if (this.idx == 1 && this.step == 0) {
+      return;
+    }
+    if (this.step == 0) {
+      this.setCursor(this.idx - 1,
+                     this.slides[this.idx - 2].$$('.incremental > *').length);
+    } else {
+      this.setCursor(this.idx, this.step - 1);
+    }
+  }
+
+  Dz.forward = function() {
+    if (this.idx >= this.slides.length &&
+        this.step >= this.slides[this.idx - 1].$$('.incremental > *').length) {
+        return;
+    }
+    if (this.step >= this.slides[this.idx - 1].$$('.incremental > *').length) {
+      this.setCursor(this.idx + 1, 0);
+    } else {
+      this.setCursor(this.idx, this.step + 1);
+    }
+  }
+
+  Dz.goStart = function() {
+    this.setCursor(1, 0);
+  }
+
+  Dz.goEnd = function() {
+    var lastIdx = this.slides.length;
+    var lastStep = this.slides[lastIdx - 1].$$('.incremental > *').length;
+    this.setCursor(lastIdx, lastStep);
+  }
+
+  Dz.setSlide = function(aIdx) {
+    this.idx = aIdx;
+    var old = $("section[aria-selected]");
+    var next = $("section:nth-of-type("+ this.idx +")");
+    if (old) {
+      old.removeAttribute("aria-selected");
+      var video = old.$("video");
+      if (video) {
+        video.pause();
+      }
+    }
+    if (next) {
+      next.setAttribute("aria-selected", "true");
+      var video = next.$("video");
+      if (video && !!+this.params.autoplay) {
+        video.play();
+      }
+    } else {
+      // That should not happen
+      this.idx = -1;
+      // console.warn("Slide doesn't exist.");
+    }
+  }
+
+  Dz.setIncremental = function(aStep) {
+    this.step = aStep;
+    var old = this.slides[this.idx - 1].$('.incremental > *[aria-selected]');
+    if (old) {
+      old.removeAttribute('aria-selected');
+    }
+    var incrementals = $$('.incremental');
+    if (this.step <= 0) {
+      $$.forEach(incrementals, function(aNode) {
+        aNode.removeAttribute('active');
+      });
+      return;
+    }
+    var next = this.slides[this.idx - 1].$$('.incremental > *')[this.step - 1];
+    if (next) {
+      next.setAttribute('aria-selected', true);
+      next.parentNode.setAttribute('active', true);
+      var found = false;
+      $$.forEach(incrementals, function(aNode) {
+        if (aNode != next.parentNode)
+          if (found)
+            aNode.removeAttribute('active');
+          else
+            aNode.setAttribute('active', true);
+        else
+          found = true;
+      });
+    } else {
+      setCursor(this.idx, 0);
+    }
+    return next;
+  }
+
+  Dz.goFullscreen = function() {
+    var html = $('html'),
+        requestFullscreen = html.requestFullscreen || html.requestFullScreen || html.mozRequestFullScreen || html.webkitRequestFullScreen;
+    if (requestFullscreen) {
+      requestFullscreen.apply(html);
+    }
+  }
+  
+  Dz.setProgress = function(aIdx, aStep) {
+    var slide = $("section:nth-of-type("+ aIdx +")");
+    if (!slide)
+      return;
+    var steps = slide.$$('.incremental > *').length + 1,
+        slideSize = 100 / (this.slides.length - 1),
+        stepSize = slideSize / steps;
+    this.progressBar.style.width = ((aIdx - 1) * slideSize + aStep * stepSize) + '%';
+  }
+  
+  Dz.postMsg = function(aWin, aMsg) { // [arg0, [arg1...]]
+    aMsg = [aMsg];
+    for (var i = 2; i < arguments.length; i++)
+      aMsg.push(encodeURIComponent(arguments[i]));
+    aWin.postMessage(aMsg.join(" "), "*");
+  }
+  
+  function init() {
+    Dz.init();
+    window.onkeydown = Dz.onkeydown.bind(Dz);
+    window.onresize = Dz.onresize.bind(Dz);
+    window.onhashchange = Dz.onhashchange.bind(Dz);
+    window.onmessage = Dz.onmessage.bind(Dz);
+  }
+
+  window.onload = init;
+</script>
+
+
+<script> // Helpers
+  if (!Function.prototype.bind) {
+    Function.prototype.bind = function (oThis) {
+
+      // closest thing possible to the ECMAScript 5 internal IsCallable
+      // function 
+      if (typeof this !== "function")
+      throw new TypeError(
+        "Function.prototype.bind - what is trying to be fBound is not callable"
+      );
+
+      var aArgs = Array.prototype.slice.call(arguments, 1),
+          fToBind = this,
+          fNOP = function () {},
+          fBound = function () {
+            return fToBind.apply( this instanceof fNOP ? this : oThis || window,
+                   aArgs.concat(Array.prototype.slice.call(arguments)));
+          };
+
+      fNOP.prototype = this.prototype;
+      fBound.prototype = new fNOP();
+
+      return fBound;
+    };
+  }
+
+  var $ = (HTMLElement.prototype.$ = function(aQuery) {
+    return this.querySelector(aQuery);
+  }).bind(document);
+
+  var $$ = (HTMLElement.prototype.$$ = function(aQuery) {
+    return this.querySelectorAll(aQuery);
+  }).bind(document);
+
+  $$.forEach = function(nodeList, fun) {
+    Array.prototype.forEach.call(nodeList, fun);
+  }
+
+</script>
+<!-- vim: set fdm=marker: }}} -->
+</body>
+</html>
