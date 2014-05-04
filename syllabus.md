@@ -67,10 +67,10 @@ im [internen Repository](https://github.com/hshdb/hshdb2014-aufgaben).
 
 `2014-05-05` "Spezifikation"
   : - **[Datenformate und Standards](2014-05-05/datenformate.slides.md)**
-    - **(Forschungs)informationssysteme:**
-      incl. Hochschulserver und -bibliographien (z.B. VIVO)
+    - ~**(Forschungs)informationssysteme:** incl. Hochschulserver und -bibliographien (z.B. VIVO)~
     -  *Transkription*
     -  *Forschungsinformationssysteme an deutschsprachigen Hochschulen*
+    - **[Arten und Beispiele von Repositories](2014-05-05/repositories.slides.md)**
 
 `2014-05-12` "Verantwortung"
   : - **Rechte und Lizenzen**:
