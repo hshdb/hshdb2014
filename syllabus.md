@@ -62,16 +62,14 @@ im [internen Repository](https://github.com/hshdb/hshdb2014-aufgaben).
 `2014-04-28` "Kommunikation"
   : - **[Wissenschaftliches Publizieren](2014-04-28/wissenschaft.slides.md)**
     - **[Publikations- und Wissenschaftsmetriken](2014-04-28/metriken.slides.md)**
-    - **[Digitale Communities](2014-04-28/communities.slides.md)**
     - *Konsultation Kommunikationssysteme*
     - *BID-Fachzeitschriften*
 
 `2014-05-05` "Spezifikation"
-  : - **Datenformate und Standards:**
-      CSV, JSON, XML, RDF...; Schemata...
-    -  *Transkription*
+  : - **[Datenformate und Standards](2014-05-05/datenformate.slides.md)**
     - **(Forschungs)informationssysteme:**
       incl. Hochschulserver und -bibliographien (z.B. VIVO)
+    -  *Transkription*
     -  *Forschungsinformationssysteme an deutschsprachigen Hochschulen*
 
 `2014-05-12` "Verantwortung"
@@ -123,7 +121,6 @@ anderer Termine behandelt
    Softwareysteme (DSpace, EPub, OPUS, MyCore...),
    Arten von Repositories und Archiven (arXiv, SSRRN, RePEC, Hochschulserver,
    Internet Archive, Wikimedia Commons, private Sammlungen ...)
-- **Metriken:** Quantitative Bewertungsverfahren wissenschaftlicher Publikationen
 - **Datenjournalismus**
 
 

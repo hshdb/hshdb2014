@@ -46,9 +46,9 @@ Beispiel: GND in RDF
 # RDF-Tripel
 
 Subjekt
-  : URI
-Prädikat
   : URI oder blank node
+Prädikat
+  : URI
 Objekt
   : URI, blank node oder Literal
 
