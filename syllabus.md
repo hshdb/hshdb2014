@@ -34,52 +34,43 @@ im [internen Repository](https://github.com/hshdb/hshdb2014-aufgaben).
     - Einführung in **[Open Access](2014-03-17/einfuehrung-oa.slides.md)**
 
 `2014-03-24` "Metadaten"
-  : - **Tagging & Erschließung**:
+  : - **[Open Archives Initiative](2014-03-24/oai.slides.md)**
+    - **[Tagging & Erschließung](2014-03-24/tagging-und-erschliessung.slides.md)**:
       Social Tagging, Normdaten & Erstellung von Metadaten
-    - **Aggregation von Metadaten**:
+    - **[Aggregation von Metadaten](2014-03-24/metadaten-aggregation.slides.md)**:
       RSS, ATOM, OAI-PMH, ResourceSync, Sitemaps...
 
 `2014-03-31` "Software"
-  : - **Repository-Software & -Workflows**: 
-      Softwareysteme (DSpace, EPub, OPUS, MyCore...),
-      Arten von Repositories und Archiven (arXiv, SSRRN, RePEC, Hochschulserver,
-      Internet Archive, Wikimedia Commons, private Sammlungen ...)
-    - **Suchmaschinen:**
+  : - **[Suchmaschinen](2014-03-31/suchmaschinen.slides.md)**:
       Indexierung, Ranking vs Bool, Metasuche, Solr/VuFind... 
+    - **[Datenkonvertierung](2014-03-31/datenkonvertierung.slides.md)**
 
-`2014-04-07` "Datenverarbeitung"
-  : - **Datenkonvertierung**
-    -  *Verfügbarkeitsanzeige*
-    - **Crowdsourcing & Crowdfunding**
-    -  *Crowdcrafting/PyBossa*
+`2014-04-07`
+  : - *Crowdcrafting/PyBossa*
+    - **[Crowdsourcing & Crowdfunding](2014-04-07/crowdsourcing-und-funding.slides.md)**
+    - *Verfügbarkeitsanzeige*
+    - **[Hinweise zur Ausarbeitung](2014-04-07/hinweise-ausarbeitung.slides.md)**
 
 `2014-04-14` "Identifikation"
-  : - **Identifier-Systeme**: 
-      ISBN, DOI, URI, Handle...
-    - *Werk-Identifier*
-    - **Linked Open Data**:
-      RDF & Semantic Web in Bibliotheken
+  : - **[Identifier-Systeme](2014-04-14/identifier.slides.md)** 
     - *HsH in RDF*
+    - **[Linked Open Data](2014-04-14/semanticweb.slides.md)**
 
 `2014-04-22`
   : *keine Lehrveranstaltung* (Ostermontag)
 
 `2014-04-28` "Kommunikation"
-  : - **Digitale Publikation**:
-      Publikationsformen, Autorensysteme, OJS, Wikis...
-    -  *Konsultation Kommunikationssysteme* (18.3. bis 17.4).
-    - **Digitale Kommunikation**
-       Communities, Soziale Netzwerke & Kommunikationsformen
-       (Fachzeitschriften, ResearchGate, Twitter...)
-    - *Fachzeitschriften*
+  : - **[Wissenschaftliches Publizieren](2014-04-28/wissenschaft.slides.md)**
+    - **[Publikations- und Wissenschaftsmetriken](2014-04-28/metriken.slides.md)**
+    - *Konsultation Kommunikationssysteme*
+    - *BID-Fachzeitschriften*
 
 `2014-05-05` "Spezifikation"
-  : - **Datenformate und Standards:**
-      CSV, JSON, XML, RDF...; Schemata...
+  : - **[Datenformate und Standards](2014-05-05/datenformate.slides.md)**
+    - ~**(Forschungs)informationssysteme:** incl. Hochschulserver und -bibliographien (z.B. VIVO)~
     -  *Transkription*
-    - **(Forschungs)informationssysteme:**
-      incl. Hochschulserver und -bibliographien (z.B. VIVO)
     -  *Forschungsinformationssysteme an deutschsprachigen Hochschulen*
+    - **[Arten und Beispiele von Repositories](2014-05-05/repositories.slides.md)**
 
 `2014-05-12` "Verantwortung"
   : - **Rechte und Lizenzen**:
@@ -103,7 +94,7 @@ im [internen Repository](https://github.com/hshdb/hshdb2014-aufgaben).
       Kataloge, Fachdatenbanken, Reference Management... (auch: DOAJ)
     -  *Semesterapparate*
     - **Forschungsdaten:** Big Data & Data Science
-    -  *Nanopublikationen* (nicht 28.4. bis 12.5.)
+    -  *Nanopublikationen*
 
 `2014-06-02` "Lernen"
   : - **Forschungs- & Lernumgebungen & -Portale:**
@@ -126,7 +117,10 @@ im [internen Repository](https://github.com/hshdb/hshdb2014-aufgaben).
 Die folgenden ursprünglich vorgesehenen Themen werden bei Bedarf im Rahmen
 anderer Termine behandelt
 
-- **Metriken:** Quantitative Bewertungsverfahren wissenschaftlicher Publikationen
+- **Repository-Software & -Workflows allgemein**: 
+   Softwareysteme (DSpace, EPub, OPUS, MyCore...),
+   Arten von Repositories und Archiven (arXiv, SSRRN, RePEC, Hochschulserver,
+   Internet Archive, Wikimedia Commons, private Sammlungen ...)
 - **Datenjournalismus**
 
 

@@ -6,8 +6,10 @@
 
 Überführung von Daten von einem Format in ein anderes Format
 
-* <http://d-nb.info/gnd/4377497-0>
-* <https://www.wikidata.org/wiki/Q1783551>
+* <http://d-nb.info/gnd/4377497-0>\
+  Umsetzung (Informatik) = Konversion (Informatik)
+* <https://www.wikidata.org/wiki/Q1783551>\
+  Data conversion
 * ...
 
 # Was ist Datenkonvertierung?
@@ -23,7 +25,14 @@ Format
 
 Quellformat $\longrightarrow$ *Konvertierung* $\longrightarrow$ Zielformat
 
-# Anwendung
+# Anwendungen für Normalnutzer
+
+* Einfache Bild- u.Ä. Bearbeitungen von digitalen Dokumenten
+* "Datei speichern unter..."
+* Copy & Paste
+* Automatisch bei Kopieren und Verschicken von Daten
+
+# Anwendungen für Informationsmanager 
 
 * Import/Export von Daten
 * Migration in neue Systeme
@@ -71,9 +80,7 @@ Konvertierungs-programm, -skript, -mapping, -tabelle...
 
 ---
 
-![](img/Euclid_flowchart_1.png)
-
-^[CC [Wvbailey@commons](https://commons.wikimedia.org/wiki/User:Wvbailey>)]
+![](../img/Euclid_flowchart_1.png)
 
 # Algorithmen und Programme
 
@@ -91,7 +98,7 @@ Konvertierungs-programm, -skript, -mapping, -tabelle...
     * Beschreibung und Implementierung weichen voneinander ab
     * Regeln müssen angepasst, korrigiert, verändert werden
 * Aufteilung in Programm und Konfiguration (DSL)
-  
+
 # Beispiel: (Konkordanz-)Tabelle
 
 -------------- --------------- ------------
@@ -106,7 +113,7 @@ Illustrationen  $\rightarrow$  Contributor
 
 * Nachname, Vorname $\rightarrow$ Vorname Nachname
 * Sehr hilfreich: Reguläre Ausdrücke:\
-  `(.+), (.+)` $\Rightarrow$  `$1 $2`
+  `(.+), (.+)` $\Rightarrow$  `$2 $1`
 
 # Schwierigkeiten am Beispiel "Nachname, Vorname"
 
@@ -115,7 +122,13 @@ Illustrationen  $\rightarrow$  Contributor
 * "Welikaja, Jekaterina (russ. Великая, Екатерина)"
 * ...
 
-# Mappings vs Konvertierungen
+# Technische Schwierigkeiten am Beispiel dieser Folien
+
+`datenkonvertierung.slides.md` (Markdown in Unicode)\
+$\rightarrow$ LaTeX
+$\rightarrow$ `datenkonvertierung.slides.pdf` (PDF)
+
+# Mappings vs. Konvertierungen
 
 * Einfache Mappings
 * Transformationen der Struktur
@@ -140,12 +153,20 @@ Prinzip in Unix und anderen Systemen
 
 ![](../img/pipes-memo.jpg)
 
-# Eigenschaften von Konvertierungsregeln
+# Übung
 
-* Mathematische Funktion
-* Umkehrbar, Bijektiv, ...
+Rekonstruktion einer Konvertierung
 
-**wichtig zum Verständnis welche Informationen in den Daten stecken!**
+* Dokument $\rightarrow$ PICA-Format 
+* PICA $\rightarrow$ MARC-Format
+* MARC $\rightarrow$ MODS-Format
+* MODS $\rightarrow$ Dublin-Core
+
+In Gruppen: 
+* Titel
+* Contributor
+* Date
+* Subject
 
 # Daten und Formate
 
@@ -157,20 +178,48 @@ Prinzip in Unix und anderen Systemen
 
 # Aufbau von Daten
 
-* Werte & Struktur (Ä)
+Werte & Struktur (mit unterschiedlichen Strukturierungsgraden)
+ 
+![](../img/datamodeling.png)
 
+*siehe Einheit zu Digitalität*
+
+# Eigenschaften von Konvertierungsregeln
+
+* Konvertierung als Mathematische Funktion/Relation
+* Ausgangsmenge $\rightarrow$ Zielmenge
+
+Verschiedene Eigenschaften
+
+* Deterministisch
+* Links-Total (vollständig definiert)
+* Rechts-total (surjektiv)
+* eindeutig (injektiv)
+* Umkehrbar (bijektiv)
+
+**Bestimmen, welche Informationen in Daten stecken können!**
 
 # Qualitätskontrolle
 
-...
+* Sicherstellen, dass Konvertierung "richtig" ist
+* Richtige Konvertierung nach bekannten Regeln
+* Richtige Konvertierung nach Beispielen
 
+# Qualitätskontrolle
 
+* Testfälle
+    * Eingabe $\rightarrow^?$ erwartete Ausgabe 
+* Fehlererkennung
+    * Eingabe $\rightarrow$ Ausgabe $=^?$ erwartete Eigenschaften 
 
+# Zusammenfassung
 
+* Überall wo Daten verarbeitet werden, werden auch Daten konvertiert
+* Datenkonvertierung ist meist etwas einfacher als Programmierung
+* Ähnliche Möglichkeiten & Probleme
+* Ohne Datenkonvertierung gibt es Mehraufwand & Inkonsistenzen
 
+# Quellen und Literatur
 
-
-
-
-
+Flowchart mit Euklids Algorithmus CC-BY [Wvbailey@commons](https://commons.wikimedia.org/wiki/User:Wvbailey>)]
 

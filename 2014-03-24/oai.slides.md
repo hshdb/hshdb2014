@@ -248,10 +248,6 @@ ListSets
 * 2006-2008 entwickelt
 * <http://www.openarchives.org/ore>
 
-# OAI-ORE
-
-* TODO: Beispiel
-
 # Konzepte in OAI-ORE
 
 * Aggregated Resource
@@ -284,9 +280,21 @@ ListSets
 * 2012-2014 entwickelt
 * <http://www.openarchives.org/rs/>
 
----
+# ResourceSync
 
-TODO: Beispiel/Details
+Erweitert XML Sitemaps um zusätzliche Teile
+
+* Änderungen (neue oder gelöschte)
+* Dumps
+* Verweise auf frühere Versionen (RCS)
+* Zusätzliche Angaben
+
+# ResourceSync: Arten von Sitemaps
+
+* ResourceList
+* ResourceDump
+* ChangeList
+* ChangeDump
 
 # Verwandte Initiativen & Projekte
 
