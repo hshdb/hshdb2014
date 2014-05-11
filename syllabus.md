@@ -68,16 +68,15 @@ im [internen Repository](https://github.com/hshdb/hshdb2014-aufgaben).
 `2014-05-05` "Spezifikation"
   : - **[Datenformate und Standards](2014-05-05/datenformate.slides.md)**
     -  *Transkription*
-    - **[Arten und Beispiele von Repositories](2014-05-05/repositories.slides.md)**
 
 `2014-05-12` "Verantwortung"
-  : - **Rechte und Lizenzen**:
-      Urheberrecht, DRM, CC, Nationallizenzen,...
+  : - **[Rechte und Lizenzen](2014-05-12/rechte-und-lizenzen.slides.md)**
     -  *Commons Machinery*
+    -  *Langzeitarchivierung an der DNB*
     - **Digitalisierung und Archivierung:**
       Digitale Sammlungen und Archive bis zu Google Books und 3D-Scannern,
       Langzeitarchivierung (Methoden, LOCKSS etc.)
-    -  *Langzeitarchivierung an der DNB*
+    - **[Arten und Beispiele von Repositories](2014-05-05/repositories.slides.md)**
 
 `2014-05-19` "Werkzeuge"
  :  - **Software & Schnittstellen**: (
