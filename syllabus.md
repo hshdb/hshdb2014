@@ -70,16 +70,16 @@ im [internen Repository](https://github.com/hshdb/hshdb2014-aufgaben).
     -  *Transkription*
 
 `2014-05-12` "Verantwortung"
-  : - **[Rechte und Lizenzen](2014-05-12/rechte-und-lizenzen.slides.md)**
-    -  *Commons Machinery*
-    -  *Langzeitarchivierung an der DNB*
-    - **Digitalisierung und Archivierung:**
+  : -  *Langzeitarchivierung an der DNB*
+    - **[Digitalisierung und Archivierung](2014-05-12/archivierung.slides.md)**
       Digitale Sammlungen und Archive bis zu Google Books und 3D-Scannern,
       Langzeitarchivierung (Methoden, LOCKSS etc.)
+    - *Commons Machinery*
+    - **[Rechte und Lizenzen](2014-05-12/rechte-und-lizenzen.slides.md)**
     - **[Arten und Beispiele von Repositories](2014-05-05/repositories.slides.md)**
 
 `2014-05-19` "Werkzeuge"
- :  - **Software & Schnittstellen**: (
+ :  - **Software & Schnittstellen**: 
       API-Grundlagen & Beispiele, Webservices, Mashups, SOA...
     -  *Sollten Bibliotheken programmieren?*
     - **Data Mining:**
