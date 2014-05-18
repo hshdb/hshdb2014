@@ -76,16 +76,14 @@ im [internen Repository](https://github.com/hshdb/hshdb2014-aufgaben).
       Langzeitarchivierung (Methoden, LOCKSS etc.)
     - *Commons Machinery*
     - **[Rechte und Lizenzen](2014-05-12/rechte-und-lizenzen.slides.md)**
-    - **[Arten und Beispiele von Repositories](2014-05-05/repositories.slides.md)**
 
 `2014-05-19` "Werkzeuge"
- :  - **Software & Schnittstellen**: 
-      API-Grundlagen & Beispiele, Webservices, Mashups, SOA...
+ :  - **[Arten und Beispiele von Repositories](2014-05-19/repositories.slides.md)**
     -  *Sollten Bibliotheken programmieren?*
-    - **Data Mining:**
-      Natural Language Procesing, Text Mining, Web Crawling & Web Scraping
+    - **[Software & Schnittstellen](2014-05-19/apis.slides.md)** 
     -  *Archivist Manifesto*
     -  *Forschungsinformationssysteme an deutschsprachigen Hochschulen*
+    - Weitere Beispiele für Schnittstellen
 
 `2014-05-26` "Sammlung"
   : - **Literaturdatenbanken und Verzeichnisse**:
@@ -100,6 +98,7 @@ im [internen Repository](https://github.com/hshdb/hshdb2014-aufgaben).
     -  *MOOCbrarian*
     - **Open Educational Resources:**
     -  *Erschließung von OER*
+    -  *Open Annotation*
 
 `2014-06-09`
   : *keine Lehrveranstaltung (Pfingsten) aber **Deadline** für gegenseitige Korrekturen!*
@@ -117,5 +116,6 @@ anderer Termine behandelt
 
 - **(Forschungs)informationssysteme:** incl. Hochschulserver und -bibliographien (z.B. VIVO)
 - **Datenjournalismus**
+- **Data Mining:** Natural Language Procesing, Text Mining, Web Crawling & Web Scraping
 
 

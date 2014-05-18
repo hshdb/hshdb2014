@@ -1,6 +1,6 @@
 % Arten und Beispiele von Repositories
 % Dr. Jakob Voß
-% 2014-05-05
+% 2014-05-19
 
 # Repository-Definitionen
 
@@ -71,6 +71,5 @@
 # Verzeichnisse von Repositories
 
 * Directory of Open Access Repositories (DOAR)
-* je nach Repository-Art
-
+* je nach Repository-Art eigene Verzeichnisse
 
