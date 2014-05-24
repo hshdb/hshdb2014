@@ -83,14 +83,12 @@ im [internen Repository](https://github.com/hshdb/hshdb2014-aufgaben).
     - **[Software & Schnittstellen](2014-05-19/apis.slides.md)** 
     -  *Archivist Manifesto*
     -  *Forschungsinformationssysteme an deutschsprachigen Hochschulen*
-    - Weitere Beispiele für Schnittstellen
 
 `2014-05-26` "Sammlung"
-  : - **Literaturdatenbanken und Verzeichnisse**:
-      Kataloge, Fachdatenbanken, Reference Management... (auch: DOAJ)
-    -  *Semesterapparate*
-    - **Forschungsdaten:** Big Data & Data Science
+  : -  *Semesterapparate*
+    - **[Literaturdatenbanken und Verzeichnisse](2014-04-26/literaturdatenbanken.slides.md)**
     -  *Nanopublikationen*
+    - **[Forschungsdaten](2014-05-26/forschungsdaten.slides.md)** 
 
 `2014-06-02` "Lernen"
   : - **Forschungs- & Lernumgebungen & -Portale:**
@@ -116,6 +114,6 @@ anderer Termine behandelt
 
 - **(Forschungs)informationssysteme:** incl. Hochschulserver und -bibliographien (z.B. VIVO)
 - **Datenjournalismus**
-- **Data Mining:** Natural Language Procesing, Text Mining, Web Crawling & Web Scraping
+- **Data Mining:** Natural Language Procesing, Text Mining, Web Crawling & Web Scraping z.B. import.io
 
 
