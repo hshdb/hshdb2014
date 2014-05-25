@@ -10,6 +10,13 @@
 
 Allianz der deutschen Wissenschaftsorganisationen^[<http://www.allianzinitiative.de/de/handlungsfelder/forschungsdaten/>]
 
+# Research Data Alliance (RDA)
+
+* Gegründet 2013 von Wissenschaftsorganisationen aus EU, USA und Australien
+* Schaffung von einheitlichen Standards über Fach- und ländergrenzen
+
+<https://rd-alliance.org/>
+
 # Warum Forschungsdaten?
 
 * Rasanter Anstieg von datenbasierter Forschung ("Data Science"):
@@ -25,17 +32,15 @@ Allianz der deutschen Wissenschaftsorganisationen^[<http://www.allianzinitiative
 
 <https://www.youtube.com/watch?v=hrHM3bUym3g>
 
+
 # Publikation von Forschungsdaten
 
 * Umfang inzwischen kein Problem mehr
 * Bislang nicht so akzeptiert und honoriert wie Fachartikel
+* Unterschiedliche Standards je nach Fachdiziplin
 * Förderung von Forschungsdaten-Infrastrukturen
 
 ***¡¿** Welche weiteren Hemmnisse mag es geben, Forschungsdaten zu veröffentlichen **?!***
-
-# Research Data Alliance (RDA)
-
-...TODO
 
 # Nachnutzung von Forschungsdaten
 
@@ -69,6 +74,18 @@ Daten als Dokumente
     * Fachspezifisch sehr unterschiedlich
 
 ***¡¿** Wo liegen die Grenzen zwischen beschreibenden Metadaten, Tiefenerschließung und den Daten selber **?!***
+
+# Grenzfall: Nano- und Atomare Publikationen
+
+* einzelne Aussagen
+* einzelne Beispiele
+* einzelne Textbausteine
+* einzelne Annotationen oder Verknüpfungen
+* ...
+
+Nicht nur im wissenschaftlichen Bereich (vgl Simon Appleby:
+*[Dropping the A-Bomb on publishing](http://www.bookswarm.co.uk/2014/02/dropping-the-a-bomb-on-publishing/)*)
+14.2.2014
 
 # Fachspezifische Standards
 
@@ -181,16 +198,23 @@ Weitere Felder
 
 # Bibliotheken und Forschungsdaten
 
-
-...TODO:
-<http://blogs.ethz.ch/innovethbib/2014/05/12/wissenschaftliche-bibliotheken-und-der-umgang-mit-forschungsdaten/>
-
-* Forschungsdaten als Dokumente
+* Bibliotheken sind Infrastruktureinrichtungen
+* Sammeln, Erschließen, Zugänglich machen
+* Erfassung von Forschungsdaten als Dokumente
 
 # Beispiel: ETH Zürich
 
-TODO:
+Fachstelle Digitaler Datenerhalt an der ETH-Bibliothek\
 <http://www.library.ethz.ch/Digitaler-Datenerhalt>
+
+* Dauer- oder zeitweise Aufbewahrung von Daten
+* Bei Bedarf Zugriffskontrolle
+* Veröffentlichung mit DOI
+* Planung von Massnahmen zur Migration in lesbare Formate
+* Hilfe und Beratung bei der Erschließung von Daten
+* Hilfe und Beratung bei Anforderungen von Förderorganisationen
+
+*Alternative: internationale, fachspezifische Datenrepositories*
 
 # Weitere Informationen zu Forschungsdaten
 
@@ -199,13 +223,3 @@ TODO:
 * Aktuelle Publikationen zu Forschungsdaten
 * Selbstdarstellung von Projekten zu Forschungsdaten
 
----
-
-# Nachtrag zu Nanopublikationen
-
-TODO: Publikationsformen (linear vs. atomic)
-http://www.bookswarm.co.uk/2014/02/dropping-the-a-bomb-on-publishing/
-
-Annotationen
-
-Daten selber
