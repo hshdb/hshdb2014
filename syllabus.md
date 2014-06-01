@@ -91,10 +91,8 @@ im [internen Repository](https://github.com/hshdb/hshdb2014-aufgaben).
     - **[Forschungsdaten](2014-05-26/forschungsdaten.slides.md)** 
 
 `2014-06-02` "Lernen"
-  : - **Forschungs- & Lernumgebungen & -Portale:**
-      ViFas, (M)OOCs & Systeme wie HUB zero
+  : - **[Open Science](2014-06-02/open-science.slides.md)**
     -  *MOOCbrarian*
-    - **Open Educational Resources:**
     -  *Erschließung von OER*
     -  *Open Annotation*
 
@@ -112,6 +110,8 @@ im [internen Repository](https://github.com/hshdb/hshdb2014-aufgaben).
 Die folgenden ursprünglich vorgesehenen Themen werden bei Bedarf im Rahmen
 anderer Termine behandelt
 
+- **Open Educational Resources**
+- **Forschungs- & Lernumgebungen & -Portale:**  ViFas, (M)OOCs & Systeme wie HUB zero
 - **(Forschungs)informationssysteme:** incl. Hochschulserver und -bibliographien (z.B. VIVO)
 - **Datenjournalismus**
 - **Data Mining:** Natural Language Procesing, Text Mining, Web Crawling & Web Scraping z.B. import.io

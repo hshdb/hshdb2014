@@ -74,3 +74,12 @@ bezahlte Infrastruktur
 * Projektberichte: Überflüssig, notwendig, sinnvoll?
 * Auslaufende Finanzierungen (z.B. DBI, SSG, ViFas)
 
+---
+
+Jeder(r) kann Geld fürs Forschen sammeln!
+
+* *Siehe Einheit zu Crowdsourcing & Crowdfunding (7.4.)!*
+
+...[ScienceStarter](http://sciencestarter.de)...
+
+
